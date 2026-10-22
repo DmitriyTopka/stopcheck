@@ -4,6 +4,8 @@ While testing dreamDEX perps we filed 21 feedback reports; this tool fixes the o
 
 Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position a stop loss really protects. A small bot then closes the unprotected part when your stop price is hit.
 
+**Demo video (50 s):** [demo/stopcheck-demo.mp4](demo/stopcheck-demo.mp4)
+
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
 ## Why

@@ -1,0 +1,8 @@
+html,body{margin:0;width:1920px;height:1080px;background:#0f1014;color:#f2f2f5;font-family:-apple-system,"SF Pro Display","Helvetica Neue",Arial,sans-serif;overflow:hidden}
+.wrap{box-sizing:border-box;width:1920px;height:1080px;padding:80px 110px;display:flex;flex-direction:column}
+.cap{font-size:46px;line-height:1.25;font-weight:650;letter-spacing:-0.01em;max-width:1700px}
+.sub{font-size:30px;color:#a6a6b3;margin-top:18px;line-height:1.35}
+.tag{font-size:24px;color:#8b80ff;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:22px}
+.stage{flex:1;display:flex;align-items:center;justify-content:center;gap:50px;margin-top:40px}
+img{border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.mono{font-family:"SF Mono",Menlo,monospace}
