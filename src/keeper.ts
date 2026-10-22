@@ -37,6 +37,8 @@ interface Gap {
   uncovered: number;
   /** The stop-loss trigger that fires first for this side. */
   trigger: number;
+  /** Ids of the stop-loss legs, to tell a fired stop from a cancelled one. */
+  slIds: string[];
 }
 
 function gapOf(p: PositionCheck): Gap | undefined {
@@ -45,7 +47,7 @@ function gapOf(p: PositionCheck): Gap | undefined {
   const prices = sl.map((l) => l.triggerPrice);
   // A long is stopped on the way down, so the highest trigger fires first; a short the mirror.
   const trigger = p.side === "long" ? Math.max(...prices) : Math.min(...prices);
-  return { symbol: p.symbol, side: p.side, uncovered: p.size * (1 - p.slCovered), trigger };
+  return { symbol: p.symbol, side: p.side, uncovered: p.size * (1 - p.slCovered), trigger, slIds: sl.map((l) => l.id) };
 }
 
 async function main(): Promise<void> {
@@ -86,10 +88,36 @@ async function main(): Promise<void> {
         console.log(`${g.symbol}: mark unavailable, holding`);
         continue;
       }
-      const hit = g.side === "long" ? mark <= g.trigger : mark >= g.trigger;
+      // The account's own stop fires the moment the mark crosses; the keeper only
+      // looks every few seconds and the mark can bounce back in between. So a stop
+      // loss that vanished is looked up: TRIGGERED means close the rest whatever
+      // the mark says now, CANCELLED means the trader removed it on purpose.
+      let fired = false;
+      if (!p.legs.some((l) => l.kind === "SL")) {
+        const done: any[] = await (ctx.exchange.client as any)
+          .listPerpStopOrders({ account: owner, status: "TRIGGERED" })
+          .catch(() => []);
+        fired = done.some((s) => g.slIds.includes(String(s.orderIdRaw)));
+        if (!fired) {
+          const gone: any[] = await (ctx.exchange.client as any)
+            .listPerpStopOrders({ account: owner, status: "CANCELLED" })
+            .catch(() => []);
+          if (gone.some((s) => g.slIds.includes(String(s.orderIdRaw)) && s.cancelReason === "Owner")) {
+            console.log(`${g.symbol}: stop loss was cancelled by the trader, leaving the position alone`);
+            known.delete(g.symbol);
+          } else {
+            // Neither state indexed yet: the indexer trails the chain by a few seconds.
+            console.log(`${g.symbol}: stop loss vanished, waiting for the indexer to say why`);
+          }
+          continue;
+        }
+      }
+      const crossed = g.side === "long" ? mark <= g.trigger : mark >= g.trigger;
+      const hit = fired || crossed;
       console.log(
         `${g.symbol} ${g.side} ${p.size}: stop covers ${Math.round(p.slCovered * 100)}%, ` +
-          `${g.uncovered.toPrecision(6)} uncovered | SL ${g.trigger} | mark ${mark}${hit ? " | HIT" : ""}`,
+          `${g.uncovered.toPrecision(6)} uncovered | SL ${g.trigger} | mark ${mark}` +
+          `${fired ? " | STOP FIRED" : crossed ? " | HIT" : ""}`,
       );
       if (!hit) continue;
       if (Date.now() - (lastAct.get(g.symbol) ?? 0) < COOLDOWN_MS) continue;

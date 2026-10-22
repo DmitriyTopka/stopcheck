@@ -17,7 +17,22 @@ These are not only our test accounts. A scan of accounts with pending stops on 2
 ## What it does
 
 - **Check (web page and CLI).** For an address: each open position with the share covered by its stop loss and take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
-- **Gap keeper (bot, in progress).** A trading key linked to your account with "Link a bot" cannot arm stops for you; only the account can. So the keeper watches instead: when the mark reaches your stop loss and that stop covers only part of the position, it closes the uncovered rest with a reduce order through `placeOrderFor`.
+- **Gap keeper (bot).** A trading key linked to your account with "Link a bot" cannot arm stops for you; only the account can. So the keeper watches instead: when the mark reaches your stop loss and that stop covers only part of the position, it closes the uncovered rest with a reduce order through `placeOrderFor`.
+
+## Live demo (Somnia Tokyo testnet, 2026-10-22)
+
+The trap from report 019, reproduced in the dreamDEX app and closed by the keeper. Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21`, BTC-PERP, linked bot key `0x13f05c8e15cC0d7d3abff02C144fb74778018a55`.
+
+| time (UTC) | what happened | transaction |
+|---|---|---|
+| 19:18:57 | Long 0.00018 BTC in the app | [0xfb3f20ae…955ac3](https://explorer.testnet.somnia.network/tokyo/tx/0xfb3f20ae55c32a67a7402112893a4f82ee9f4bb61e61ac2883097ef618955ac3) |
+| 19:19 | TP/SL set in **Entire** mode (TP 90,000, SL 81,260): both legs store 0.00018 BTC | |
+| 19:21:21 | Added 0.00018 BTC, position now 0.00036. App still says Entire; StopCheck: "stop loss covers 50%" | [0xda18d4a5…62e8d9](https://explorer.testnet.somnia.network/tokyo/tx/0xda18d4a5b124ad3858ddf5ec39a81064b1fa327532045eb5b31b0001d562e8d9) |
+| 19:31:45 | Stop loss moved to 81,385 in the app. The new leg is again 0.00018 BTC, so editing does not fix it | |
+| 19:34:35 | Mark crosses 81,385, the stop registry fires the account's own stop loss: closes 0.00018 | [0x2db1fbb6…825178](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178) |
+| **19:34:38** | **Gap keeper closes the other 0.00018 with `placeOrderFor` from the linked bot key** | [0x8524c1fb…67abc2](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2) |
+
+Without the keeper, half of the position would have stayed open with no stop after the trader's stop loss "fired on the entire position". Keeper log: [`demo/keeper-2026-10-22.log`](demo/keeper-2026-10-22.log). Gas spent by the bot for the whole run: 0.0098 STT.
 
 ## Who it is for
 

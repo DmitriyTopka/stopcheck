@@ -1,0 +1,13 @@
+gap keeper for 0x84326A92162Ece92ed257A31073fDd3a6599BF21 | poll 3s | dry-run false
+nothing uncovered (1 position(s))
+BTC-PERP long 0.00036: stop covers 50%, 0.000180000 uncovered | SL 81260 | mark 81361.22161094788
+  ... (80 similar lines)
+BTC-PERP long 0.00036: stop covers 50%, 0.000180000 uncovered | SL 81385 | mark 81408.9887841508
+  ... (21 similar lines)
+BTC-PERP long 0.00036: stop covers 50%, 0.000180000 uncovered | SL 81385 | mark 81383.3577540114 | HIT
+placed gap keeper short 0.00018 BTC @ 81426.1 | filled 0.00018 | order 16749643618928279910644
+BTC-PERP: gap close sent=true filled=18000
+nothing uncovered (0 position(s))
+
+stopping, finishing the current cycle first. Press Ctrl-C again to exit now.
+
