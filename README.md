@@ -34,6 +34,19 @@ npm run build:web                  # rebuilds docs/app.js for the page
 
 Node 20+. Reads go to the public Hideki RPC and indexer; no keys are needed for the check.
 
+### Gap keeper
+
+The keeper reuses the official [dreamdex-bot-kit](https://github.com/somnia-chain/dreamdex-bot-kit) (`@dreamdex-bot-kit/perp-core`) for the linked trading key and the reduce order. Clone the kit, run `npm install` there, then link its perp-core into this repo:
+
+```bash
+mkdir -p node_modules/@dreamdex-bot-kit
+ln -s /path/to/dreamdex-bot-kit/packages/perp-core node_modules/@dreamdex-bot-kit/perp-core
+PRIVATE_KEY=0x... OWNER_ADDRESS=0xYourAccount NETWORK=hideki npm run keeper              # dry run, logs only
+PRIVATE_KEY=0x... OWNER_ADDRESS=0xYourAccount NETWORK=hideki DRY_RUN=false npm run keeper
+```
+
+`PRIVATE_KEY` is the bot key you linked in the app with Link a bot (Perps), not your wallet key. Every 10 seconds the keeper re-reads the account. For a position whose stop loss covers only part of it, it remembers the uncovered size and the first stop-loss trigger. When the mark crosses that trigger it re-reads the position and closes the uncovered size, capped at what is still open, so it never closes more than your stop left behind. Code: [`src/keeper.ts`](src/keeper.ts).
+
 ## How it reads
 
 Market list, pending stops and candidate positions come from the dreamDEX indexer. Position sizes (`getPerpPosition`), stop sizes and links (`getPerpStopOrders`), resting orders (`getOpenOrdersOnchain`) and claimable fees (`getUnclaimedPerpStopSomi`) are read from the chain, so a lagging indexer cannot make a position look covered. Code: [`src/check.ts`](src/check.ts).

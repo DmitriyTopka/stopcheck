@@ -6,7 +6,8 @@
   "description": "Checks whether a dreamDEX perps account's TP/SL actually cover its positions",
   "scripts": {
     "check": "tsx src/cli.ts",
-    "build:web": "esbuild src/web.ts --bundle --format=esm --platform=browser --target=es2020 --outfile=docs/app.js --minify"
+    "build:web": "esbuild src/web.ts --bundle --format=esm --platform=browser --target=es2020 --outfile=docs/app.js --minify",
+    "keeper": "tsx src/keeper.ts"
   },
   "dependencies": {
     "@somnia-chain/markets-sdk": "0.32.1",
