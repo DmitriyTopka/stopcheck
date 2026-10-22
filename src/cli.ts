@@ -7,7 +7,7 @@ function print(r: Report): void {
   console.log(`\n${r.account}  (${r.checkedAt})`);
   for (const p of r.positions) {
     const legs = p.legs.map((l) => `${l.kind} ${l.triggerPrice} x ${l.wholePosition ? "whole" : l.quantity}`).join(", ");
-    console.log(`  ${p.symbol} ${p.side} ${p.size} @ ${p.entry} | TP ${Math.round(p.tpCovered * 100)}% SL ${Math.round(p.slCovered * 100)}% | ${legs || "no stops"}`);
+    console.log(`  ${p.symbol} ${p.side} ${p.size} @ ${p.entry} | TP ${(p.tpCovered * 100).toFixed(1)}% SL ${(p.slCovered * 100).toFixed(1)}% | ${legs || "no stops"}`);
   }
   for (const i of r.idle) console.log(`  ${i.symbol} ${i.state}: ${i.legs.length} stop(s), ${i.restingOrders} resting order(s)`);
   console.log(`  STT held by stops ${r.sttHeld.toFixed(2)}, claimable ${r.sttClaimable.toFixed(2)}`);

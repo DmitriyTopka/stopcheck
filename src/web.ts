@@ -2,7 +2,14 @@ import { checkAccount, createClient, type PositionCheck, type Report, type StopL
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
-const pct = (x: number) => `${Math.round(x * 100)}%`;
+// Never round a partial cover up to 100% or a small one down to 0%: 99.6% printed
+// as "100%" next to "the rest has no stop" reads as a contradiction.
+const pct = (x: number) => {
+  const v = x * 100;
+  if (v >= 100) return "100%";
+  if (v > 0 && v < 1) return `${v.toFixed(1)}%`;
+  return `${Math.floor(v)}%`;
+};
 const client = createClient();
 
 function bar(label: string, share: number, present: boolean): string {

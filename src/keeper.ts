@@ -115,7 +115,7 @@ async function main(): Promise<void> {
       const crossed = g.side === "long" ? mark <= g.trigger : mark >= g.trigger;
       const hit = fired || crossed;
       console.log(
-        `${g.symbol} ${g.side} ${p.size}: stop covers ${Math.round(p.slCovered * 100)}%, ` +
+        `${g.symbol} ${g.side} ${p.size}: stop covers ${(p.slCovered * 100).toFixed(1)}%, ` +
           `${g.uncovered.toPrecision(6)} uncovered | SL ${g.trigger} | mark ${mark}` +
           `${fired ? " | STOP FIRED" : crossed ? " | HIT" : ""}`,
       );

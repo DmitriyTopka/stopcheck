@@ -75,7 +75,14 @@ export function createClient(): SomniaMarkets {
 
 // Rounded to 10 significant digits so 6975e-1 does not print as 697.5000000000001.
 const human = (raw: bigint | string | number, decimals: number) => Number((Number(BigInt(raw)) / 10 ** decimals).toPrecision(10));
-const pct = (x: number) => `${Math.round(x * 100)}%`;
+// Never round a partial cover up to 100% or a small one down to 0%: 99.6% printed
+// as "100%" next to "the rest has no stop" reads as a contradiction.
+const pct = (x: number) => {
+  const v = x * 100;
+  if (v >= 100) return "100%";
+  if (v > 0 && v < 1) return `${v.toFixed(1)}%`;
+  return `${Math.floor(v)}%`;
+};
 
 function classify(isBid: boolean, operator: number, side: Side | null): StopLeg["kind"] {
   // Closing a long sells, closing a short buys. A leg on the other side cannot

@@ -1,0 +1,3288 @@
+markets with pending stops: BNB, SOL, HYPE, NEAR, ETH, BTC, DOGE, ZRO, XRP, AVAX, SUI, LIT, WLD, ZEC, TAO, LINK, XLM, PUMP, VVV
+862 pending stops, 463 owners checked
+
+0x1dbc15ca1e11bfb43bb0a66d76194aaef1f5ecbb  (2026-10-22T19:09:34.355Z)
+  BNB-PERP short 2.754 @ 730.3668548 | TP 100% SL 0% | TP 723.063 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.754 has no stop loss.
+
+0x88f440eea83f9a7a297886d8d0bb4eb8ba2717b2  (2026-10-22T19:09:36.286Z)
+  BNB-PERP short 2.752 @ 730.7658983 | TP 100% SL 0% | TP 723.458 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.752 has no stop loss.
+
+0x1aa0113b61235320ece01a181f6b46b2231b0b53  (2026-10-22T19:09:38.299Z)
+  BNB-PERP short 2.752 @ 730.6988932 | TP 100% SL 0% | TP 723.391 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.752 has no stop loss.
+
+0x9f805c87b12bda1026c1ee8bdb3e3b781911cc13  (2026-10-22T19:09:40.229Z)
+  BNB-PERP short 2.753 @ 730.6053829 | TP 100% SL 0% | TP 723.299 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.753 has no stop loss.
+
+0x166d3b523f5f547e6cd8e8502c34d084efcd482d  (2026-10-22T19:09:42.154Z)
+  BNB-PERP short 2.752 @ 730.8738198 | TP 100% SL 0% | TP 723.565 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.752 has no stop loss.
+
+0xb9425886f142a21b5fb206b7b4c273e150ac5f9a  (2026-10-22T19:09:44.082Z)
+  BNB-PERP short 2.754 @ 730.4109129 | TP 100% SL 0% | TP 723.106 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.754 has no stop loss.
+
+0xf9bebaf61c683c68902400506ae4cb1bcc2a3b06  (2026-10-22T19:09:46.005Z)
+  BNB-PERP short 2.753 @ 730.574372 | TP 100% SL 0% | TP 723.268 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.753 has no stop loss.
+
+0xa1f5611dfe316ed4e9498fcdf420dd7b5b9d8173  (2026-10-22T19:09:47.931Z)
+  BNB-PERP short 2.754 @ 730.4689103 | TP 100% SL 0% | TP 723.164 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.754 has no stop loss.
+
+0xbb5cb4fea3dd5cc2091a4c7e54c11236c630079e  (2026-10-22T19:09:49.865Z)
+  BNB-PERP short 2.751 @ 731.1326674 | TP 100% SL 0% | TP 723.821 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.751 has no stop loss.
+
+0x97e0990872a74d15669c8970979ab1494a53e45a  (2026-10-22T19:09:51.790Z)
+  SOL-PERP short 19.43 @ 103.65 | TP 100% SL 0% | TP 102.61 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.43 has no stop loss.
+
+0xa14d4561f2697859ab6c2d5eb62e1172a6cc3d14  (2026-10-22T19:09:53.714Z)
+  HYPE-PERP long 396.08 @ 77.8 | TP 100% SL 0% | TP 85 x 396.08
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 396.08 has no stop loss.
+
+0xc8e6deb8cb516d7fa7b987bac32532e96284486d  (2026-10-22T19:09:55.631Z)
+  SOL-PERP short 19.43 @ 103.67 | TP 100% SL 0% | TP 102.63 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.43 has no stop loss.
+
+0x74974dc791d93c0122d08db4c90268242dc0a022  (2026-10-22T19:09:57.577Z)
+  SOL-PERP short 19.42 @ 103.72 | TP 100% SL 0% | TP 102.68 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.42 has no stop loss.
+
+0xcc7c140f296d25bfb068b1ade94d1fa812140bb8  (2026-10-22T19:09:59.542Z)
+  SOL-PERP short 19.41 @ 103.74 | TP 100% SL 0% | TP 102.7 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.41 has no stop loss.
+
+0xd54899be21be2cd650e3dfe80c26dc900bb04141  (2026-10-22T19:10:01.465Z)
+  SOL-PERP short 19.42 @ 103.72 | TP 100% SL 0% | TP 102.68 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.42 has no stop loss.
+
+0x8aad2703b2fbc2eb42da7e4f9b3ba21732c18e1b  (2026-10-22T19:10:03.399Z)
+  SOL-PERP short 19.4 @ 103.8249742 | TP 100% SL 0% | TP 102.78 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.4 has no stop loss.
+
+0xe52583dc7d602e4c9f613ae6b630740dd48e322a  (2026-10-22T19:10:06.564Z)
+  SOL-PERP short 19.39 @ 103.87 | TP 100% SL 0% | TP 102.83 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.39 has no stop loss.
+
+0xcc3cb8667fd793a8b2307a7ea1daf42b9c626f3a  (2026-10-22T19:10:08.491Z)
+  SOL-PERP short 19.39 @ 103.83 | TP 100% SL 0% | TP 102.79 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.39 has no stop loss.
+
+0x778f452eec0421ddaf327da7625d54c27da3ad9e  (2026-10-22T19:10:10.430Z)
+  SOL-PERP short 19.41 @ 103.7648944 | TP 100% SL 0% | TP 102.72 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.41 has no stop loss.
+
+0xda356088a733ed210c1670eb99bace8388cbfa75  (2026-10-22T19:10:12.354Z)
+  SOL-PERP short 19.4 @ 103.7849742 | TP 100% SL 0% | TP 102.74 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.4 has no stop loss.
+
+0x75ba27464afe2c3c1a904ee9d6e5d5ccb3e52e8f  (2026-10-22T19:10:14.297Z)
+  SOL-PERP short 19.38 @ 103.9049742 | TP 100% SL 0% | TP 102.86 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.38 has no stop loss.
+
+0x5f47834ad2773f1330f1c467192187a0c22077e2  (2026-10-22T19:10:16.219Z)
+  SOL-PERP short 19.39 @ 103.82 | TP 100% SL 0% | TP 102.78 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.39 has no stop loss.
+
+0xc46bcedf7bfce2a649c09e0f6d32a4845439cc47  (2026-10-22T19:10:18.149Z)
+  SOL-PERP short 19.4 @ 103.83 | TP 100% SL 0% | TP 102.79 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.4 has no stop loss.
+
+0x18973ee0c30fe1ccc4cc18b8fe8f05544c582624  (2026-10-22T19:10:20.125Z)
+  SOL-PERP short 19.41 @ 103.75 | TP 100% SL 0% | TP 102.71 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.41 has no stop loss.
+
+0xdc96de34a4bad67aa7bb1f462d067382ca2aac0c  (2026-10-22T19:10:22.075Z)
+  SOL-PERP short 19.43 @ 103.66 | TP 100% SL 0% | TP 102.62 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.43 has no stop loss.
+
+0x9499b7418bd485c02d529f8faeca16877da77091  (2026-10-22T19:10:24.069Z)
+  SOL-PERP short 19.42 @ 103.694897 | TP 100% SL 0% | TP 102.65 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.42 has no stop loss.
+
+0xc44fc6817e10507001c1d596f741796e91d7aa4b  (2026-10-22T19:10:25.991Z)
+  NEAR-PERP long 697.5 @ 4.905105133 | TP 100% SL 100% | SL 4.7 x 697.5, TP 4.95 x 697.5
+  STT held by stops 0.30, claimable 0.07
+  ! 0.07 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x200107ffcfe9a23c1fdd3d11643399de170a0c20  (2026-10-22T19:10:27.916Z)
+  SOL-PERP short 19.41 @ 103.78 | TP 100% SL 0% | TP 102.74 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.41 has no stop loss.
+
+0x98606284e96a13a3f6ef5d17012ab20aefd0123b  (2026-10-22T19:10:29.842Z)
+  SOL-PERP short 19.4 @ 103.81 | TP 100% SL 0% | TP 102.77 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.4 has no stop loss.
+
+0x3cd3e5fdf38cd5cd3cf67b441bf958fafb2b2ef4  (2026-10-22T19:10:32.038Z)
+  SOL-PERP short 46.82 @ 103.5120675 | TP 100% SL 100% | TP 101 x 46.82, SL 105 x 46.82
+  ETH-PERP short 1.0891 @ 2375.19 | TP 100% SL 100% | TP 2335 x 1.0891, SL 2400 x 1.0891
+  STT held by stops 0.60, claimable 0.00
+  ok: nothing to fix
+
+0xa4359f1bf501fd46b4e5d0804b5681c413721d5f  (2026-10-22T19:10:33.972Z)
+  SOL-PERP short 19.42 @ 103.7 | TP 100% SL 0% | TP 102.66 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.42 has no stop loss.
+
+0xfaa620e532a463fe7163e63501fa16661b28b5ce  (2026-10-22T19:10:35.908Z)
+  HYPE-PERP long 49.86 @ 77.52 | TP 0% SL 0% | no stops
+  ETH-PERP long 14.9897 @ 2375.975329 | TP 100% SL 100% | TP 2510 x 14.9897, SL 2308 x 14.9897
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: long 49.86 has no stop loss.
+
+0x6aad29cca6ed7e1a5e8181e5dcbcbf8a58df0f75  (2026-10-22T19:10:37.844Z)
+  SOL-PERP short 19.42 @ 103.68 | TP 100% SL 0% | TP 102.64 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.42 has no stop loss.
+
+0x84df400f2248cfa1ca730a7ea6889998d02b8210  (2026-10-22T19:10:39.796Z)
+  SOL-PERP short 19.43 @ 103.61 | TP 100% SL 0% | TP 102.57 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.43 has no stop loss.
+
+0x8a9ae84dab75cda50f44720ba2bc6de3b95a227f  (2026-10-22T19:10:42.010Z)
+  SOL-PERP short 19.44 @ 103.5849743 | TP 100% SL 0% | TP 102.54 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.44 has no stop loss.
+
+0xd5ce8a6ca2da555219e59f7a7ed23e5c407ca184  (2026-10-22T19:10:43.946Z)
+  SOL-PERP short 19.46 @ 103.4949743 | TP 100% SL 0% | TP 102.46 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.46 has no stop loss.
+
+0x4aebfe9b899fa7380366c08dfb3fa1a18881f981  (2026-10-22T19:10:45.882Z)
+  SOL-PERP short 19.49 @ 103.36 | TP 100% SL 0% | TP 102.32 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.49 has no stop loss.
+
+0x677a31c132c19bb2dc30bb0dcf64037cec9ef405  (2026-10-22T19:10:47.817Z)
+  SOL-PERP short 19.47 @ 103.47 | TP 100% SL 0% | TP 102.43 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.47 has no stop loss.
+
+0x96864f095e5649c8da2f178eb1f5d50afe6214c5  (2026-10-22T19:10:50.055Z)
+  BTC-PERP short 0.78256 @ 82746.51511 | TP 84% SL 84% | SL 81800 x 0.65948, TP 72000 x 0.65948
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: stop loss covers 84% of the 0.78256 short; the rest has no stop.
+  ! BTC-PERP: take profit covers 84% of the 0.78256 short.
+
+0xaddbe97ee97fd02bd709ed003cf6bf45db4e33b4  (2026-10-22T19:10:52.023Z)
+  SOL-PERP short 19.48 @ 103.3848973 | TP 100% SL 0% | TP 102.35 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.48 has no stop loss.
+
+0xeb129b226101fb70c7c1a6e8d1f6ffe3ddf1da49  (2026-10-22T19:10:53.940Z)
+  SOL-PERP short 19.5 @ 103.29 | TP 100% SL 0% | TP 102.25 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.5 has no stop loss.
+
+0x5cfc738e3e2c26b9f5f4de91b77d55b8749f0600  (2026-10-22T19:10:55.893Z)
+  ETH-PERP long 9.8374 @ 2365.799858 | TP 0% SL 100% | SL 2365.8 x 9.8374
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x509c8ba1b1c8d8454ff1ab9242ee4fd58c0f78b7  (2026-10-22T19:10:57.812Z)
+  SOL-PERP short 19.5 @ 103.29 | TP 100% SL 0% | TP 102.25 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.5 has no stop loss.
+
+0x8d8b02b7441c8ad6e75fba9bde4be83044ce36a2  (2026-10-22T19:10:59.741Z)
+  SOL-PERP short 19.51 @ 103.27 | TP 100% SL 0% | TP 102.23 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.51 has no stop loss.
+
+0x3993064b48244e46407ad458d956f1612d677b0f  (2026-10-22T19:11:01.667Z)
+  SOL-PERP short 19.48 @ 103.38 | TP 100% SL 0% | TP 102.34 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.48 has no stop loss.
+
+0x1ff91339d57d9618d2ae80504a1e3b9fc9db8d93  (2026-10-22T19:11:03.606Z)
+  SOL-PERP short 19.47 @ 103.4299538 | TP 100% SL 0% | TP 102.39 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.47 has no stop loss.
+
+0x50bd36bcf88b753af95ecba3257c6ab59f24083a  (2026-10-22T19:11:05.535Z)
+  SOL-PERP short 19.47 @ 103.5149718 | TP 100% SL 0% | TP 102.47 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.47 has no stop loss.
+
+0x9ab9c47659b4509fff3fede725e9e04e6cdec5d3  (2026-10-22T19:11:08.758Z)
+  SOL-PERP short 19.45 @ 103.57 | TP 100% SL 0% | TP 102.53 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.45 has no stop loss.
+
+0x675a6c9240478291115004db5cf60a1ad29e2cde  (2026-10-22T19:11:10.941Z)
+  SOL-PERP short 19.46 @ 103.4949743 | TP 100% SL 0% | TP 102.46 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.46 has no stop loss.
+
+0xa30cf2578da21573f9ac49a9a84b03ef47ca6a60  (2026-10-22T19:11:13.054Z)
+  STT held by stops 0.00, claimable 0.00
+  ok: nothing to fix
+
+0xd36f27137b220b61edb567d8ad32d998a5a1e7b7  (2026-10-22T19:11:14.971Z)
+  SOL-PERP short 19.44 @ 103.57 | TP 100% SL 0% | TP 102.53 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.44 has no stop loss.
+
+0x8ca7e26d9c01646bce0b68bb4e8b1acc987e8200  (2026-10-22T19:11:16.913Z)
+  SOL-PERP long 257.03 @ 104.82667 | TP 100% SL 0% | TP 105 x 60.83, TP 108 x 196.2
+  BTC-PERP long 0.01204 @ 83000 | TP 100% SL 0% | TP 83200 x 0.01204
+  STT held by stops 0.45, claimable 0.00
+  ! SOL-PERP: long 257.03 has no stop loss.
+  ! BTC-PERP: long 0.01204 has no stop loss.
+
+0x8e1319fb0544cd124348e42d7df53902478da93a  (2026-10-22T19:11:18.841Z)
+  SOL-PERP short 19.44 @ 103.6 | TP 100% SL 0% | TP 102.56 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.44 has no stop loss.
+
+0x6e4eafd2ccf6272606d13bb7ecb6cfa7732d3036  (2026-10-22T19:11:20.765Z)
+  BNB-PERP short 2.754 @ 730.1178627 | TP 100% SL 0% | TP 722.816 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.754 has no stop loss.
+
+0xf7348c01c70bace8613d695876c06839dcdf0a7c  (2026-10-22T19:11:22.686Z)
+  BNB-PERP short 2.754 @ 730.1338272 | TP 100% SL 0% | TP 722.832 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! BNB-PERP: short 2.754 has no stop loss.
+
+0x55d5501554cb3d535bd8edee0afed2747366dc2c  (2026-10-22T19:11:24.619Z)
+  DOGE-PERP long 204110 @ 0.08015681544 | TP 100% SL 0% | TP 0.08357 x 204110
+  STT held by stops 0.15, claimable 0.00
+  ! DOGE-PERP: long 204110 has no stop loss.
+
+0x8f92e2a5f9c78ea95229aa64621c34eae9791a54  (2026-10-22T19:11:26.549Z)
+  ETH-PERP long 6.4371 @ 2378.735133 | TP 100% SL 0% | TP 2450 x 6.4371
+  BTC-PERP long 0.0323 @ 81803.01749 | TP 100% SL 0% | TP 82500 x 0.0323
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: long 6.4371 has no stop loss.
+  ! BTC-PERP: long 0.0323 has no stop loss.
+
+0x5a5271086d513053a9a367c651095cc62b6b2edc  (2026-10-22T19:11:28.536Z)
+  ZRO-PERP long 2119 @ 1.93058403 | TP 48% SL 0% | TP 2.05 x 1017.8
+  BTC-PERP short 0.06474 @ 81549.52872 | TP 23% SL 0% | TP 78725.3 x 0.01232, TP 79302.2 x 0.00242
+  ETH-PERP short 0.4219 @ 2370.909991 | TP 100% SL 0% | TP 2299.06 x 0.4219
+  STT held by stops 0.60, claimable 0.00
+  ! ZRO-PERP: take profit covers 48% of the 2119 long.
+  ! ZRO-PERP: long 2119 has no stop loss.
+  ! BTC-PERP: take profit covers 23% of the 0.06474 short.
+  ! BTC-PERP: short 0.06474 has no stop loss.
+  ! ETH-PERP: short 0.4219 has no stop loss.
+
+0xea4949836c967d275bdd093f38682dabccef7bdd  (2026-10-22T19:11:30.480Z)
+  ZRO-PERP long 945.1 @ 1.767980267 | TP 100% SL 0% | TP 2.6626 x 945.1, TP 2.5046 x 2186.5
+  STT held by stops 0.30, claimable 0.00
+  ! ZRO-PERP: long 945.1 has no stop loss.
+
+0xcbc1953a894ecb503437cb8c7de4272e14d09fa8  (2026-10-22T19:11:33.547Z)
+  XRP-PERP waiting: 1 stop(s), 1 resting order(s)
+  HYPE-PERP waiting: 1 stop(s), 1 resting order(s)
+  SOL-PERP waiting: 1 stop(s), 1 resting order(s)
+  ETH-PERP waiting: 1 stop(s), 1 resting order(s)
+  BTC-PERP waiting: 1 stop(s), 1 resting order(s)
+  STT held by stops 0.75, claimable 0.00
+  ! XRP-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! HYPE-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! SOL-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! ETH-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! BTC-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+
+0x3344670ad2314294279b6807ccd61c58b058717c  (2026-10-22T19:11:36.877Z)
+  ZRO-PERP long 2101.1 @ 1.7676 | TP 100% SL 0% | TP 2.6514 x 2101.1
+  STT held by stops 0.15, claimable 0.00
+  ! ZRO-PERP: long 2101.1 has no stop loss.
+
+0x575712127ef070f425ecd4a9eabfbb8c3d01ebe9  (2026-10-22T19:11:38.817Z)
+  SOL-PERP long 44.25 @ 104.0455548 | TP 100% SL 0% | TP 150 x 44.25
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 44.25 has no stop loss.
+
+0xb050ca57fc4b0f5d95baef6d67a59ce08609e880  (2026-10-22T19:11:40.757Z)
+  BTC-PERP long 0.62849 @ 81259.9 | TP 100% SL 100% | TP 85000 x 0.62849, SL 80000 x 0.62849
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x65cc929e3e049885b55e3a328a28d2b04b02d2f4  (2026-10-22T19:11:42.684Z)
+  SOL-PERP long 1032.57 @ 103.549646 | TP 100% SL 0% | TP 108 x 1032.57
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 1032.57 has no stop loss.
+
+0x2b0ff474d10e86fa10849b42ff016496323da0ec  (2026-10-22T19:11:44.620Z)
+  HYPE-PERP long 429.77 @ 77.28007772 | TP 100% SL 0% | TP 80 x 429.77
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 429.77 has no stop loss.
+
+0x68f8f6227b18b44f0cd2d48b3051e36380e483ed  (2026-10-22T19:11:46.551Z)
+  HYPE-PERP long 645.9 @ 77.12425732 | TP 100% SL 0% | TP 80 x 645.9
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 645.9 has no stop loss.
+
+0x6bfe70f889c7602aad49369a6e7c21d6f59fce49  (2026-10-22T19:11:48.484Z)
+  SOL-PERP short 19.41 @ 103.5849768 | TP 100% SL 0% | TP 102.54 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 19.41 has no stop loss.
+
+0x185121b8be398e7d5baf41375dafdf5720dea0bf  (2026-10-22T19:11:50.412Z)
+  ETH-PERP long 0.3748 @ 2388.58 | TP 100% SL 100% | SL 1910.86 x 0.3748, TP 2627.44 x 0.3748
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x67f48794157817d8c66bc8d3ccda210a8fd661a7  (2026-10-22T19:11:52.366Z)
+  SOL-PERP long 2.6 @ 104.8594231 | TP 100% SL 0% | TP 106 x 2.6
+  ETH-PERP long 0.1111 @ 2405.85 | TP 100% SL 0% | TP 2472.98 x 0.1111
+  BTC-PERP long 0.01665 @ 81887.44432 | TP 100% SL 0% | TP 84400.5 x 0.01665
+  STT held by stops 0.45, claimable 0.00
+  ! SOL-PERP: long 2.6 has no stop loss.
+  ! ETH-PERP: long 0.1111 has no stop loss.
+  ! BTC-PERP: long 0.01665 has no stop loss.
+
+0xbce44b491de1789f38a4367805eee236c299dc01  (2026-10-22T19:11:54.319Z)
+  AVAX-PERP long 762.3 @ 9.175997639 | TP 100% SL 0% | TP 9.237 x 762.3
+  SUI-PERP long 10164 @ 0.9852059622 | TP 100% SL 0% | TP 1.0005 x 10164
+  SOL-PERP long 293.66 @ 104.5 | TP 100% SL 0% | TP 105.17 x 293.66
+  STT held by stops 0.45, claimable 0.00
+  ! AVAX-PERP: long 762.3 has no stop loss.
+  ! SUI-PERP: long 10164 has no stop loss.
+  ! SOL-PERP: long 293.66 has no stop loss.
+
+0xac4a1a8105bcf11bcafb60f26eb2794de35fc2e8  (2026-10-22T19:11:56.241Z)
+  BTC-PERP short 0.57778 @ 82541.11364 | TP 55% SL 0% | TP 78900 x 0.32028
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: take profit covers 55% of the 0.57778 short.
+  ! BTC-PERP: short 0.57778 has no stop loss.
+
+0xa48b5936b0fa0c62f20dfe541a8fa4117d190623  (2026-10-22T19:11:58.249Z)
+  BTC-PERP long 0.04024 @ 81752.14774 | TP 100% SL 0% | TP 82500 x 0.125, TP 82500 x 0.04024
+  SOL-PERP long 29 @ 106.7405698 | TP 3% SL 100% | SL 100 x 29, TP 120 x 0.93
+  STT held by stops 0.60, claimable 0.07
+  ! BTC-PERP: long 0.04024 has no stop loss.
+  ! SOL-PERP: take profit covers 3% of the 29 long.
+  ! 0.07 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x095df868de3603ba9afcad55caa71856013682c5  (2026-10-22T19:12:00.676Z)
+  SUI-PERP short 5321 @ 0.9805876339 | TP 100% SL 0% | TP 0.96 x 5321
+  NEAR-PERP short 1646.4 @ 4.935639577 | TP 100% SL 0% | TP 4.8 x 1646.4
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: short 5321 has no stop loss.
+  ! NEAR-PERP: short 1646.4 has no stop loss.
+
+0x9932e673c4c6e256286d738938c2af0bc5f3ac0c  (2026-10-22T19:12:02.617Z)
+  BTC-PERP long 0.54848 @ 81785.89269 | TP 100% SL 0% | TP 85600 x 0.54848
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.54848 has no stop loss.
+
+0xecd55b541a1ea8c6b60318e801a9c872bd4d66d7  (2026-10-22T19:12:04.558Z)
+  SOL-PERP long 171.93 @ 104.6672035 | TP 100% SL 100% | TP 107.28 x 171.93, SL 102.05 x 171.93
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x936dff3925603a23d7fe3745aa2c113e86d9afb3  (2026-10-22T19:12:06.493Z)
+  SOL-PERP long 71.78 @ 104.3979799 | TP 100% SL 100% | TP 107.11 x 71.78, SL 101.68 x 71.78
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0xd2e25ddac8d2cf411f936a38c2cd544f06ce0e8c  (2026-10-22T19:12:08.427Z)
+  SOL-PERP long 186.78 @ 104.3764043 | TP 100% SL 100% | TP 106.99 x 186.78, SL 101.77 x 186.78
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0xae01fb3f7c413bca18c102a2014b711ffb699c6d  (2026-10-22T19:12:11.208Z)
+  HYPE-PERP long 130.29 @ 76.75 | TP 100% SL 0% | TP 80.59 x 130.29
+  ETH-PERP waiting: 1 stop(s), 1 resting order(s)
+  NEAR-PERP waiting: 1 stop(s), 1 resting order(s)
+  STT held by stops 0.45, claimable 0.15
+  ! HYPE-PERP: long 130.29 has no stop loss.
+  ! ETH-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! NEAR-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x466fcf107272f94cd9d3e0a2c6576c62b1e82b48  (2026-10-22T19:12:13.147Z)
+  SOL-PERP long 239 @ 104.5651933 | TP 100% SL 100% | SL 101.95 x 239, TP 107.18 x 239
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x437f4cdab33f492646a5be09596fec9399291266  (2026-10-22T19:12:15.083Z)
+  SOL-PERP long 82.31 @ 104.4741805 | TP 100% SL 100% | SL 101.86 x 82.31, TP 107.09 x 82.31
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0xe5f87ef866ea1ea07613aecb05b789eb9148627f  (2026-10-22T19:12:17.010Z)
+  SOL-PERP long 230.5 @ 104.12 | TP 100% SL 100% | SL 101.52 x 230.5, TP 106.72 x 230.5
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x8d4a4e4484e0fc2c24dd4622dda314d0538d5df8  (2026-10-22T19:12:19.432Z)
+  SOL-PERP short 1896.46 @ 104.1896396 | TP 100% SL 100% | TP 101.9 x 1896.46, SL 106.48 x 1896.46
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0xab420831c2be15c2cd408e89e154fbe3a13334fc  (2026-10-22T19:12:21.368Z)
+  BTC-PERP short 0.11942 @ 81559.8 | TP 100% SL 100% | SL 81796.3 x 0.11942, TP 78297.4 x 0.11942
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x010b8289bc78cf704d5a62f7cb8f3835b2f0893e  (2026-10-22T19:12:23.317Z)
+  BNB-PERP long 24.411 @ 733.859955 | TP 100% SL 0% | TP 748 x 2.725, TP 748 x 21.686
+  BTC-PERP long 0.09723 @ 81867.70098 | TP 100% SL 0% | TP 85000 x 0.09723
+  STT held by stops 0.45, claimable 0.00
+  ! BNB-PERP: long 24.411 has no stop loss.
+  ! BTC-PERP: long 0.09723 has no stop loss.
+
+0xdf5ea390e0be0f6b6ef6eca1ea4f91b6e1ab53ba  (2026-10-22T19:12:26.129Z)
+  DOGE-PERP long 18910 @ 0.07931 | TP 0% SL 100% | SL 0.07534 x 18910
+  WLD-PERP short 1757 @ 0.569 | TP 0% SL 0% | no stops
+  ETH-PERP waiting: 1 stop(s), 1 resting order(s)
+  BTC-PERP waiting: 1 stop(s), 1 resting order(s)
+  NEAR-PERP waiting: 1 stop(s), 1 resting order(s)
+  STT held by stops 0.60, claimable 0.00
+  ! WLD-PERP: short 1757 has no stop loss.
+  ! ETH-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! BTC-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! NEAR-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+
+0xcdec87cbea684f3fe5108322438395d6cc0a4e91  (2026-10-22T19:12:28.631Z)
+  SOL-PERP long 186.69 @ 104.4474316 | TP 100% SL 100% | TP 107.06 x 186.69, SL 101.84 x 186.69
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x16ad669f090e3c026ad0253d01c221c4a4c1e9da  (2026-10-22T19:12:30.609Z)
+  ETH-PERP short 1.0362 @ 2424.79 | TP 100% SL 100% | TP 2317.9 x 1.0362, SL 2432.7 x 1.0362
+  BTC-PERP short 0.01897 @ 83725.37503 | TP 100% SL 100% | SL 83979.7 x 0.01897, TP 79699.9 x 0.01897
+  SOL-PERP short 7.66 @ 106.0580369 | TP 100% SL 100% | TP 96.17 x 7.66, SL 106.9 x 7.66
+  BNB-PERP short 0.647 @ 742.7352887 | TP 100% SL 100% | TP 705.7 x 0.647, SL 744.77 x 0.647
+  STT held by stops 1.20, claimable 0.00
+  ok: nothing to fix
+
+0x48154ff8431cfc05c071e616c87261066714d360  (2026-10-22T19:12:32.799Z)
+  BTC-PERP long 0.00121 @ 81926.14545 | TP 73% SL 0% | TP 82000 x 0.00088
+  TAO-PERP long 25.688 @ 275.2869233 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: take profit covers 73% of the 0.00121 long.
+  ! BTC-PERP: long 0.00121 has no stop loss.
+  ! TAO-PERP: long 25.688 has no stop loss.
+
+0x164c1a744bf7963da92a671c70ef2e6d038e6ffc  (2026-10-22T19:12:34.729Z)
+  BTC-PERP long 0.02771 @ 81880.82266 | TP 100% SL 100% | SL 80192.5 x 0.05923, TP 85257.5 x 0.05923
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x0789dc3592cd9f7e73208f275580a4c76aa273c1  (2026-10-22T19:12:36.663Z)
+  ETH-PERP long 12.2874 @ 2437.520168 | TP 100% SL 0% | TP 2470.5 x 12.2874
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 12.2874 has no stop loss.
+
+0x2ad7d0a1bde83e85d417133e49c86e2b920db055  (2026-10-22T19:12:39.178Z)
+  BTC-PERP long 0.005 @ 82015.0852 | TP 0% SL 0% | no stops
+  XRP-PERP short 100 @ 1.3233 | TP 0% SL 0% | no stops
+  HYPE-PERP long 1.1 @ 78.59 | TP 0% SL 0% | no stops
+  NEAR-PERP short 70.7 @ 5.0224 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.1 @ 2408.85 | TP 0% SL 0% | no stops
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  ZEC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.005 has no stop loss.
+  ! XRP-PERP: short 100 has no stop loss.
+  ! HYPE-PERP: long 1.1 has no stop loss.
+  ! NEAR-PERP: short 70.7 has no stop loss.
+  ! ETH-PERP: long 0.1 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! ZEC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xd9f11391bb1581f45791169dc5b2351fd9e17996  (2026-10-22T19:12:41.113Z)
+  SOL-PERP long 890.37 @ 105 | TP 100% SL 0% | TP 107.5 x 890.37
+  HYPE-PERP long 1154.3 @ 79 | TP 100% SL 0% | TP 83 x 1154.3
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: long 890.37 has no stop loss.
+  ! HYPE-PERP: long 1154.3 has no stop loss.
+
+0x5c4c43b6dca4a53ccea06a7e9c03afd6b03ea931  (2026-10-22T19:12:43.063Z)
+  ZRO-PERP short 32.6 @ 1.8227 | TP 0% SL 0% | no stops
+  SUI-PERP short 106 @ 0.9891 | TP 0% SL 0% | no stops
+  DOGE-PERP short 1860 @ 0.07973 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.26456 @ 81836.49497 | TP 16% SL 0% | TP 63034.4 x 0.0421
+  ZEC-PERP short 1.551 @ 1257.744544 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.5853 @ 2605.685522 | TP 100% SL 100% | TP 3517.68 x 0.5853, SL 1823.98 x 0.5853
+  STT held by stops 0.45, claimable 0.00
+  ! ZRO-PERP: short 32.6 has no stop loss.
+  ! SUI-PERP: short 106 has no stop loss.
+  ! DOGE-PERP: short 1860 has no stop loss.
+  ! BTC-PERP: take profit covers 16% of the 0.26456 short.
+  ! BTC-PERP: short 0.26456 has no stop loss.
+  ! ZEC-PERP: short 1.551 has no stop loss.
+
+0xd1d15b3fce2418c04c88c07affc39226f827ad64  (2026-10-22T19:12:44.992Z)
+  SUI-PERP short 1039 @ 0.9662 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.09842 @ 81609.22888 | TP 0% SL 100% | SL 83000 x 0.09842
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: short 1039 has no stop loss.
+
+0x0a606f1daac74a3c0265b94057822533521664cf  (2026-10-22T19:12:47.319Z)
+  DOGE-PERP long 370 @ 0.07909 | TP 0% SL 0% | no stops
+  SOL-PERP short 0.58 @ 103.65 | TP 100% SL 50% | SL 120 x 0.29, TP 101 x 0.58
+  AVAX-PERP long 2.4 @ 9.601 | TP 0% SL 0% | no stops
+  NEAR-PERP long 6 @ 4.9698 | TP 0% SL 0% | no stops
+  STT held by stops 0.30, claimable 0.00
+  ! DOGE-PERP: long 370 has no stop loss.
+  ! SOL-PERP: stop loss covers 50% of the 0.58 short; the rest has no stop.
+  ! AVAX-PERP: long 2.4 has no stop loss.
+  ! NEAR-PERP: long 6 has no stop loss.
+
+0x767e082f748b3150ae8dbb567abe032339d99df3  (2026-10-22T19:12:49.303Z)
+  DOGE-PERP short 6350 @ 0.07933 | TP 100% SL 100% | SL 0.08568 x 6350, TP 0.07298 x 6350
+  LIT-PERP short 358.7 @ 3.6992 | TP 100% SL 100% | SL 4.0691 x 358.7, TP 3.4033 x 358.7
+  XRP-PERP short 998.3 @ 1.3239 | TP 100% SL 100% | SL 1.4295 x 998.3, TP 1.2177 x 998.3
+  ZEC-PERP short 1.809 @ 1250.740051 | TP 0% SL 0% | no stops
+  SUI-PERP short 2289 @ 0.9875885103 | TP 0% SL 0% | no stops
+  BNB-PERP short 5.132 @ 734.3220325 | TP 0% SL 0% | no stops
+  NEAR-PERP short 262.4 @ 4.980806098 | TP 0% SL 0% | no stops
+  HYPE-PERP short 42.81 @ 78.40192245 | TP 0% SL 0% | no stops
+  SOL-PERP short 61.26 @ 104.4346931 | TP 0% SL 0% | no stops
+  ETH-PERP short 3.134 @ 2406.478562 | TP 0% SL 0% | no stops
+  STT held by stops 0.90, claimable 0.00
+  ! ZEC-PERP: short 1.809 has no stop loss.
+  ! SUI-PERP: short 2289 has no stop loss.
+  ! BNB-PERP: short 5.132 has no stop loss.
+  ! NEAR-PERP: short 262.4 has no stop loss.
+  ! HYPE-PERP: short 42.81 has no stop loss.
+  ! SOL-PERP: short 61.26 has no stop loss.
+  ! ETH-PERP: short 3.134 has no stop loss.
+
+0x608ce199270dfc9f261b093fa758ce3519f01239  (2026-10-22T19:12:51.248Z)
+  ETH-PERP short 0.483 @ 2401.71 | TP 100% SL 0% | TP 2200 x 0.483
+  NEAR-PERP short 1566.9 @ 5.01318908 | TP 100% SL 0% | TP 4.6 x 1566.9
+  BTC-PERP short 0.04208 @ 81699.33721 | TP 100% SL 0% | TP 79000 x 0.04208
+  STT held by stops 0.45, claimable 0.00
+  ! ETH-PERP: short 0.483 has no stop loss.
+  ! NEAR-PERP: short 1566.9 has no stop loss.
+  ! BTC-PERP: short 0.04208 has no stop loss.
+
+0xc7e2c7799bba849c958c6ad7f90ef280b2a25f72  (2026-10-22T19:12:54.326Z)
+  WLD-PERP long 9441 @ 0.5296 | TP 100% SL 100% | SL 0.519 x 9441, TP 0.5826 x 9441
+  SUI-PERP waiting: 2 stop(s), 1 resting order(s)
+  STT held by stops 0.60, claimable 0.00
+  ! SUI-PERP: 2 stop(s) wait for a resting order to fill (0.30 STT held). If you cancel that order, cancel these too.
+
+0xf0886e3de7d8192dd617567958b1665c5f6b4dcc  (2026-10-22T19:12:56.248Z)
+  BTC-PERP long 0.75046 @ 81944.90726 | TP 100% SL 0% | TP 84400 x 0.75046
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.75046 has no stop loss.
+
+0x21fcd6ff08a82dab8b29c893c71ae70ff2d4faf9  (2026-10-22T19:12:58.190Z)
+  WLD-PERP long 590 @ 0.5436 | TP 100% SL 100% | TP 0.7067 x 590, SL 0.299 x 590
+  SOL-PERP long 32.4 @ 106.5639722 | TP 100% SL 0% | TP 113 x 32.4
+  STT held by stops 0.45, claimable 0.00
+  ! SOL-PERP: long 32.4 has no stop loss.
+
+0xa5b17a0eccf7a9498edde2735daaccd8065dca33  (2026-10-22T19:13:00.726Z)
+  BTC-PERP long 0.28036 @ 81897.64353 | TP 96% SL 0% | TP 83350 x 0.26789
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: take profit covers 96% of the 0.28036 long.
+  ! BTC-PERP: long 0.28036 has no stop loss.
+
+0x6b40995a61ba745aeb0f7fa5924a09d68dd13a9b  (2026-10-22T19:13:02.670Z)
+  SOL-PERP long 63.8 @ 104.62 | TP 100% SL 0% | TP 106 x 63.8
+  BTC-PERP long 0.46761 @ 82093.5254 | TP 100% SL 0% | TP 83000 x 0.46761
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: long 63.8 has no stop loss.
+  ! BTC-PERP: long 0.46761 has no stop loss.
+
+0x99657f6ad33d44985d1b31890a2fee1f74ff832f  (2026-10-22T19:13:04.614Z)
+  BTC-PERP long 0.37863 @ 82087.4626 | TP 75% SL 75% | SL 80000 x 0.28397, TP 84000 x 0.28397
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: stop loss covers 75% of the 0.37863 long; the rest has no stop.
+  ! BTC-PERP: take profit covers 75% of the 0.37863 long.
+
+0x6cb7b939f421b646507d9495707daf28f06cf08e  (2026-10-22T19:13:06.568Z)
+  BNB-PERP long 1.379 @ 733.6773945 | TP 100% SL 0% | TP 745 x 1.379
+  SUI-PERP long 1316 @ 0.9903193769 | TP 100% SL 0% | TP 1 x 1316
+  BTC-PERP long 0.08087 @ 81931.81826 | TP 100% SL 0% | TP 82500 x 0.08087
+  NEAR-PERP long 788.5 @ 5.161886493 | TP 100% SL 0% | TP 5.6 x 788.5
+  STT held by stops 0.60, claimable 0.00
+  ! BNB-PERP: long 1.379 has no stop loss.
+  ! SUI-PERP: long 1316 has no stop loss.
+  ! BTC-PERP: long 0.08087 has no stop loss.
+  ! NEAR-PERP: long 788.5 has no stop loss.
+
+0x4fd9d3cb35219f82b9cf93b02420d14c95a379e1  (2026-10-22T19:13:08.496Z)
+  ETH-PERP short 26.1936 @ 2400.594915 | TP 0% SL 100% | SL 2470 x 26.1936
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x1ab43a002beeea905f938ca9e24d9bcc43ad61f8  (2026-10-22T19:13:10.979Z)
+  BTC-PERP long 0.14202 @ 81900 | TP 0% SL 0% | no stops
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.14202 has no stop loss.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x53f0f842fcaa5d678e585e981539442ce204fafa  (2026-10-22T19:13:12.904Z)
+  BTC-PERP long 0.5245 @ 82122.42673 | TP 100% SL 0% | TP 83000 x 0.5245
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.5245 has no stop loss.
+
+0x6cb6f217c61ccd8d2b143f594a33420692232466  (2026-10-22T19:13:15.391Z)
+  SUI-PERP long 292 @ 0.9884 | TP 0% SL 0% | no stops
+  XRP-PERP long 260.1 @ 1.328982622 | TP 0% SL 0% | no stops
+  NEAR-PERP long 37.8 @ 4.9751 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.1526 @ 2399.54 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.00439 @ 82020.11185 | TP 0% SL 0% | no stops
+  ZEC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: long 292 has no stop loss.
+  ! XRP-PERP: long 260.1 has no stop loss.
+  ! NEAR-PERP: long 37.8 has no stop loss.
+  ! ETH-PERP: long 0.1526 has no stop loss.
+  ! BTC-PERP: long 0.00439 has no stop loss.
+  ! ZEC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xaa908ae4c6f29744d5fe0248b1492dc8dfd974fd  (2026-10-22T19:13:17.327Z)
+  BTC-PERP long 0.1399 @ 81998.56993 | TP 100% SL 0% | TP 83000 x 0.1399
+  ETH-PERP long 4.693 @ 2466.26285 | TP 100% SL 0% | TP 2500 x 4.693
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.1399 has no stop loss.
+  ! ETH-PERP: long 4.693 has no stop loss.
+
+0x6c56325a35be8cd161e0dec491f1f72c9dfeb46c  (2026-10-22T19:13:19.310Z)
+  SOL-PERP short 39.39 @ 104.5072912 | TP 100% SL 100% | TP 88.43 x 39.39, SL 109.23 x 39.39
+  ETH-PERP short 1.1637 @ 2401.552204 | TP 100% SL 100% | SL 2509.99 x 1.1637, TP 2031.88 x 1.1637
+  BTC-PERP short 0.05951 @ 82065.3981 | TP 100% SL 100% | SL 85733 x 0.05951, TP 69403.3 x 0.05951
+  STT held by stops 0.90, claimable 0.30
+  ! 0.30 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x9085407c614c5d8d62fe1523209f7c71ed1c3c03  (2026-10-22T19:13:21.609Z)
+  TAO-PERP long 0.382 @ 260.109 | TP 100% SL 0% | TP 262 x 0.382
+  LINK-PERP long 8.2 @ 12.041 | TP 100% SL 0% | TP 12.3 x 8.2
+  AVAX-PERP long 10.7 @ 9.22 | TP 100% SL 0% | TP 9.29 x 10.7
+  XRP-PERP long 74.7 @ 1.330839491 | TP 100% SL 0% | TP 1.34 x 74.7
+  ZEC-PERP long 0.079 @ 1257.637 | TP 100% SL 0% | TP 1270 x 0.079
+  XLM-PERP long 560 @ 0.1779 | TP 100% SL 0% | TP 0.18 x 560
+  DOGE-PERP long 1250 @ 0.07922 | TP 100% SL 0% | TP 0.08 x 1250
+  BNB-PERP long 0.406 @ 734.283 | TP 100% SL 0% | TP 741 x 0.406
+  HYPE-PERP long 1.26 @ 78.54 | TP 100% SL 0% | TP 81 x 1.26
+  SOL-PERP long 0.95 @ 104.68 | TP 100% SL 0% | TP 105.5 x 0.95
+  BTC-PERP long 0.00242 @ 82183.14256 | TP 100% SL 0% | TP 82950 x 0.00242
+  ETH-PERP long 0.0413 @ 2406.57 | TP 100% SL 0% | TP 2449 x 0.0413
+  STT held by stops 1.80, claimable 0.00
+  ! TAO-PERP: long 0.382 has no stop loss.
+  ! LINK-PERP: long 8.2 has no stop loss.
+  ! AVAX-PERP: long 10.7 has no stop loss.
+  ! XRP-PERP: long 74.7 has no stop loss.
+  ! ZEC-PERP: long 0.079 has no stop loss.
+  ! XLM-PERP: long 560 has no stop loss.
+  ! DOGE-PERP: long 1250 has no stop loss.
+  ! BNB-PERP: long 0.406 has no stop loss.
+  ! HYPE-PERP: long 1.26 has no stop loss.
+  ! SOL-PERP: long 0.95 has no stop loss.
+  ! BTC-PERP: long 0.00242 has no stop loss.
+  ! ETH-PERP: long 0.0413 has no stop loss.
+
+0x5cfc1b26ee9ef6bd398458f0fd700393ce3d376d  (2026-10-22T19:13:24.165Z)
+  SUI-PERP short 1480 @ 0.9868 | TP 0% SL 0% | no stops
+  LIT-PERP short 199.4 @ 3.6746 | TP 100% SL 0% | TP 2.4 x 199.4
+  HYPE-PERP short 26.82 @ 78.62 | TP 100% SL 100% | TP 75 x 26.82, SL 81 x 26.82
+  BTC-PERP long 0.01554 @ 82151.06448 | TP 100% SL 0% | wrong side 83000 x 0.09811, wrong side 80800 x 0.09811, TP 82400 x 0.01554
+  ETH-PERP short 3.0974 @ 2405.148982 | TP 100% SL 0% | TP 2350 x 3.0974
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 1.20, claimable 0.15
+  ! SUI-PERP: short 1480 has no stop loss.
+  ! LIT-PERP: short 199.4 has no stop loss.
+  ! BTC-PERP: long 0.01554 has no stop loss.
+  ! BTC-PERP: 2 stop(s) are on the wrong side for a long and cannot reduce it.
+  ! ETH-PERP: short 3.0974 has no stop loss.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x0f9abaae1d4dd8b5780d515498e186b928ed4389  (2026-10-22T19:13:26.089Z)
+  XRP-PERP long 34326 @ 1.350230436 | TP 100% SL 0% | TP 1.42 x 53463.4
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 34326 has no stop loss.
+
+0x9ca8dc987deca9a3c94f6cf1b95eb12df5f6210c  (2026-10-22T19:13:28.084Z)
+  ZEC-PERP short 0.51 @ 1250.71 | TP 0% SL 0% | no stops
+  NEAR-PERP short 197.4 @ 5.06 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.01749 @ 81841.77559 | TP 0% SL 0% | no stops
+  VVV-PERP short 88.63 @ 26.35690116 | TP 64% SL 0% | TP 22.88 x 56.68
+  LIT-PERP short 229.9 @ 3.294382297 | TP 69% SL 0% | TP 1.9898 x 157.6
+  ETH-PERP short 0.5867 @ 2406.604164 | TP 100% SL 0% | TP 2258.88 x 0.5867
+  ZRO-PERP short 273.1 @ 1.8548 | TP 100% SL 0% | TP 1.3888 x 273.1
+  WLD-PERP short 3594 @ 0.4892018364 | TP 95% SL 0% | TP 0.42 x 3403
+  XRP-PERP short 4937 @ 1.2864 | TP 100% SL 0% | TP 0.9899 x 4937
+  PUMP-PERP short 470300 @ 0.004449047842 | TP 40% SL 0% | TP 0.002888 x 190000
+  STT held by stops 1.05, claimable 0.00
+  ! ZEC-PERP: short 0.51 has no stop loss.
+  ! NEAR-PERP: short 197.4 has no stop loss.
+  ! BTC-PERP: short 0.01749 has no stop loss.
+  ! VVV-PERP: take profit covers 64% of the 88.63 short.
+  ! VVV-PERP: short 88.63 has no stop loss.
+  ! LIT-PERP: take profit covers 69% of the 229.9 short.
+  ! LIT-PERP: short 229.9 has no stop loss.
+  ! ETH-PERP: short 0.5867 has no stop loss.
+  ! ZRO-PERP: short 273.1 has no stop loss.
+  ! WLD-PERP: take profit covers 95% of the 3594 short.
+  ! WLD-PERP: short 3594 has no stop loss.
+  ! XRP-PERP: short 4937 has no stop loss.
+  ! PUMP-PERP: take profit covers 40% of the 470300 short.
+  ! PUMP-PERP: short 470300 has no stop loss.
+
+0x5c04ad8dc5a21e4a8f8171a9a2bf90c87f43a915  (2026-10-22T19:13:30.016Z)
+  HYPE-PERP short 625.17 @ 78.51973079 | TP 100% SL 0% | TP 74.35 x 69.89, TP 74.11 x 555.28
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: short 625.17 has no stop loss.
+
+0x87b10c6af6b8f435ea5a9df6b6bec25ffbfc8fe6  (2026-10-22T19:13:31.955Z)
+  HYPE-PERP short 583.51 @ 78.45695052 | TP 100% SL 0% | TP 74.73 x 49.33, TP 74.35 x 534.18
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: short 583.51 has no stop loss.
+
+0xdd2ff058d43a6fb0bc0bc2612d5d8a8652b236bc  (2026-10-22T19:13:34.155Z)
+  SOL-PERP long 358.95 @ 104.5379465 | TP 100% SL 0% | TP 110.06 x 38.78, TP 110.81 x 320.17
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: long 358.95 has no stop loss.
+
+0x986144f98909713da22a4301c1f68d9cf972cf83  (2026-10-22T19:13:36.081Z)
+  SOL-PERP long 419.4 @ 104.4893963 | TP 100% SL 0% | TP 108.44 x 53.39, TP 108.76 x 366.01
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: long 419.4 has no stop loss.
+
+0x0f8a3bf854e56b457b2f04cf9e38789de6345760  (2026-10-22T19:13:38.007Z)
+  XRP-PERP long 15718.8 @ 1.330571276 | TP 87% SL 0% | TP 1.45 x 13687.6
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: take profit covers 87% of the 15718.8 long.
+  ! XRP-PERP: long 15718.8 has no stop loss.
+
+0xb0fabcd5ea02c701c314c189ead3606cb48f7568  (2026-10-22T19:13:40.476Z)
+  SOL-PERP long 39.88 @ 104.41 | TP 100% SL 100% | SL 100.23 x 39.88, TP 108.59 x 39.88
+  NEAR-PERP long 623.8 @ 4.976021465 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.2564 @ 2433.84 | TP 100% SL 100% | SL 2312.15 x 0.2564, TP 2555.53 x 0.2564
+  BTC-PERP long 0.11239 @ 82801.09398 | TP 100% SL 100% | TP 85285.1 x 0.11239, SL 80317.1 x 0.11239
+  STT held by stops 0.90, claimable 0.15
+  ! NEAR-PERP: long 623.8 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x136ff267836cda89f85b1e219844fcc9c0f38ff1  (2026-10-22T19:13:42.402Z)
+  HYPE-PERP long 461.49 @ 78 | TP 100% SL 0% | TP 80 x 461.49
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 461.49 has no stop loss.
+
+0x5fb475d67394141e1a187058b093dc73361a27b8  (2026-10-22T19:13:44.341Z)
+  HYPE-PERP short 1107.03 @ 78.12957806 | TP 100% SL 0% | TP 73.9 x 121.3, TP 73.56 x 985.73
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: short 1107.03 has no stop loss.
+
+0x6988e88e9c1dad5eb6bb568ebc98272674076193  (2026-10-22T19:13:46.323Z)
+  NEAR-PERP long 207.5 @ 4.945110217 | TP 0% SL 0% | no stops
+  HYPE-PERP long 31.86 @ 78.21 | TP 100% SL 100% | SL 75.08 x 31.86, TP 81.34 x 31.86
+  SOL-PERP long 45.67 @ 106.37 | TP 0% SL 0% | no stops
+  ETH-PERP long 1.2914 @ 2423.458832 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.10928 @ 82772.26757 | TP 100% SL 100% | SL 79461.4 x 0.10928, TP 86083.2 x 0.10928
+  STT held by stops 0.60, claimable 0.15
+  ! NEAR-PERP: long 207.5 has no stop loss.
+  ! SOL-PERP: long 45.67 has no stop loss.
+  ! ETH-PERP: long 1.2914 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x1442542174ffc7e043f3079d27975a8b3092eef9  (2026-10-22T19:13:48.280Z)
+  NEAR-PERP short 11448.9 @ 4.919433716 | TP 100% SL 0% | TP 4.6519 x 1090.2, TP 4.6366 x 10358.7
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: short 11448.9 has no stop loss.
+
+0xd42aa8fc94e621cf7c6e32d47b9218a6844ea11b  (2026-10-22T19:13:50.670Z)
+  ETH-PERP long 18.9667 @ 2396.84188 | TP 100% SL 0% | TP 2494.07 x 18.9667
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 18.9667 has no stop loss.
+
+0x7c30179b81212f592f7d24d37acbec408e905b96  (2026-10-22T19:13:52.598Z)
+  NEAR-PERP long 9684.7 @ 4.926988508 | TP 100% SL 0% | TP 5.2423 x 9684.7
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: long 9684.7 has no stop loss.
+
+0xa56bf055ee3de4a9a239f2526a1884cba63b2a72  (2026-10-22T19:13:54.534Z)
+  ETH-PERP short 19.3842 @ 2398.395052 | TP 100% SL 0% | TP 2329.55 x 2.1354, TP 2321.89 x 17.2488
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: short 19.3842 has no stop loss.
+
+0xefb17c3c30b085600d47fa7056956d23da498c4b  (2026-10-22T19:13:56.465Z)
+  BTC-PERP long 1.25229 @ 81823.0244 | TP 100% SL 0% | TP 84196.2 x 0.14133, TP 84357.6 x 1.11096
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 1.25229 has no stop loss.
+
+0x650702f55e7d9961504dedaf8113ff441a905d5f  (2026-10-22T19:13:58.398Z)
+  BTC-PERP long 0.12164 @ 81965.07722 | TP 0% SL 0% | no stops
+  DOGE-PERP long 37710 @ 0.07914 | TP 100% SL 0% | TP 0.0821 x 37710
+  ETH-PERP long 0.4145 @ 2401.03 | TP 0% SL 0% | no stops
+  HYPE-PERP long 12.63 @ 78.86952494 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.401 @ 1251.267 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.15
+  ! BTC-PERP: long 0.12164 has no stop loss.
+  ! DOGE-PERP: long 37710 has no stop loss.
+  ! ETH-PERP: long 0.4145 has no stop loss.
+  ! HYPE-PERP: long 12.63 has no stop loss.
+  ! ZEC-PERP: short 0.401 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x0e598a6512d55c3ba782dd2d844fbbdb189a4476  (2026-10-22T19:14:00.329Z)
+  HYPE-PERP long 322.93 @ 78.15167343 | TP 100% SL 0% | TP 80.74 x 42.43, TP 81.17 x 280.5
+  STT held by stops 0.30, claimable 0.15
+  ! HYPE-PERP: long 322.93 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xa22cbf757c46e64abfaad5f8dd9e2e86f5b2e17a  (2026-10-22T19:14:02.263Z)
+  BTC-PERP long 0.69112 @ 81843.20993 | TP 100% SL 0% | TP 84145.6 x 0.06873, TP 84732.4 x 0.62239
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.69112 has no stop loss.
+
+0x3da7e44f7ebf77e6a94e1c40399e427b6fa1dac3  (2026-10-22T19:14:04.225Z)
+  ETH-PERP long 25.3251 @ 2401 | TP 100% SL 0% | TP 2469 x 25.3251
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 25.3251 has no stop loss.
+
+0x8a6b989842463c19267d8e6e106b980eee4cdafa  (2026-10-22T19:14:06.158Z)
+  SUI-PERP short 9006 @ 1.001573506 | TP 100% SL 0% | TP 0.92 x 9006
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: short 9006 has no stop loss.
+
+0x508dbc4edd46a062410925c722062748995f2385  (2026-10-22T19:14:08.121Z)
+  ZEC-PERP short 1.01 @ 1243.621 | TP 100% SL 0% | TP 1000 x 1.01
+  XRP-PERP short 5926.4 @ 1.3323 | TP 100% SL 0% | TP 0.5 x 5926.4
+  BTC-PERP short 0.1344 @ 81700.8 | TP 100% SL 100% | SL 90000 x 0.1344, TP 75000 x 0.1344
+  STT held by stops 0.60, claimable 0.00
+  ! ZEC-PERP: short 1.01 has no stop loss.
+  ! XRP-PERP: short 5926.4 has no stop loss.
+
+0xecfd544333910c4180a66008267b574d2f88c3b9  (2026-10-22T19:14:10.053Z)
+  BTC-PERP long 0.66886 @ 82056.46556 | TP 100% SL 0% | TP 84200 x 0.66886
+  STT held by stops 0.15, claimable 0.75
+  ! BTC-PERP: long 0.66886 has no stop loss.
+  ! 0.75 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x71642de6c6630b018732069d96cfe51483146d96  (2026-10-22T19:14:12.001Z)
+  BTC-PERP long 0.59997 @ 81800 | TP 100% SL 100% | SL 80500 x 0.59997, TP 86300 x 0.59997
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x7da313f4466816efde44934639c0ca2c9c90236f  (2026-10-22T19:14:13.988Z)
+  BTC-PERP short 0.00043 @ 83028.23698 | TP 100% SL 0% | TP 75000 x 0.00043
+  SUI-PERP short 21 @ 1.0073 | TP 0% SL 0% | no stops
+  ETH-PERP short 0.0634 @ 2440.62 | TP 78% SL 0% | TP 2000 x 0.0494
+  NEAR-PERP short 1256.8 @ 5.0462 | TP 100% SL 100% | TP 3 x 1256.8, SL 7 x 1256.8
+  ZEC-PERP short 0.018 @ 1268.906 | TP 100% SL 100% | SL 34533 x 0.018, TP 1000 x 0.018
+  STT held by stops 0.90, claimable 0.00
+  ! BTC-PERP: short 0.00043 has no stop loss.
+  ! SUI-PERP: short 21 has no stop loss.
+  ! ETH-PERP: take profit covers 78% of the 0.0634 short.
+  ! ETH-PERP: short 0.0634 has no stop loss.
+
+0x4298e7d0c8e8a01a025e23e0d1735169413b931c  (2026-10-22T19:14:15.918Z)
+  BTC-PERP short 0.00199 @ 82939.48651 | TP 0% SL 0% | no stops
+  SUI-PERP short 21 @ 1.007 | TP 0% SL 0% | no stops
+  ETH-PERP short 0.009 @ 2438.17 | TP 0% SL 0% | no stops
+  VVV-PERP short 0.87 @ 26.291 | TP 0% SL 0% | no stops
+  PUMP-PERP short 2200 @ 0.004865 | TP 0% SL 0% | no stops
+  XRP-PERP short 17.1 @ 1.3395 | TP 0% SL 0% | no stops
+  LIT-PERP short 9.3 @ 3.4181 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.018 @ 1272.075 | TP 0% SL 0% | no stops
+  NEAR-PERP short 1009.4 @ 5.063236596 | TP 100% SL 0% | TP 3 x 1009.4
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.00199 has no stop loss.
+  ! SUI-PERP: short 21 has no stop loss.
+  ! ETH-PERP: short 0.009 has no stop loss.
+  ! VVV-PERP: short 0.87 has no stop loss.
+  ! PUMP-PERP: short 2200 has no stop loss.
+  ! XRP-PERP: short 17.1 has no stop loss.
+  ! LIT-PERP: short 9.3 has no stop loss.
+  ! ZEC-PERP: short 0.018 has no stop loss.
+  ! NEAR-PERP: short 1009.4 has no stop loss.
+
+0xbb200a6d3a56415e2003071351825f5ffbffa8f2  (2026-10-22T19:14:17.902Z)
+  BNB-PERP short 0.029 @ 741.595 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.00561 @ 83014.49515 | TP 0% SL 0% | no stops
+  XRP-PERP short 8.9 @ 1.3377 | TP 0% SL 0% | no stops
+  NEAR-PERP short 1005.8 @ 5.0483 | TP 100% SL 0% | TP 3 x 1005.8
+  ZEC-PERP short 0.009 @ 1267.257 | TP 100% SL 100% | TP 1000 x 0.009, SL 12321 x 0.009
+  ETH-PERP short 0.0513 @ 2396.09 | TP 100% SL 100% | TP 2000 x 0.0513, SL 23564 x 0.0513
+  STT held by stops 0.75, claimable 0.00
+  ! BNB-PERP: short 0.029 has no stop loss.
+  ! BTC-PERP: short 0.00561 has no stop loss.
+  ! XRP-PERP: short 8.9 has no stop loss.
+  ! NEAR-PERP: short 1005.8 has no stop loss.
+
+0x3ca24142f1a2ce23e328a04289d5fc2296c2acb0  (2026-10-22T19:14:19.836Z)
+  SOL-PERP short 51.14 @ 103.8837661 | TP 100% SL 100% | SL 107.5 x 51.14, TP 101.5 x 51.14
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0xe72f3513ba767e6d116d9898ca4392a18476b90c  (2026-10-22T19:14:21.867Z)
+  BTC-PERP short 0.01496 @ 82517.46497 | TP 41% SL 67% | wrong side 79226.8 x 0.00242, wrong side 84178.5 x 0.00242, SL 83166.3 x 0.00242, SL 83166.3 x 0.00121, SL 85275 x 0.00027, wrong side 85365 x 0.00014, wrong side 85376.2 x 0.00014, wrong side 80547.1 x 0.00602, TP 80537.4 x 0.00608, SL 85474.1 x 0.00608, wrong side 497.5 x 0.00241
+  XRP-PERP short 346.6 @ 1.3424 | TP 0% SL 0% | no stops
+  ADA-PERP long 216 @ 0.2281990826 | TP 0% SL 0% | no stops
+  1000PEPE-PERP short 21700 @ 0.004629845727 | TP 0% SL 0% | no stops
+  SUI-PERP short 102 @ 0.9824 | TP 0% SL 0% | no stops
+  STT held by stops 1.65, claimable 0.15
+  ! BTC-PERP: stop loss covers 67% of the 0.01496 short; the rest has no stop.
+  ! BTC-PERP: take profit covers 41% of the 0.01496 short.
+  ! BTC-PERP: 6 stop(s) are on the wrong side for a short and cannot reduce it.
+  ! XRP-PERP: short 346.6 has no stop loss.
+  ! ADA-PERP: long 216 has no stop loss.
+  ! 1000PEPE-PERP: short 21700 has no stop loss.
+  ! SUI-PERP: short 102 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xd4502269c90ba3372c2b2355c34d224b1728bf00  (2026-10-22T19:14:23.799Z)
+  SOL-PERP long 103.09 @ 105.81 | TP 0% SL 100% | SL 101.98 x 103.09
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0xe60ef0ae21a66cfbd09c47f32f7ab94c731c1243  (2026-10-22T19:14:25.724Z)
+  BTC-PERP long 0.10593 @ 82168.38336 | TP 0% SL 100% | SL 79500 x 0.10593
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x891f00054fde10e9e834850068b0d9be213df3f1  (2026-10-22T19:14:27.659Z)
+  NEAR-PERP short 2893.5 @ 4.996565972 | TP 69% SL 0% | TP 4.7 x 2001
+  HYPE-PERP short 622.13 @ 80.86 | TP 100% SL 0% | TP 76 x 622.13
+  SUI-PERP short 59 @ 0.9853 | TP 0% SL 0% | no stops
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: take profit covers 69% of the 2893.5 short.
+  ! NEAR-PERP: short 2893.5 has no stop loss.
+  ! HYPE-PERP: short 622.13 has no stop loss.
+  ! SUI-PERP: short 59 has no stop loss.
+
+0xe9e575f19d57ced155d1ff5d6809844405d6be15  (2026-10-22T19:14:30.148Z)
+  NEAR-PERP long 45.2 @ 4.9739 | TP 0% SL 0% | no stops
+  XRP-PERP long 107.6 @ 1.3350606 | TP 0% SL 0% | no stops
+  SOL-PERP long 0.6 @ 104.072 | TP 0% SL 0% | no stops
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: long 45.2 has no stop loss.
+  ! XRP-PERP: long 107.6 has no stop loss.
+  ! SOL-PERP: long 0.6 has no stop loss.
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xd874a15143803cb66314adb7dcdcd1427579029d  (2026-10-22T19:14:32.660Z)
+  SOL-PERP long 0.5 @ 105.15 | TP 0% SL 0% | no stops
+  NEAR-PERP long 10 @ 5.0025 | TP 0% SL 0% | no stops
+  LINK-PERP short 16 @ 12.152 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.774 @ 1266.702 | TP 0% SL 0% | no stops
+  XRP-PERP short 324.9 @ 1.3567 | TP 0% SL 0% | no stops
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: long 0.5 has no stop loss.
+  ! NEAR-PERP: long 10 has no stop loss.
+  ! LINK-PERP: short 16 has no stop loss.
+  ! ZEC-PERP: short 0.774 has no stop loss.
+  ! XRP-PERP: short 324.9 has no stop loss.
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb486ce4c9310b08a29633f92e2ee8f7cf27c4b97  (2026-10-22T19:14:34.852Z)
+  BTC-PERP short 0.27383 @ 82165.47787 | TP 100% SL 0% | TP 57800 x 0.27383
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.27383 has no stop loss.
+
+0x38573e79f174c1702dcfa2398c5d9b7b7fd56f40  (2026-10-22T19:14:36.790Z)
+  BTC-PERP long 0.00302 @ 82346.73444 | TP 40% SL 0% | TP 82770 x 0.0012
+  NEAR-PERP long 29.3 @ 4.879694925 | TP 0% SL 0% | no stops
+  BNB-PERP long 0.508 @ 725.8730709 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: take profit covers 40% of the 0.00302 long.
+  ! BTC-PERP: long 0.00302 has no stop loss.
+  ! NEAR-PERP: long 29.3 has no stop loss.
+  ! BNB-PERP: long 0.508 has no stop loss.
+
+0xae96fb121d21d6bed6798423efaedc0e9321a7b8  (2026-10-22T19:14:38.729Z)
+  HYPE-PERP long 2.05 @ 78 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.0029 @ 82346.56552 | TP 100% SL 0% | TP 82752 x 0.0029
+  NEAR-PERP long 81 @ 5.042236049 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 2.05 has no stop loss.
+  ! BTC-PERP: long 0.0029 has no stop loss.
+  ! NEAR-PERP: long 81 has no stop loss.
+
+0x415153dc4ae1981e76527a96c8bf98d7e21a0533  (2026-10-22T19:14:40.654Z)
+  XRP-PERP long 193.2 @ 1.342768582 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.0012 @ 82377.8 | TP 83% SL 0% | TP 82770 x 0.001
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 193.2 has no stop loss.
+  ! BTC-PERP: take profit covers 83% of the 0.0012 long.
+  ! BTC-PERP: long 0.0012 has no stop loss.
+
+0x188009dc29dc66f4c8f6b9f2728ef4a6053587f2  (2026-10-22T19:14:42.585Z)
+  BTC-PERP long 0.07265 @ 82174.30819 | TP 17% SL 0% | TP 84000 x 0.01208
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: take profit covers 17% of the 0.07265 long.
+  ! BTC-PERP: long 0.07265 has no stop loss.
+
+0x152ef9423ede85f997dc251a5e9c40c23c7d4d44  (2026-10-22T19:14:44.560Z)
+  ETH-PERP long 5.8306 @ 2428.375131 | TP 100% SL 0% | TP 2480 x 5.8306
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 5.8306 has no stop loss.
+
+0x8b1a590f619939bb239821c7702cc00bfa594f4d  (2026-10-22T19:14:46.497Z)
+  ETH-PERP long 5.7358 @ 2428.960615 | TP 100% SL 0% | TP 2475 x 5.7358
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 5.7358 has no stop loss.
+
+0xe8f817a57e907830fab5e6401ed709b032bd4a9c  (2026-10-22T19:14:48.426Z)
+  AVAX-PERP short 10.7 @ 9.348 | TP 100% SL 0% | TP 9 x 10.7
+  STT held by stops 0.15, claimable 0.15
+  ! AVAX-PERP: short 10.7 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x54f7a69b90d7d1d1348a57ecef549b6b04890d6e  (2026-10-22T19:14:50.936Z)
+  XRP-PERP long 74.2 @ 1.3427 | TP 0% SL 100% | SL 1.25 x 74.2
+  SUI-PERP long 99 @ 0.9974 | TP 0% SL 0% | no stops
+  AVAX-PERP orphan: 1 stop(s), 0 resting order(s)
+  LINK-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.60, claimable 0.00
+  ! SUI-PERP: long 99 has no stop loss.
+  ! AVAX-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! LINK-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xdc2a6e2f1a0d1bbe1bc19de4f91937f195e986a0  (2026-10-22T19:14:52.889Z)
+  AVAX-PERP short 107.7 @ 9.377988858 | TP 100% SL 0% | TP 8.88 x 107.7
+  LINK-PERP long 199.5 @ 12.33726767 | TP 0% SL 0% | no stops
+  XLM-PERP long 16127 @ 0.1839 | TP 62% SL 0% | TP 0.1969 x 9943
+  SUI-PERP long 1845 @ 1.0302 | TP 0% SL 0% | no stops
+  ETH-PERP short 0.5476 @ 2393.51 | TP 100% SL 100% | TP 2309 x 0.5476, SL 5555 x 0.5476
+  STT held by stops 0.60, claimable 0.00
+  ! AVAX-PERP: short 107.7 has no stop loss.
+  ! LINK-PERP: long 199.5 has no stop loss.
+  ! XLM-PERP: take profit covers 62% of the 16127 long.
+  ! XLM-PERP: long 16127 has no stop loss.
+  ! SUI-PERP: long 1845 has no stop loss.
+
+0xbd02df0207c89dce60c46af5ada3e352e344d9bf  (2026-10-22T19:14:54.830Z)
+  WLD-PERP short 14604 @ 0.5425 | TP 0% SL 0% | no stops
+  HYPE-PERP short 559.28 @ 81.69065566 | TP 100% SL 96% | TP 76 x 559.28, SL 83 x 538.42
+  STT held by stops 0.30, claimable 0.00
+  ! WLD-PERP: short 14604 has no stop loss.
+  ! HYPE-PERP: stop loss covers 96% of the 559.28 short; the rest has no stop.
+
+0xf1a3bf57913f3ef373327504d3a6a9918ec02561  (2026-10-22T19:14:56.773Z)
+  BTC-PERP long 0.001 @ 82847.7175 | TP 100% SL 100% | SL 75000 x 0.001, TP 90000 x 0.001
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x39031c58fc83fa08f82f0403af91a7de1b358036  (2026-10-22T19:14:58.713Z)
+  BTC-PERP long 0.11078 @ 82930.13283 | TP 37% SL 0% | TP 82990 x 0.04089
+  SOL-PERP long 21.33 @ 105.2875527 | TP 7% SL 0% | TP 105.6 x 1.45
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: take profit covers 37% of the 0.11078 long.
+  ! BTC-PERP: long 0.11078 has no stop loss.
+  ! SOL-PERP: take profit covers 7% of the 21.33 long.
+  ! SOL-PERP: long 21.33 has no stop loss.
+
+0x0b78a22232335ff2415c4dec9f6212330f806eeb  (2026-10-22T19:15:00.658Z)
+  BTC-PERP long 0.11571 @ 82871.04663 | TP 18% SL 0% | TP 82991 x 0.02112
+  SOL-PERP long 49.51 @ 105.2723854 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: take profit covers 18% of the 0.11571 long.
+  ! BTC-PERP: long 0.11571 has no stop loss.
+  ! SOL-PERP: long 49.51 has no stop loss.
+
+0xa88ae2cf4c34c4eb8c221deabe72be72b4e08d9e  (2026-10-22T19:15:02.600Z)
+  BTC-PERP long 0.66356 @ 81900 | TP 100% SL 0% | TP 84000 x 0.66356
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.66356 has no stop loss.
+
+0x9eace4bde5d9be72de2f04ce2019106670042b47  (2026-10-22T19:15:05.380Z)
+  SOL-PERP waiting: 1 stop(s), 1 resting order(s)
+  BTC-PERP waiting: 2 stop(s), 1 resting order(s)
+  STT held by stops 0.45, claimable 0.22
+  ! SOL-PERP: 1 stop(s) wait for a resting order to fill (0.15 STT held). If you cancel that order, cancel these too.
+  ! BTC-PERP: 2 stop(s) wait for a resting order to fill (0.30 STT held). If you cancel that order, cancel these too.
+  ! 0.22 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x71ef3cfcd77e4df9b50691f6fc3966621db55201  (2026-10-22T19:15:07.307Z)
+  ETH-PERP long 15.2389 @ 2443.248367 | TP 100% SL 0% | TP 2520 x 15.2389
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 15.2389 has no stop loss.
+
+0x57c16ee0cba799e2635d5497c1a06613da18d08d  (2026-10-22T19:15:09.296Z)
+  HYPE-PERP short 46.33 @ 78.74 | TP 100% SL 100% | SL 82.3 x 46.33, TP 66.62 x 46.33
+  ETH-PERP long 1.4618 @ 2444.296006 | TP 100% SL 100% | SL 2336.14 x 1.4618, TP 2827.95 x 1.4618
+  BTC-PERP long 0.05526 @ 82863.13655 | TP 100% SL 100% | SL 79111.3 x 0.05526, TP 99930.1 x 0.05526
+  BNB-PERP long 0.067 @ 742.308 | TP 0% SL 0% | no stops
+  TAO-PERP long 0.071 @ 277.456 | TP 0% SL 0% | no stops
+  XLM-PERP long 104 @ 0.1902 | TP 0% SL 0% | no stops
+  STT held by stops 0.90, claimable 0.00
+  ! BNB-PERP: long 0.067 has no stop loss.
+  ! TAO-PERP: long 0.071 has no stop loss.
+  ! XLM-PERP: long 104 has no stop loss.
+
+0x8c80d614599a6780bc1764ef70d159cd3e0ce1aa  (2026-10-22T19:15:11.228Z)
+  BNB-PERP long 0.222 @ 741.774 | TP 0% SL 0% | no stops
+  ZEC-PERP long 0.065 @ 1292.963 | TP 0% SL 0% | no stops
+  HYPE-PERP long 4.04 @ 78.8 | TP 0% SL 0% | no stops
+  SOL-PERP long 3.06 @ 105.36 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.135 @ 2440.41 | TP 0% SL 100% | SL 1000 x 0.135
+  BTC-PERP long 0.0271 @ 82467.36621 | TP 78% SL 78% | TP 100000 x 0.02122, SL 80000 x 0.02122
+  STT held by stops 0.45, claimable 0.00
+  ! BNB-PERP: long 0.222 has no stop loss.
+  ! ZEC-PERP: long 0.065 has no stop loss.
+  ! HYPE-PERP: long 4.04 has no stop loss.
+  ! SOL-PERP: long 3.06 has no stop loss.
+  ! BTC-PERP: stop loss covers 78% of the 0.0271 long; the rest has no stop.
+  ! BTC-PERP: take profit covers 78% of the 0.0271 long.
+
+0xa2cdb4fbe006d04a8205f408770847ed1f4ca9e1  (2026-10-22T19:15:13.154Z)
+  HYPE-PERP long 240 @ 78.12757917 | TP 42% SL 0% | TP 80 x 100
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: take profit covers 42% of the 240 long.
+  ! HYPE-PERP: long 240 has no stop loss.
+
+0xa659affb4f99a4d52aeb116455a8bc45f624902b  (2026-10-22T19:15:15.093Z)
+  SOL-PERP short 0.5 @ 105.03 | TP 0% SL 0% | wrong side 20 x 0.1
+  WLD-PERP short 1201 @ 0.5847172131 | TP 0% SL 0% | no stops
+  BNB-PERP short 0.107 @ 740.946 | TP 0% SL 0% | no stops
+  NEAR-PERP long 60.7 @ 5.1424 | TP 0% SL 0% | wrong side 5.2 x 10
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: short 0.5 has no stop loss.
+  ! SOL-PERP: 1 stop(s) are on the wrong side for a short and cannot reduce it.
+  ! WLD-PERP: short 1201 has no stop loss.
+  ! BNB-PERP: short 0.107 has no stop loss.
+  ! NEAR-PERP: long 60.7 has no stop loss.
+  ! NEAR-PERP: 1 stop(s) are on the wrong side for a long and cannot reduce it.
+
+0xd76dd98ac235b8deba9e27b26c57d3d282b3932c  (2026-10-22T19:15:17.030Z)
+  NEAR-PERP short 7056.7 @ 5.011894643 | TP 100% SL 0% | TP 4.3 x 9597.6
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 7056.7 has no stop loss.
+
+0x4882616cad106023da02f8735d63bc5a47d3e3ef  (2026-10-22T19:15:19.522Z)
+  ETH-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x4f0ce2abc0c31400c61319afbf7547363a7833ae  (2026-10-22T19:15:22.971Z)
+  DOGE-PERP long 3860 @ 0.0802 | TP 0% SL 0% | no stops
+  BNB-PERP short 0.258 @ 741.235 | TP 0% SL 0% | no stops
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! DOGE-PERP: long 3860 has no stop loss.
+  ! BNB-PERP: short 0.258 has no stop loss.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x1a48d1c3c8fd68b7b71821cf19cc73dc7529997b  (2026-10-22T19:15:24.904Z)
+  ETH-PERP long 11.6014 @ 2430 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.031 @ 1307.001 | TP 0% SL 0% | no stops
+  NEAR-PERP short 15.9 @ 5.1504 | TP 0% SL 0% | no stops
+  SOL-PERP long 0.49 @ 105.5 | TP 100% SL 100% | SL 100.23 x 0.49, TP 110.78 x 0.49
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: long 11.6014 has no stop loss.
+  ! ZEC-PERP: short 0.031 has no stop loss.
+  ! NEAR-PERP: short 15.9 has no stop loss.
+
+0xcf466afd90900fdb42749589933001caf63a6008  (2026-10-22T19:15:27.788Z)
+  ETH-PERP long 11.8857 @ 2430 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.031 @ 1307.001 | TP 0% SL 0% | no stops
+  NEAR-PERP short 16.3 @ 5.1504 | TP 0% SL 0% | no stops
+  SOL-PERP long 0.5 @ 105.5 | TP 100% SL 100% | TP 110.78 x 0.5, SL 100.23 x 0.5
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: long 11.8857 has no stop loss.
+  ! ZEC-PERP: short 0.031 has no stop loss.
+  ! NEAR-PERP: short 16.3 has no stop loss.
+
+0x038fc764114051a638e9beed6d1d1b5598fd08d9  (2026-10-22T19:15:30.678Z)
+  ETH-PERP long 13.5451 @ 2430 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.034 @ 1307.001 | TP 0% SL 0% | no stops
+  NEAR-PERP short 17.7 @ 5.1504 | TP 0% SL 0% | no stops
+  SOL-PERP long 3.41 @ 105.5 | TP 100% SL 100% | SL 100.23 x 3.41, TP 110.78 x 3.41
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: long 13.5451 has no stop loss.
+  ! ZEC-PERP: short 0.034 has no stop loss.
+  ! NEAR-PERP: short 17.7 has no stop loss.
+
+0x065bf3f4b2c6941935e318cda8a34041790222fe  (2026-10-22T19:15:32.610Z)
+  1000PEPE-PERP long 3300 @ 0.0044674 | TP 0% SL 0% | no stops
+  ETH-PERP long 11.3793 @ 2430 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.03 @ 1307.001 | TP 0% SL 0% | no stops
+  NEAR-PERP short 15.6 @ 5.1504 | TP 0% SL 0% | no stops
+  SOL-PERP long 0.48 @ 105.5 | TP 100% SL 100% | SL 100.23 x 0.48, TP 110.78 x 0.48
+  STT held by stops 0.30, claimable 0.00
+  ! 1000PEPE-PERP: long 3300 has no stop loss.
+  ! ETH-PERP: long 11.3793 has no stop loss.
+  ! ZEC-PERP: short 0.03 has no stop loss.
+  ! NEAR-PERP: short 15.6 has no stop loss.
+
+0x47bbedb733d23959fe63563c7039bf800428f147  (2026-10-22T19:15:34.540Z)
+  ZEC-PERP short 0.013 @ 1307.001 | TP 0% SL 0% | no stops
+  NEAR-PERP short 6.5 @ 5.1504 | TP 0% SL 0% | no stops
+  SOL-PERP long 0.2 @ 105.5 | TP 100% SL 100% | TP 110.78 x 0.2, SL 100.23 x 0.2
+  STT held by stops 0.30, claimable 0.00
+  ! ZEC-PERP: short 0.013 has no stop loss.
+  ! NEAR-PERP: short 6.5 has no stop loss.
+
+0x634e9e537583e878d04378871cf5d8fbc46f7e01  (2026-10-22T19:15:36.742Z)
+  BTC-PERP long 0.32284 @ 83015.50238 | TP 100% SL 0% | TP 85405.6 x 0.03939, TP 85675.2 x 0.28345
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: take profit covers 100% of the 0.32284 long.
+  ! BTC-PERP: long 0.32284 has no stop loss.
+
+0x1faed318fced713cc5764bd7b4974b39ddf5bfc7  (2026-10-22T19:15:39.236Z)
+  ETH-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xeeb9be02468ee3ca55658779c8a52fb058050ed4  (2026-10-22T19:15:41.159Z)
+  SOL-PERP short 240.11 @ 105.3051601 | TP 100% SL 0% | TP 101.88 x 240.11
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 240.11 has no stop loss.
+
+0x6abf78a88d52be1c71f86af286aa198a0ab76b1b  (2026-10-22T19:15:43.116Z)
+  HYPE-PERP short 2.12 @ 79.6017808 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.24941 @ 82724.59648 | TP 100% SL 100% | SL 344544 x 0.24915, TP 75000 x 0.24915
+  ETH-PERP short 0.2982 @ 2440.44 | TP 61% SL 0% | TP 2300 x 0.1819
+  XRP-PERP short 17.2 @ 1.3346 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.018 @ 1268.563 | TP 0% SL 0% | no stops
+  NEAR-PERP short 6.8 @ 4.9874 | TP 0% SL 0% | no stops
+  STT held by stops 0.45, claimable 0.00
+  ! HYPE-PERP: short 2.12 has no stop loss.
+  ! BTC-PERP: stop loss covers 100% of the 0.24941 short; the rest has no stop.
+  ! BTC-PERP: take profit covers 100% of the 0.24941 short.
+  ! ETH-PERP: take profit covers 61% of the 0.2982 short.
+  ! ETH-PERP: short 0.2982 has no stop loss.
+  ! XRP-PERP: short 17.2 has no stop loss.
+  ! ZEC-PERP: short 0.018 has no stop loss.
+  ! NEAR-PERP: short 6.8 has no stop loss.
+
+0x82e0a69c9c372639688a09461006ada4d1852c41  (2026-10-22T19:15:45.142Z)
+  AVAX-PERP short 2.3 @ 9.383 | TP 0% SL 0% | no stops
+  SUI-PERP short 21 @ 1.0061 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.04063 @ 82955.93305 | TP 6% SL 0% | TP 76000 x 0.00243
+  NEAR-PERP short 1004.1 @ 4.975870282 | TP 20% SL 20% | SL 67 x 200.1, TP 3 x 200.1
+  BNB-PERP short 0.031 @ 740.701 | TP 100% SL 100% | TP 500 x 0.031, SL 65576 x 0.031
+  ZEC-PERP short 0.018 @ 1267.07 | TP 100% SL 100% | SL 4565 x 0.018, TP 1000 x 0.018
+  XRP-PERP short 17.2 @ 1.3325 | TP 0% SL 0% | no stops
+  SOL-PERP short 0.21 @ 104.39 | TP 100% SL 100% | TP 89 x 0.21, SL 566 x 0.21
+  STT held by stops 1.35, claimable 0.00
+  ! AVAX-PERP: short 2.3 has no stop loss.
+  ! SUI-PERP: short 21 has no stop loss.
+  ! BTC-PERP: take profit covers 6% of the 0.04063 short.
+  ! BTC-PERP: short 0.04063 has no stop loss.
+  ! NEAR-PERP: stop loss covers 20% of the 1004.1 short; the rest has no stop.
+  ! NEAR-PERP: take profit covers 20% of the 1004.1 short.
+  ! XRP-PERP: short 17.2 has no stop loss.
+
+0x3391dc5839157e746c5f1756cc11e0765ad5ae62  (2026-10-22T19:15:47.114Z)
+  ETH-PERP short 1.9064 @ 2440.52475 | TP 97% SL 0% | TP 2000 x 1.8492, SL 4567 x 0.0091
+  WLD-PERP short 37 @ 0.5826 | TP 86% SL 0% | TP 0.5 x 32
+  NEAR-PERP short 641.5 @ 4.8317 | TP 100% SL 100% | SL 76 x 641.5, TP 3 x 641.5
+  STT held by stops 0.75, claimable 0.00
+  ! ETH-PERP: stop loss covers 0% of the 1.9064 short; the rest has no stop.
+  ! ETH-PERP: take profit covers 97% of the 1.9064 short.
+  ! WLD-PERP: take profit covers 86% of the 37 short.
+  ! WLD-PERP: short 37 has no stop loss.
+
+0x41dc3574517164cbc27cde3a91604a3d83f98fb0  (2026-10-22T19:15:49.044Z)
+  SOL-PERP short 416.04 @ 105.7641145 | TP 100% SL 0% | TP 102.13 x 416.04
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 416.04 has no stop loss.
+
+0x413fb4bf95004e978890ee03b151be47bdb9464d  (2026-10-22T19:15:51.005Z)
+  BTC-PERP short 0.00362 @ 83427.74696 | TP 66% SL 0% | TP 79592.4 x 0.0024
+  ETH-PERP short 0.1235 @ 2431.564308 | TP 66% SL 0% | TP 2333 x 0.0817
+  NEAR-PERP short 19.3 @ 5.2014 | TP 100% SL 0% | TP 4.6104 x 19.3
+  SOL-PERP short 0.94 @ 105.89 | TP 100% SL 0% | TP 100.54 x 0.94
+  STT held by stops 0.60, claimable 0.00
+  ! BTC-PERP: take profit covers 66% of the 0.00362 short.
+  ! BTC-PERP: short 0.00362 has no stop loss.
+  ! ETH-PERP: take profit covers 66% of the 0.1235 short.
+  ! ETH-PERP: short 0.1235 has no stop loss.
+  ! NEAR-PERP: short 19.3 has no stop loss.
+  ! SOL-PERP: short 0.94 has no stop loss.
+
+0x6421a2d82ad4ac90324c00109b19a9b32fcdfbcd  (2026-10-22T19:15:53.496Z)
+  HYPE-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x3d3b8c6c6079b6b3ad50ae206aacd96589762c4a  (2026-10-22T19:15:55.463Z)
+  SOL-PERP short 56.83 @ 105.89 | TP 100% SL 100% | TP 102.71 x 56.83, SL 106.2 x 56.83
+  STT held by stops 0.30, claimable 0.60
+  ! 0.60 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x323ed5b16bd8c357c4088028ec651c62f81ca58f  (2026-10-22T19:15:57.418Z)
+  SOL-PERP short 247.59 @ 105.8408529 | TP 100% SL 0% | TP 102.72 x 247.59
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 247.59 has no stop loss.
+
+0xda2f01b6600119f6fe4813901290abaf48cf7c6e  (2026-10-22T19:15:59.356Z)
+  SOL-PERP long 54.05 @ 106.02 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.11271 @ 83738.9 | TP 100% SL 0% | TP 83822.6 x 0.11271
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 54.05 has no stop loss.
+  ! BTC-PERP: long 0.11271 has no stop loss.
+
+0x0981415eb6188801965b9f055d8631af68ba7157  (2026-10-22T19:16:02.321Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x19db15504d25d5462f3ca4a8ac516e66eaa75794  (2026-10-22T19:16:04.250Z)
+  DOGE-PERP long 210 @ 0.08171 | TP 0% SL 0% | no stops
+  SUI-PERP long 24168 @ 1.030500724 | TP 100% SL 0% | TP 1.08 x 24168
+  STT held by stops 0.15, claimable 0.00
+  ! DOGE-PERP: long 210 has no stop loss.
+  ! SUI-PERP: long 24168 has no stop loss.
+
+0xe1215bf0daad061b9396e0650509eee9a6cb3262  (2026-10-22T19:16:06.742Z)
+  ETH-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xe93e50a5870856003fb35f71bb07d183b38aa26c  (2026-10-22T19:16:09.202Z)
+  BTC-PERP long 0.05721 @ 83760.36515 | TP 0% SL 0% | no stops
+  NEAR-PERP long 466.5 @ 5.216094641 | TP 0% SL 0% | no stops
+  SOL-PERP long 84.71 @ 105.6380262 | TP 100% SL 100% | SL 100.36 x 84.71, TP 110.92 x 84.71
+  ETH-PERP long 1.4484 @ 2421.761176 | TP 100% SL 100% | SL 2300.67 x 1.4484, TP 2518.63 x 1.4484
+  STT held by stops 0.60, claimable 0.00
+  ! BTC-PERP: long 0.05721 has no stop loss.
+  ! NEAR-PERP: long 466.5 has no stop loss.
+
+0xf5c57d114c12aba9bce3dbcdc3aa0150b4f14fcd  (2026-10-22T19:16:11.983Z)
+  NEAR-PERP long 19.5 @ 4.925 | TP 0% SL 0% | no stops
+  ETH-PERP long 1.3074 @ 2450.72 | TP 0% SL 0% | no stops
+  SUI-PERP long 14 @ 1.0306 | TP 0% SL 0% | no stops
+  HYPE-PERP long 9.15 @ 81.01 | TP 0% SL 0% | no stops
+  AVAX-PERP long 69.7 @ 9.59 | TP 100% SL 100% | TP 11 x 69.7, SL 8.631 x 69.7
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! NEAR-PERP: long 19.5 has no stop loss.
+  ! ETH-PERP: long 1.3074 has no stop loss.
+  ! SUI-PERP: long 14 has no stop loss.
+  ! HYPE-PERP: long 9.15 has no stop loss.
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x0bd8e8dad9a3c4ec454ce551ca7411400dbd2383  (2026-10-22T19:16:14.486Z)
+  HYPE-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xc8ac07a8b8201e4c1fec821e68af0434284d6c31  (2026-10-22T19:16:16.418Z)
+  XRP-PERP long 12514.2 @ 1.358834314 | TP 100% SL 0% | TP 1.38 x 31610.9
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 12514.2 has no stop loss.
+
+0xf1a114c1604a272ec6a1da07803fc68a786480e7  (2026-10-22T19:16:18.638Z)
+  ETH-PERP long 2.0248 @ 2466.375955 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.06908 @ 83213.47646 | TP 100% SL 100% | TP 79052.8 x 0.06908, SL 87374.2 x 0.06908
+  STT held by stops 0.30, claimable 0.30
+  ! ETH-PERP: long 2.0248 has no stop loss.
+  ! 0.30 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xb72177204bb2386ec2a767f218e155468259fa17  (2026-10-22T19:16:20.561Z)
+  BTC-PERP short 0.22225 @ 84388.10799 | TP 0% SL 100% | SL 84556.9 x 0.22225
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0xc7cb20cd471eca3f4fe5c27f1817b00b24d59a5c  (2026-10-22T19:16:22.487Z)
+  BTC-PERP short 0.19094 @ 84389.52773 | TP 0% SL 100% | SL 84558.3 x 0.19094
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0xa350b9f5986ab271997c58289a3016172d4d711c  (2026-10-22T19:16:24.415Z)
+  BTC-PERP short 0.16166 @ 84386.44383 | TP 0% SL 100% | SL 84562.8 x 0.16166
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x58578671bd8754aadfa0f0b9485cd49385eb065a  (2026-10-22T19:16:26.350Z)
+  BTC-PERP short 0.16078 @ 84386.84395 | TP 0% SL 100% | SL 84563.2 x 0.16078
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x4a8dbbc5252b70c745928a6999bea2d9e8dfde74  (2026-10-22T19:16:28.281Z)
+  BTC-PERP short 0.19812 @ 84387.36898 | TP 0% SL 100% | SL 84556.1 x 0.19812
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x458e139faacdcd1feb82624066f6e408248841b3  (2026-10-22T19:16:30.214Z)
+  BTC-PERP short 0.24008 @ 84386.52071 | TP 0% SL 100% | SL 84555.3 x 0.24008
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x8a11261dd2174dc5fa22d517d5b227c2c263bca4  (2026-10-22T19:16:32.154Z)
+  BTC-PERP short 0.01367 @ 84317.42143 | TP 100% SL 100% | SL 86003.8 x 0.01367, TP 65767.6 x 0.01367
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x757f4cf3c1bf9dea5f04011a3b54f4c962114e9a  (2026-10-22T19:16:34.093Z)
+  XRP-PERP long 1830.2 @ 1.367639102 | TP 100% SL 0% | TP 1.4047 x 2219.7, TP 1.4105 x 18499
+  STT held by stops 0.30, claimable 0.00
+  ! XRP-PERP: long 1830.2 has no stop loss.
+
+0x026a47f5659fddb9e895d968ddd44a65d7a53698  (2026-10-22T19:16:36.572Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x992c2108373cc6aaecab800fbde8e1d2d4dc2564  (2026-10-22T19:16:38.768Z)
+  BTC-PERP short 0.18 @ 84387.74446 | TP 0% SL 100% | SL 84632.5 x 0.18
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0xd6a038a62f4d1d916c344b25e0607bfd314fd2f4  (2026-10-22T19:16:40.899Z)
+  BTC-PERP short 0.22789 @ 84385.69802 | TP 0% SL 100% | SL 84554.5 x 0.22789
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x2f0155b51105446024799a3ebea2b1a0f73448bf  (2026-10-22T19:16:42.865Z)
+  BTC-PERP short 0.41678 @ 83451 | TP 100% SL 100% | SL 87000 x 0.41678, TP 80251 x 0.41678
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x4210731a73398f5c9e035505d01a0fbe75b26055  (2026-10-22T19:16:44.801Z)
+  XRP-PERP long 3125.5 @ 1.367031513 | TP 100% SL 0% | TP 1.4077 x 2199.7, TP 1.4155 x 19751.8
+  STT held by stops 0.30, claimable 0.00
+  ! XRP-PERP: long 3125.5 has no stop loss.
+
+0x9a390439a656c18f900f1757426fcfb4d9725036  (2026-10-22T19:16:47.283Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x1b4ccda1950a0d4c7e43eb1df4ca9c59be0ef45c  (2026-10-22T19:16:50.264Z)
+  ETH-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xfda2cd24b5effe798d387bf7362f3de3287f8f08  (2026-10-22T19:16:52.758Z)
+  ETH-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x44dac4655c68a8dae0d546f8b3fd6e930388fb8b  (2026-10-22T19:16:55.249Z)
+  HYPE-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x10d23854178220d157a5486ff2d8eb3d454df4ed  (2026-10-22T19:16:57.172Z)
+  ETH-PERP long 3.218 @ 2408 | TP 0% SL 0% | no stops
+  SOL-PERP long 46.38 @ 107.3 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.12235 @ 84875.24922 | TP 100% SL 0% | TP 85253.1 x 0.12235
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 3.218 has no stop loss.
+  ! SOL-PERP: long 46.38 has no stop loss.
+  ! BTC-PERP: long 0.12235 has no stop loss.
+
+0x156a88acb130af305bd8c877722a0591fcc9a6c1  (2026-10-22T19:16:59.107Z)
+  NEAR-PERP long 1805.8 @ 5.245183668 | TP 100% SL 0% | TP 5.4784 x 612.9, TP 5.5862 x 6251
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: long 1805.8 has no stop loss.
+
+0xe232da2ee7756eec86140b0050a58a0c627fe5af  (2026-10-22T19:17:01.598Z)
+  SOL-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xf8b4e18a6d5e8dd728369a2029b3dc1674df23bb  (2026-10-22T19:17:03.522Z)
+  NEAR-PERP short 2646.7 @ 5.282950569 | TP 100% SL 0% | TP 4 x 2646.7
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 2646.7 has no stop loss.
+
+0xec9b5faabb1d612836fbb1acd678e25508865eae  (2026-10-22T19:17:06.023Z)
+  SOL-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xc987290f04a4aa1570c217e32bfbeba572529113  (2026-10-22T19:17:07.946Z)
+  SOL-PERP long 18.48 @ 107.57 | TP 100% SL 0% | TP 108.65 x whole
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 18.48 has no stop loss.
+
+0xf1abf5c4c7b1a98f3e03adb7b36977146f22226b  (2026-10-22T19:17:09.879Z)
+  NEAR-PERP short 1804.4 @ 5.308353375 | TP 100% SL 0% | TP 4.1 x 1804.4
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 1804.4 has no stop loss.
+
+0xb99cf7e7d2ce1df7bc2492d9d9c9679f9ddc5368  (2026-10-22T19:17:11.816Z)
+  BTC-PERP long 0.01149 @ 82267.67776 | TP 0% SL 0% | wrong side 85567.2 x 0.00236
+  ETH-PERP short 0.3239 @ 2426.99 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.15
+  ! BTC-PERP: long 0.01149 has no stop loss.
+  ! BTC-PERP: 1 stop(s) are on the wrong side for a long and cannot reduce it.
+  ! ETH-PERP: short 0.3239 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x12dca4df084f9551cdd4712dfea2cafebf8b6886  (2026-10-22T19:17:15.300Z)
+  SUI-PERP long 457 @ 1.044 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.03863 @ 83544.03865 | TP 0% SL 0% | no stops
+  BNB-PERP long 0.127 @ 746.363 | TP 100% SL 100% | SL 449.812 x 0.127, TP 752 x 0.127
+  NEAR-PERP long 173.2 @ 5.169 | TP 100% SL 100% | SL 2.5956 x 173.2, TP 6.7467 x 173.2
+  ZRO-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.75, claimable 0.00
+  ! SUI-PERP: long 457 has no stop loss.
+  ! BTC-PERP: long 0.03863 has no stop loss.
+  ! ZRO-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xc2f39b60c067918f2736febe0990986de4fd0687  (2026-10-22T19:17:17.238Z)
+  BTC-PERP long 0.13269 @ 82580.23484 | TP 100% SL 0% | TP 87122.1 x 0.13269
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.13269 has no stop loss.
+
+0x36fa45f37d1be89c2096e87090661212701cafe9  (2026-10-22T19:17:19.958Z)
+  BTC-PERP long 0.13015 @ 84723.29925 | TP 0% SL 0% | no stops
+  SOL-PERP short 0.14 @ 104.17 | TP 0% SL 0% | no stops
+  ETH-PERP short 0.0412 @ 2422.34 | TP 0% SL 0% | no stops
+  ZRO-PERP long 5.3 @ 1.8492 | TP 100% SL 100% | SL 1.0171 x 5.3, TP 2.4964 x 5.3
+  XLM-PERP long 112 @ 0.1778 | TP 0% SL 0% | no stops
+  LIT-PERP long 6.5 @ 3.0655 | TP 0% SL 0% | no stops
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.13015 has no stop loss.
+  ! SOL-PERP: short 0.14 has no stop loss.
+  ! ETH-PERP: short 0.0412 has no stop loss.
+  ! XLM-PERP: long 112 has no stop loss.
+  ! LIT-PERP: long 6.5 has no stop loss.
+
+0x70585bacd737696178a7bf07109686965bd2fe51  (2026-10-22T19:17:22.175Z)
+  BTC-PERP long 0.25204 @ 84760.61744 | TP 100% SL 100% | SL 55094.4 x 0.25204, TP 114426.8 x 0.25204
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x03aa2cfc51fb85b408f41ef6bf44c3b3f07ae74d  (2026-10-22T19:17:24.112Z)
+  BTC-PERP long 0.09982 @ 82551.91348 | TP 100% SL 0% | TP 89000 x 0.09982
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.09982 has no stop loss.
+
+0x26234bc86fbdc77e223f843de77cd81909a06d81  (2026-10-22T19:17:26.045Z)
+  ETH-PERP long 0.4023 @ 2416.15 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.0998 @ 82203.92048 | TP 100% SL 0% | TP 87000 x 0.0998
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 0.4023 has no stop loss.
+  ! BTC-PERP: long 0.0998 has no stop loss.
+
+0x6b134bfbaf490c6b199dacd14bcf6be5a6f835f8  (2026-10-22T19:17:28.026Z)
+  ZRO-PERP long 1946.2 @ 1.769491902 | TP 100% SL 0% | TP 2.5912 x 4473.8
+  SOL-PERP short 0.96 @ 103.87 | TP 100% SL 0% | TP 100.14 x 0.96
+  BTC-PERP short 0.0123 @ 81682.40976 | TP 100% SL 0% | TP 78847.6 x 0.0123
+  STT held by stops 0.45, claimable 0.00
+  ! ZRO-PERP: long 1946.2 has no stop loss.
+  ! SOL-PERP: short 0.96 has no stop loss.
+  ! BTC-PERP: short 0.0123 has no stop loss.
+
+0x7480c89f8c34a51d84796e42b876b7899eca83ac  (2026-10-22T19:17:29.988Z)
+  ZRO-PERP long 823.8 @ 1.770450546 | TP 100% SL 0% | TP 2.6804 x 3753.8
+  BTC-PERP short 0.00608 @ 82674.94302 | TP 100% SL 0% | TP 74009.3 x 0.00608
+  WLD-PERP long 4958 @ 0.5244 | TP 0% SL 0% | no stops
+  STT held by stops 0.30, claimable 0.00
+  ! ZRO-PERP: long 823.8 has no stop loss.
+  ! BTC-PERP: short 0.00608 has no stop loss.
+  ! WLD-PERP: long 4958 has no stop loss.
+
+0x42b56067efe76a2c577b9969fb94d9b6cef3901f  (2026-10-22T19:17:31.914Z)
+  SOL-PERP long 184.87 @ 106.2879634 | TP 100% SL 0% | TP 110 x 184.87
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 184.87 has no stop loss.
+
+0x78e10cb30d7eac62f9562ee152900280b190f257  (2026-10-22T19:17:33.839Z)
+  HYPE-PERP long 0.13 @ 80.12 | TP 0% SL 0% | no stops
+  SUI-PERP long 43625 @ 1.027930948 | TP 100% SL 0% | TP 1.089 x 43625
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 0.13 has no stop loss.
+  ! SUI-PERP: long 43625 has no stop loss.
+
+0xad67462bb8fa3e6ea39536b5c4ae72451c4b52bf  (2026-10-22T19:17:35.764Z)
+  BTC-PERP long 0.37112 @ 83855.85907 | TP 100% SL 0% | TP 167711.7 x 0.37112
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.37112 has no stop loss.
+
+0xff3b35d2e03a0054acef3aae71a460590b6c9713  (2026-10-22T19:17:37.709Z)
+  XRP-PERP short 3056.7 @ 1.321947555 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.4094 @ 81963.84399 | TP 0% SL 0% | no stops
+  ETH-PERP short 1.1508 @ 2377 | TP 100% SL 100% | SL 2580.61 x 1.1508, TP 2336.62 x 1.1508
+  STT held by stops 0.30, claimable 0.00
+  ! XRP-PERP: short 3056.7 has no stop loss.
+  ! BTC-PERP: long 0.4094 has no stop loss.
+
+0x4e670a1f00812b45c009330b06a45b764793983c  (2026-10-22T19:17:40.482Z)
+  SOL-PERP long 1 @ 104.5 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.05 @ 2400.17 | TP 0% SL 80% | SL 60 x 0.02, SL 50 x 0.02
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! SOL-PERP: long 1 has no stop loss.
+  ! ETH-PERP: stop loss covers 80% of the 0.05 long; the rest has no stop.
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x7115e070a3e366162f30af0c4cf24b15e90b22fd  (2026-10-22T19:17:42.418Z)
+  BTC-PERP long 0.01685 @ 84557.01798 | TP 100% SL 100% | SL 0.2 x 0.01685, TP 84853 x 0.01685
+  STT held by stops 0.30, claimable 0.45
+  ! 0.45 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xad68145f6fa22359eeb3bc48169378bfc5eabf66  (2026-10-22T19:17:44.903Z)
+  HYPE-PERP long 1 @ 78.41 | TP 0% SL 0% | no stops
+  SUI-PERP long 123 @ 0.986 | TP 0% SL 0% | no stops
+  NEAR-PERP short 13.8 @ 4.9879 | TP 0% SL 0% | no stops
+  XRP-PERP short 110 @ 1.321 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.0027 @ 84843.3 | TP 0% SL 30% | SL 100 x 0.0008
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: long 1 has no stop loss.
+  ! SUI-PERP: long 123 has no stop loss.
+  ! NEAR-PERP: short 13.8 has no stop loss.
+  ! XRP-PERP: short 110 has no stop loss.
+  ! BTC-PERP: stop loss covers 30% of the 0.0027 long; the rest has no stop.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xd97d8a0c4d3202eb9f4d01ac43ad995222616123  (2026-10-22T19:17:46.834Z)
+  XRP-PERP long 73.2 @ 1.325254497 | TP 0% SL 0% | no stops
+  HYPE-PERP long 2.22 @ 80.14464789 | TP 0% SL 0% | no stops
+  SOL-PERP long 5.56 @ 104.9883094 | TP 100% SL 0% | TP 110 x 5.56
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 73.2 has no stop loss.
+  ! HYPE-PERP: long 2.22 has no stop loss.
+  ! SOL-PERP: long 5.56 has no stop loss.
+
+0x03342f5580fa6c696a665ca1c53d4a473e6b8196  (2026-10-22T19:17:48.760Z)
+  BTC-PERP long 0.00178 @ 83820.9 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.1132 @ 2470.22 | TP 0% SL 0% | no stops
+  NEAR-PERP long 44.1 @ 5.181377098 | TP 0% SL 0% | no stops
+  SOL-PERP long 2.24 @ 106.7424554 | TP 100% SL 0% | TP 110 x 2.24
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.00178 has no stop loss.
+  ! ETH-PERP: long 0.1132 has no stop loss.
+  ! NEAR-PERP: long 44.1 has no stop loss.
+  ! SOL-PERP: long 2.24 has no stop loss.
+
+0x938597543afc0d332ba6fccbfbbe567b54d61604  (2026-10-22T19:17:51.754Z)
+  NEAR-PERP long 536.5 @ 5.18124699 | TP 100% SL 0% | TP 5.5 x 536.5
+  SOL-PERP long 13.2 @ 106.79 | TP 100% SL 0% | TP 110 x 13.2
+  ETH-PERP short 0.8928 @ 2472.476237 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.09857 @ 82058.53194 | TP 100% SL 0% | TP 80000 x 0.09857
+  ZEC-PERP short 1.02 @ 1144.558868 | TP 100% SL 0% | TP 1100 x 1.02
+  STT held by stops 0.60, claimable 0.00
+  ! NEAR-PERP: long 536.5 has no stop loss.
+  ! SOL-PERP: long 13.2 has no stop loss.
+  ! ETH-PERP: short 0.8928 has no stop loss.
+  ! BTC-PERP: short 0.09857 has no stop loss.
+  ! ZEC-PERP: short 1.02 has no stop loss.
+
+0x4e2da961b6e86ab9d7a3c360977149561c33affb  (2026-10-22T19:17:53.689Z)
+  ETH-PERP long 0.1013 @ 2460.365291 | TP 0% SL 0% | no stops
+  SOL-PERP long 2.15 @ 106.5662326 | TP 43% SL 0% | TP 110 x 0.93
+  NEAR-PERP long 42.2 @ 5.180588389 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 0.1013 has no stop loss.
+  ! SOL-PERP: take profit covers 43% of the 2.15 long.
+  ! SOL-PERP: long 2.15 has no stop loss.
+  ! NEAR-PERP: long 42.2 has no stop loss.
+
+0x4255dc767670a32c2ad361ea3d8cf44a62378b44  (2026-10-22T19:17:56.085Z)
+  XRP-PERP long 103.2 @ 1.356932238 | TP 0% SL 0% | no stops
+  HYPE-PERP long 3.1 @ 80.13093548 | TP 0% SL 0% | no stops
+  NEAR-PERP long 48.6 @ 5.123703704 | TP 0% SL 0% | no stops
+  SOL-PERP long 2.34 @ 106.2039744 | TP 40% SL 0% | TP 110 x 0.93
+  ETH-PERP long 0.0973 @ 2460.029723 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 103.2 has no stop loss.
+  ! HYPE-PERP: long 3.1 has no stop loss.
+  ! NEAR-PERP: long 48.6 has no stop loss.
+  ! SOL-PERP: take profit covers 40% of the 2.34 long.
+  ! SOL-PERP: long 2.34 has no stop loss.
+  ! ETH-PERP: long 0.0973 has no stop loss.
+
+0xe8896d90bb31f19bd72eea81231b90d79d31a7e4  (2026-10-22T19:17:58.562Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x2b49ff3a0dd518519aaa7e900f209d3ca5481c02  (2026-10-22T19:18:00.553Z)
+  XRP-PERP long 7359.9 @ 1.358348732 | TP 100% SL 0% | TP 1.4299 x 26374.7
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 7359.9 has no stop loss.
+
+0x1248df27af568647994f70ab30834b56d1f61bf1  (2026-10-22T19:18:02.497Z)
+  XRP-PERP short 9912.1 @ 1.356989054 | TP 100% SL 0% | TP 1.2867 x 27709.4
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 9912.1 has no stop loss.
+
+0x4bfe4bb4d0319c897b68c91f279a470922ae59e7  (2026-10-22T19:18:04.975Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x4fd57105ff1d3cf46b57a2b9b9e009a9289ba3e3  (2026-10-22T19:18:06.899Z)
+  XRP-PERP short 1001.7 @ 1.356299814 | TP 100% SL 0% | TP 1.2858 x 18827
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 1001.7 has no stop loss.
+
+0xca797f2138b3395aba8b25c1ca1d54edae327c39  (2026-10-22T19:18:09.378Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x7ad4793a076c426131b8c3f07c28867271a0a46a  (2026-10-22T19:18:11.585Z)
+  XRP-PERP short 314.4 @ 1.356250175 | TP 100% SL 0% | TP 1.2846 x 18119.3
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 314.4 has no stop loss.
+
+0x72d823899c1e52e78ff3a494c97bc6926c324eba  (2026-10-22T19:18:14.008Z)
+  NEAR-PERP long 200 @ 4.9714 | TP 0% SL 100% | SL 4.7 x 200
+  ETH-PERP long 0.4066 @ 2446.88 | TP 0% SL 0% | no stops
+  SOL-PERP long 9.33 @ 106.6 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.04824 @ 82907.81859 | TP 0% SL 100% | SL 75000 x 0.04824
+  STT held by stops 0.30, claimable 0.00
+  ! ETH-PERP: long 0.4066 has no stop loss.
+  ! SOL-PERP: long 9.33 has no stop loss.
+
+0xe91e53b83f76da0d92000e8f49de98e49e9eacf2  (2026-10-22T19:18:15.931Z)
+  XRP-PERP short 12145.2 @ 1.356302202 | TP 0% SL 100% | SL 1.398 x 29910.9
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0xc1cca86888bf11a5feb2a911ac27721e246f187d  (2026-10-22T19:18:18.420Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xf7686ca4053f8da2e6cf57e4250f7e78c3fed464  (2026-10-22T19:18:20.907Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x386f613804af393bca940e297680e3a5214b4ff8  (2026-10-22T19:18:22.842Z)
+  XRP-PERP short 9791.5 @ 1.356544225 | TP 0% SL 100% | SL 1.398 x 24656.6
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0xcd1ebb833151e65d7b63d01a2ee1d39af124d433  (2026-10-22T19:18:25.338Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xe7010cac2c5aab29dd78bba47e98d591fa69ad23  (2026-10-22T19:18:27.303Z)
+  XRP-PERP short 5.1 @ 1.3532 | TP 0% SL 0% | no stops
+  NEAR-PERP short 1128 @ 5.025655911 | TP 100% SL 0% | TP 4.7 x 5793.9
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 5.1 has no stop loss.
+  ! NEAR-PERP: short 1128 has no stop loss.
+
+0x83d657e0821eb47017df06f2923123108998a72c  (2026-10-22T19:18:29.253Z)
+  VVV-PERP long 55.99 @ 25.65773263 | TP 100% SL 0% | TP 29 x 55.99
+  XLM-PERP long 7992 @ 0.1835911411 | TP 100% SL 0% | TP 0.204 x 7992
+  AVAX-PERP short 95.6 @ 9.451 | TP 0% SL 0% | no stops
+  NEAR-PERP long 551.4 @ 5.1969 | TP 100% SL 0% | TP 5.45 x 551.4
+  STT held by stops 0.45, claimable 0.00
+  ! VVV-PERP: long 55.99 has no stop loss.
+  ! XLM-PERP: long 7992 has no stop loss.
+  ! AVAX-PERP: short 95.6 has no stop loss.
+  ! NEAR-PERP: long 551.4 has no stop loss.
+
+0x0d300c64fb7548e8c6f76998b60f4e1b21cdc22e  (2026-10-22T19:18:31.196Z)
+  LIT-PERP short 167.9 @ 3.6094 | TP 0% SL 0% | no stops
+  XLM-PERP long 12626 @ 0.185752479 | TP 11% SL 0% | TP 0.1991 x 1408
+  SOL-PERP long 8.78 @ 106.87 | TP 0% SL 0% | no stops
+  HYPE-PERP long 12 @ 81.46046667 | TP 0% SL 0% | no stops
+  SUI-PERP long 912 @ 1.0352 | TP 0% SL 0% | no stops
+  BNB-PERP short 1.085 @ 729.452 | TP 0% SL 0% | no stops
+  ADA-PERP short 3520 @ 0.2173 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! LIT-PERP: short 167.9 has no stop loss.
+  ! XLM-PERP: take profit covers 11% of the 12626 long.
+  ! XLM-PERP: long 12626 has no stop loss.
+  ! SOL-PERP: long 8.78 has no stop loss.
+  ! HYPE-PERP: long 12 has no stop loss.
+  ! SUI-PERP: long 912 has no stop loss.
+  ! BNB-PERP: short 1.085 has no stop loss.
+  ! ADA-PERP: short 3520 has no stop loss.
+
+0xeeb9a81e345cb6224369aadb18df9416e866889c  (2026-10-22T19:18:33.151Z)
+  SOL-PERP long 2.15 @ 105.8886512 | TP 43% SL 0% | TP 110 x 0.93, wrong side 110 x 80, wrong side 110 x 100
+  NEAR-PERP long 67.7 @ 5.009497489 | TP 0% SL 0% | no stops
+  HYPE-PERP long 4.84 @ 80.22198347 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.1398 @ 2426.21633 | TP 0% SL 0% | no stops
+  DOGE-PERP long 3260 @ 0.07956484663 | TP 0% SL 0% | no stops
+  BNB-PERP long 0.192 @ 726.682 | TP 0% SL 0% | no stops
+  PUMP-PERP long 22400 @ 0.004438 | TP 0% SL 0% | no stops
+  TAO-PERP long 0.364 @ 273.715 | TP 0% SL 0% | no stops
+  STT held by stops 0.45, claimable 0.00
+  ! SOL-PERP: take profit covers 43% of the 2.15 long.
+  ! SOL-PERP: long 2.15 has no stop loss.
+  ! SOL-PERP: 2 stop(s) are on the wrong side for a long and cannot reduce it.
+  ! NEAR-PERP: long 67.7 has no stop loss.
+  ! HYPE-PERP: long 4.84 has no stop loss.
+  ! ETH-PERP: long 0.1398 has no stop loss.
+  ! DOGE-PERP: long 3260 has no stop loss.
+  ! BNB-PERP: long 0.192 has no stop loss.
+  ! PUMP-PERP: long 22400 has no stop loss.
+  ! TAO-PERP: long 0.364 has no stop loss.
+
+0x0521c08213c576aad117225556288310da2cd4c8  (2026-10-22T19:18:35.162Z)
+  XLM-PERP long 390 @ 0.1806 | TP 0% SL 0% | no stops
+  ZRO-PERP long 18.9 @ 1.9226 | TP 0% SL 0% | no stops
+  SOL-PERP short 0.88 @ 105.4 | TP 100% SL 100% | TP 100.13 x 0.88, SL 110.67 x 0.88
+  ETH-PERP short 0.0378 @ 2434.3 | TP 100% SL 100% | TP 2312.59 x 0.0378, SL 2556.02 x 0.0378
+  NEAR-PERP long 2056.8 @ 4.806841774 | TP 89% SL 0% | TP 5.7714 x 1838.1
+  STT held by stops 0.75, claimable 0.15
+  ! XLM-PERP: long 390 has no stop loss.
+  ! ZRO-PERP: long 18.9 has no stop loss.
+  ! NEAR-PERP: take profit covers 89% of the 2056.8 long.
+  ! NEAR-PERP: long 2056.8 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x09cb20be02802a8f60d6fd6453caabd5248df99c  (2026-10-22T19:18:37.098Z)
+  WLD-PERP long 37 @ 0.57 | TP 0% SL 0% | no stops
+  BNB-PERP long 0.073 @ 742.189 | TP 100% SL 100% | SL 705.08 x 0.073, TP 779.298 x 0.073
+  STT held by stops 0.30, claimable 0.15
+  ! WLD-PERP: long 37 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x259b5828e961085485fdf1015b9b9404b84484ed  (2026-10-22T19:18:39.041Z)
+  ZEC-PERP short 5.055 @ 1291.399076 | TP 0% SL 0% | no stops
+  XLM-PERP long 162 @ 0.1806 | TP 0% SL 0% | no stops
+  ZRO-PERP long 7.8 @ 1.9226 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.00047 @ 83020.41489 | TP 0% SL 0% | no stops
+  BNB-PERP long 0.022 @ 742.189 | TP 100% SL 100% | SL 705.08 x 0.022, TP 779.298 x 0.022
+  STT held by stops 0.30, claimable 0.30
+  ! ZEC-PERP: short 5.055 has no stop loss.
+  ! XLM-PERP: long 162 has no stop loss.
+  ! ZRO-PERP: long 7.8 has no stop loss.
+  ! BTC-PERP: long 0.00047 has no stop loss.
+  ! 0.30 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xa733ae931e929a9232d3f84a30646c0f7ad437be  (2026-10-22T19:18:41.259Z)
+  XLM-PERP long 189 @ 0.1806 | TP 0% SL 0% | no stops
+  ZRO-PERP long 9.1 @ 1.9226 | TP 0% SL 0% | no stops
+  LIT-PERP long 4.1 @ 3.7556 | TP 0% SL 0% | no stops
+  BNB-PERP short 0.234 @ 742.616 | TP 0% SL 0% | no stops
+  DOGE-PERP short 360 @ 0.08128 | TP 100% SL 100% | SL 0.08453 x 360, TP 0.07234 x 360
+  STT held by stops 0.30, claimable 0.15
+  ! XLM-PERP: long 189 has no stop loss.
+  ! ZRO-PERP: long 9.1 has no stop loss.
+  ! LIT-PERP: long 4.1 has no stop loss.
+  ! BNB-PERP: short 0.234 has no stop loss.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x9681be70c7a1dfff5435fd3d22c2f320f8123d8c  (2026-10-22T19:18:43.185Z)
+  BTC-PERP short 0.29236 @ 82842.88861 | TP 100% SL 0% | TP 8000 x 0.29236
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.29236 has no stop loss.
+
+0x0e85d83335eb32ba887702e60db7a2fd339ea19f  (2026-10-22T19:18:45.140Z)
+  ZEC-PERP short 5.824 @ 1265.931425 | TP 100% SL 0% | TP 1159.518 x 0.284, TP 1146.007 x 5.54
+  STT held by stops 0.30, claimable 0.00
+  ! ZEC-PERP: short 5.824 has no stop loss.
+
+0xdeb18eeea799b48a2bf222ac4b5687e03599186e  (2026-10-22T19:18:47.088Z)
+  SUI-PERP long 8673 @ 1.029974599 | TP 100% SL 100% | SL 0.933 x 8673, TP 1.28 x 8673
+  STT held by stops 0.30, claimable 0.15
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xf7134c1b3937686cc3e1c3c03c58fbf8ae4bf664  (2026-10-22T19:18:50.096Z)
+  NEAR-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xcd201c6296347913d2f800382bc5149d00df7108  (2026-10-22T19:18:52.078Z)
+  BNB-PERP short 0.029 @ 741.965 | TP 0% SL 0% | no stops
+  HYPE-PERP short 0.56 @ 79.55 | TP 0% SL 0% | no stops
+  XRP-PERP short 172.8 @ 1.3481 | TP 0% SL 0% | no stops
+  NEAR-PERP short 10.9 @ 5.0132 | TP 100% SL 100% | SL 12 x 10.9, TP 3 x 10.9
+  BTC-PERP short 0.17935 @ 81660.18775 | TP 100% SL 100% | TP 75000 x 0.17935, SL 90000 x 0.17935
+  STT held by stops 0.60, claimable 0.00
+  ! BNB-PERP: short 0.029 has no stop loss.
+  ! HYPE-PERP: short 0.56 has no stop loss.
+  ! XRP-PERP: short 172.8 has no stop loss.
+
+0xd308a6d7c85f720cd32ecc692eba86afcf728463  (2026-10-22T19:18:54.565Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.07
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! 0.07 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xeba9e759c9a794893717303ab744d28be58a8a57  (2026-10-22T19:18:57.066Z)
+  XRP-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! XRP-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x7e421871f7ae1d15ba5fe208de22d9a08535ba66  (2026-10-22T19:18:59.002Z)
+  BTC-PERP short 0.48463 @ 83228.31054 | TP 100% SL 0% | TP 79100 x 0.48463
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.48463 has no stop loss.
+
+0x1efd0cae1463018c93a60d15c17d29898febe063  (2026-10-22T19:19:00.969Z)
+  BTC-PERP short 0.00642 @ 83573 | TP 100% SL 100% | TP 75000 x 0.13904, SL 90000 x 0.13904
+  AVAX-PERP short 0.2 @ 9.743 | TP 0% SL 0% | no stops
+  WLD-PERP short 37 @ 0.588 | TP 0% SL 0% | no stops
+  NEAR-PERP short 429.3 @ 4.678049755 | TP 100% SL 0% | TP 3 x 429.3
+  SOL-PERP short 0.21 @ 104.6 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.019 @ 1148.639 | TP 0% SL 0% | no stops
+  STT held by stops 0.45, claimable 0.00
+  ! AVAX-PERP: short 0.2 has no stop loss.
+  ! WLD-PERP: short 37 has no stop loss.
+  ! NEAR-PERP: short 429.3 has no stop loss.
+  ! SOL-PERP: short 0.21 has no stop loss.
+  ! ZEC-PERP: short 0.019 has no stop loss.
+
+0xa955a0a58c5e559f130debe2547d1620e7b72d48  (2026-10-22T19:19:03.467Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.15
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xb46f3658afc2ba15c0836c034451467544a83d87  (2026-10-22T19:19:05.972Z)
+  NEAR-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x1e3ede6e34143efb8fbc16f1659e1a0b790fdb45  (2026-10-22T19:19:07.935Z)
+  XRP-PERP short 7311 @ 1.332911088 | TP 100% SL 0% | TP 1.2911 x 4702.1, TP 1.2909 x 38714.7
+  STT held by stops 0.30, claimable 0.00
+  ! XRP-PERP: short 7311 has no stop loss.
+
+0x24e301549c57be2b88e80f5dda1752de7f712aa9  (2026-10-22T19:19:09.870Z)
+  NEAR-PERP short 1609.1 @ 4.920060301 | TP 100% SL 0% | TP 4.6659 x 5837
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 1609.1 has no stop loss.
+
+0xcb23dc2bf0bded8ebf12a982e45daa8335b6a71a  (2026-10-22T19:19:12.364Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xd94aaa72c90db7423b64f26a3f3eb30d1bab17c3  (2026-10-22T19:19:14.803Z)
+  XRP-PERP short 46245.2 @ 1.331173201 | TP 45% SL 0% | TP 1.2816 x 20939
+  STT held by stops 0.15, claimable 0.07
+  ! XRP-PERP: take profit covers 45% of the 46245.2 short.
+  ! XRP-PERP: short 46245.2 has no stop loss.
+  ! 0.07 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x2c8e2c76b79283bfac64c4c39a406c9964babc47  (2026-10-22T19:19:16.740Z)
+  NEAR-PERP short 852.2 @ 4.951794118 | TP 100% SL 0% | TP 4.6463 x 5577.8
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 852.2 has no stop loss.
+
+0x9ff8adb41bf89be66d377f3b1244a70fc3482fd1  (2026-10-22T19:19:19.250Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x9e071e97a2621c3d0d22b2c0d5cfd8010e542f42  (2026-10-22T19:19:21.235Z)
+  ETH-PERP short 1.4638 @ 2443.243734 | TP 100% SL 0% | TP 2353.64 x 8.766
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: short 1.4638 has no stop loss.
+
+0x59262d57a0e9b710cdef0b356def866d84a2046a  (2026-10-22T19:19:23.181Z)
+  BTC-PERP long 0.01507 @ 81230.58275 | TP 0% SL 0% | no stops
+  SOL-PERP long 21.46 @ 108.6771482 | TP 0% SL 0% | no stops
+  LIT-PERP long 212 @ 3.5646 | TP 0% SL 0% | no stops
+  ZRO-PERP short 118.5 @ 1.9619 | TP 100% SL 0% | TP 1.6613 x 236.9
+  HYPE-PERP long 77.39 @ 80.66073653 | TP 0% SL 0% | no stops
+  NEAR-PERP long 510 @ 5.365790412 | TP 0% SL 0% | no stops
+  WLD-PERP short 491 @ 0.5131 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.01507 has no stop loss.
+  ! SOL-PERP: long 21.46 has no stop loss.
+  ! LIT-PERP: long 212 has no stop loss.
+  ! ZRO-PERP: short 118.5 has no stop loss.
+  ! HYPE-PERP: long 77.39 has no stop loss.
+  ! NEAR-PERP: long 510 has no stop loss.
+  ! WLD-PERP: short 491 has no stop loss.
+
+0x80501b15cde7ffea6dad0ebf9494302f72263e66  (2026-10-22T19:19:25.122Z)
+  SOL-PERP long 189.38 @ 105.2590897 | TP 100% SL 0% | TP 111.57 x 189.38
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 189.38 has no stop loss.
+
+0x3104f46648875cb6cc91a8ebb86882daeb9ba726  (2026-10-22T19:19:27.055Z)
+  ETH-PERP short 5.3269 @ 2433.68 | TP 0% SL 0% | no stops
+  WLD-PERP short 11510 @ 0.5348 | TP 100% SL 0% | TP 0.47 x 11510
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: short 5.3269 has no stop loss.
+  ! WLD-PERP: short 11510 has no stop loss.
+
+0x9bcac39d8b67b2accf460e91588c872ec67d4167  (2026-10-22T19:19:28.994Z)
+  BTC-PERP long 0.20192 @ 82930.60063 | TP 0% SL 0% | no stops
+  HYPE-PERP short 387.88 @ 80.72967851 | TP 0% SL 0% | no stops
+  WLD-PERP short 357 @ 0.5347 | TP 100% SL 0% | TP 0.4 x 357
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.20192 has no stop loss.
+  ! HYPE-PERP: short 387.88 has no stop loss.
+  ! WLD-PERP: short 357 has no stop loss.
+
+0x4bb21fb53cbe64c220f8fce60dfd3221a91f796e  (2026-10-22T19:19:32.174Z)
+  SOL-PERP short 0.5 @ 105.03 | TP 0% SL 0% | wrong side 60 x 0.3
+  NEAR-PERP short 10 @ 5.0978 | TP 0% SL 0% | no stops
+  HYPE-PERP short 0.5 @ 79.05 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.02102 @ 83229.2 | TP 0% SL 0% | wrong side 50 x 0.001
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! SOL-PERP: short 0.5 has no stop loss.
+  ! SOL-PERP: 1 stop(s) are on the wrong side for a short and cannot reduce it.
+  ! NEAR-PERP: short 10 has no stop loss.
+  ! HYPE-PERP: short 0.5 has no stop loss.
+  ! BTC-PERP: short 0.02102 has no stop loss.
+  ! BTC-PERP: 1 stop(s) are on the wrong side for a short and cannot reduce it.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xcc4db3e2be5e686902ef097337263a17bdd0a853  (2026-10-22T19:19:34.111Z)
+  SOL-PERP long 1.5 @ 105.6912291 | TP 77% SL 0% | TP 110 x 1.15
+  HYPE-PERP long 1.73 @ 80.64 | TP 0% SL 0% | no stops
+  SUI-PERP long 121 @ 0.9896 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: take profit covers 77% of the 1.5 long.
+  ! SOL-PERP: long 1.5 has no stop loss.
+  ! HYPE-PERP: long 1.73 has no stop loss.
+  ! SUI-PERP: long 121 has no stop loss.
+
+0x314c0898f1bc1485d81c08a279494ba1b05b61af  (2026-10-22T19:19:36.599Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x57a8f5d41204e1258f1df101afe5b6c43a552184  (2026-10-22T19:19:39.594Z)
+  XRP-PERP short 3731.7 @ 1.298925771 | TP 100% SL 0% | TP 1.2574 x 8475.7
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! XRP-PERP: short 3731.7 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x489c9d32f24dde2b651f204dfcad6dc7e420706a  (2026-10-22T19:19:41.803Z)
+  ZEC-PERP short 3.017 @ 1295.899 | TP 0% SL 0% | no stops
+  WLD-PERP short 795 @ 0.54 | TP 0% SL 100% | SL 0.6 x 795
+  STT held by stops 0.15, claimable 0.00
+  ! ZEC-PERP: short 3.017 has no stop loss.
+
+0x90d916c5a7c78565efba2f67e0ce906604d6dc7a  (2026-10-22T19:19:44.288Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x9ea672d354cf733a767f93001899361892dff8e2  (2026-10-22T19:19:46.776Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x43fcad16012ee6e662ab4e3f6f2ec41fe97a3075  (2026-10-22T19:19:49.266Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xf31ef4dfc8fc872ca6f287c454d0471b3bfc0345  (2026-10-22T19:19:51.753Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xe344767259462836f99a38515a9eefa96510aebb  (2026-10-22T19:19:54.279Z)
+  WLD-PERP long 1 @ 0.5604911668 | TP 0% SL 100% | SL 0.4678 x 6193
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x8f6aace1c716ea1d84b74eb4e25bcf0f67343e72  (2026-10-22T19:19:56.780Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xf8578160df53725c4729a78ad344f2354ff856d0  (2026-10-22T19:19:59.267Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x12f267b594ac3d8c6ade23e55dcfe00794744261  (2026-10-22T19:20:01.199Z)
+  XRP-PERP short 33446.1 @ 1.343104112 | TP 0% SL 6% | SL 1.4 x 1894.4
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: stop loss covers 6% of the 33446.1 short; the rest has no stop.
+
+0x6fb18eb147bb42e4aea6485e79477f7e25ce2f30  (2026-10-22T19:20:03.700Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x993f981eb859799d2a5f57db4a75e0a37ffe16af  (2026-10-22T19:20:05.635Z)
+  WLD-PERP short 18589 @ 0.5423943999 | TP 0% SL 57% | SL 0.6 x 10598
+  STT held by stops 0.15, claimable 0.00
+  ! WLD-PERP: stop loss covers 57% of the 18589 short; the rest has no stop.
+
+0x8919349447126ad6958af4fb610eca70347361da  (2026-10-22T19:20:08.128Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x327861124ea6d7e4ee3c61d18b7b978e53b16dc8  (2026-10-22T19:20:10.067Z)
+  XRP-PERP short 1723.2 @ 1.296570857 | TP 100% SL 0% | TP 1.2532 x 12843.2
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 1723.2 has no stop loss.
+
+0xcd9f3edf7c189351ceb0400279d7cf51cebb15b0  (2026-10-22T19:20:12.586Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x9e799e54d78926bc184e8eeebf129d8311808e28  (2026-10-22T19:20:15.085Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xbb5e1bf7644c03459b3f92ea482f47dc73f72f07  (2026-10-22T19:20:17.062Z)
+  NEAR-PERP long 304.2 @ 5.300876134 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.14165 @ 82342.22809 | TP 81% SL 81% | SL 77762.6 x 0.11485, TP 85948.2 x 0.11485
+  HYPE-PERP long 36.72 @ 78.55 | TP 100% SL 100% | SL 74.62 x 36.72, TP 82.48 x 36.72
+  SOL-PERP long 51.85 @ 103.55 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.9193 @ 2420.08402 | TP 0% SL 0% | no stops
+  STT held by stops 0.60, claimable 0.00
+  ! NEAR-PERP: long 304.2 has no stop loss.
+  ! BTC-PERP: stop loss covers 81% of the 0.14165 long; the rest has no stop.
+  ! BTC-PERP: take profit covers 81% of the 0.14165 long.
+  ! SOL-PERP: long 51.85 has no stop loss.
+  ! ETH-PERP: long 0.9193 has no stop loss.
+
+0xaf5fc780a3f189538a0751658a47a45d8077783a  (2026-10-22T19:20:19.556Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x0a4bbb589a513bf365505d382c86c34589d02062  (2026-10-22T19:20:22.046Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x53750f70620f85b874e26995225547e679c29387  (2026-10-22T19:20:24.545Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x5e7a5481e91aeb199e974bcba961a9aee1a21436  (2026-10-22T19:20:27.044Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x3c6306429f57ca3d189b90f8e142ab72c10fff3d  (2026-10-22T19:20:29.554Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x2e6c0cd1c011ec7e7a2d22fb464d7c63d53842b7  (2026-10-22T19:20:32.044Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x92b9b27565b7b61f1065dc7628937f22161c21f0  (2026-10-22T19:20:33.979Z)
+  SOL-PERP short 106.13 @ 104.9831978 | TP 100% SL 0% | TP 101.04 x 335.5
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 106.13 has no stop loss.
+
+0xa3da0ec3232d38aaa049fc80766333224da071ef  (2026-10-22T19:20:36.471Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x6f453ce07684bfefb81bedcdd5a8b1994a2404d0  (2026-10-22T19:20:39.008Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x4b91807d9f4ea7641df4ccb5d4abf46a7caf0b7b  (2026-10-22T19:20:41.564Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x85a7b99fc55b92aa6dc21eb1a201e3c16425e991  (2026-10-22T19:20:44.340Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x33c27e529eeabe395e4c3d9c62114147da888679  (2026-10-22T19:20:46.846Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xe857a40681a3e558d7d047aef24fb296562056e5  (2026-10-22T19:20:49.341Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xbd0b7968c3ac4e097ea1ccdcf2a9d102582c6d92  (2026-10-22T19:20:51.279Z)
+  SOL-PERP short 58.04 @ 103.8046645 | TP 100% SL 0% | TP 100.39 x 337.85
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 58.04 has no stop loss.
+
+0x3c85a44b59aef479f4a5758a524137857f7f21fc  (2026-10-22T19:20:54.049Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x3d2ff83e92a1a9080f74a7fb977a1ab2ca6b9a97  (2026-10-22T19:20:56.542Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xba80435f498a645d46e9d9c521cda07eefcae09e  (2026-10-22T19:20:59.321Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xf0ed3f8a524d724a777a344444d5167c46d5ffe9  (2026-10-22T19:21:02.136Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x6bd7a0a59805c2e744eb266c0a7b3ba8ec92d77c  (2026-10-22T19:21:04.625Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x750a37b79570eb7e89e55fe978da0625173a6a51  (2026-10-22T19:21:07.113Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb65bc4c967220ec17cde413358e38f2d1e96d5af  (2026-10-22T19:21:10.828Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x63ea8ffe28a68a3e1fbb1f4d631896076c1c3c06  (2026-10-22T19:21:13.334Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x6da186b5b8c6e303b005292050cb474b1c6abe32  (2026-10-22T19:21:15.781Z)
+  NEAR-PERP short 2343.9 @ 4.905190207 | TP 100% SL 0% | TP 4.1 x 7189.6
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 2343.9 has no stop loss.
+
+0x6a3f8d6ed65eebd8d9d26a7479ebed91221a5961  (2026-10-22T19:21:17.726Z)
+  SOL-PERP short 70.88 @ 103.7481814 | TP 100% SL 0% | TP 100.13 x 286.59
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: short 70.88 has no stop loss.
+
+0x0a7d743136bdae342825d2e13c6a1789562914ae  (2026-10-22T19:21:19.654Z)
+  HYPE-PERP short 18.49 @ 77.85606203 | TP 100% SL 0% | TP 74.86 x 363.03
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: short 18.49 has no stop loss.
+
+0x2e5e7f9bd71aa5f51e25d7aa3bb42c1693951eee  (2026-10-22T19:21:22.446Z)
+  BTC-PERP long 0.01511 @ 82840 | TP 0% SL 0% | no stops
+  ZRO-PERP short 21.2 @ 1.7608 | TP 0% SL 0% | no stops
+  XRP-PERP short 1025.7 @ 1.3004 | TP 100% SL 0% | TP 1.25 x 1025.7
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.01511 has no stop loss.
+  ! ZRO-PERP: short 21.2 has no stop loss.
+  ! XRP-PERP: short 1025.7 has no stop loss.
+
+0xb084104c4f7329aed3cf8f564cadf931ba508f44  (2026-10-22T19:21:24.942Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x7f92febc056cc909915ca7e8d7599de58ff055b7  (2026-10-22T19:21:27.432Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x34947c5f820587e6ebe764f97c88e42065cc549f  (2026-10-22T19:21:29.920Z)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x7bd0d2251b5def5c70f1d1e8d3425441d293679f  (2026-10-22T19:21:32.403Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xe590521a1c8bc8440378403300e6d0fb20aef8ac  (2026-10-22T19:21:34.326Z)
+  HYPE-PERP short 16.06 @ 78.34963914 | TP 100% SL 0% | TP 75.56 x 435.35
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: short 16.06 has no stop loss.
+
+0x6d06d484ca21335b761c03da99dcbc510fa5cacc  (2026-10-22T19:21:36.260Z)
+  XRP-PERP short 5380.5 @ 1.299723469 | TP 100% SL 0% | TP 1.2577 x 26651.6
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 5380.5 has no stop loss.
+
+0x308de0f3452e7b151205a517acfe4d606f7c8ce9  (2026-10-22T19:21:39.134Z)
+  HYPE-PERP short 4.46 @ 78.57825052 | TP 100% SL 0% | TP 75.81 x 277.74
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: short 4.46 has no stop loss.
+
+0x96f1179bc546492e49d366c6c3a528269fdac398  (2026-10-22T19:21:41.088Z)
+  SOL-PERP short 1.2 @ 103.6257003 | TP 0% SL 0% | no stops
+  BTC-PERP short 0.01222 @ 81787.8 | TP 0% SL 0% | no stops
+  XRP-PERP short 766.6 @ 1.3044 | TP 100% SL 100% | SL 1.45 x 766.6, TP 1.25 x 766.6
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: short 1.2 has no stop loss.
+  ! BTC-PERP: short 0.01222 has no stop loss.
+
+0x435b8f475d822a4d20d34066cc694acf2f9b5def  (2026-10-22T19:21:43.022Z)
+  BTC-PERP short 0.1767 @ 82476.44038 | TP 0% SL 100% | SL 86900 x 0.64528
+  ETH-PERP short 10.9709 @ 2444.343266 | TP 0% SL 0% | no stops
+  HYPE-PERP short 131.53 @ 79.96952482 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: short 10.9709 has no stop loss.
+  ! HYPE-PERP: short 131.53 has no stop loss.
+
+0xda4ae49f4ffc596dfb060de4c9002e39c44033be  (2026-10-22T19:21:45.785Z)
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xba2d7748400357a2b159a4e5eda8f3b5fbf6e8e1  (2026-10-22T19:21:47.709Z)
+  BTC-PERP long 0.41937 @ 80741.28377 | TP 100% SL 0% | TP 86666 x 0.41937
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.41937 has no stop loss.
+
+0x8efe681689d69704fde10fc5dfb17d9760ad4ed4  (2026-10-22T19:21:49.774Z)
+  LINK-PERP long 28.1 @ 12.969 | TP 100% SL 0% | TP 13.617 x 28.1
+  AVAX-PERP long 41.3 @ 10.266 | TP 100% SL 0% | TP 10.779 x 41.3
+  SUI-PERP long 72 @ 1.0588 | TP 100% SL 0% | TP 1.1117 x 72
+  XRP-PERP long 404 @ 1.3719 | TP 100% SL 0% | TP 1.4405 x 404
+  HYPE-PERP long 26.06 @ 82.05 | TP 100% SL 0% | TP 86.15 x 26.06
+  BNB-PERP long 0.948 @ 746.427 | TP 100% SL 0% | TP 783.748 x 0.948
+  SOL-PERP long 13.59 @ 109 | TP 100% SL 0% | TP 114.45 x 13.59
+  ETH-PERP long 0.6423 @ 2529.183045 | TP 100% SL 0% | TP 2655.64 x 0.6423
+  STT held by stops 1.20, claimable 0.00
+  ! LINK-PERP: long 28.1 has no stop loss.
+  ! AVAX-PERP: long 41.3 has no stop loss.
+  ! SUI-PERP: long 72 has no stop loss.
+  ! XRP-PERP: long 404 has no stop loss.
+  ! HYPE-PERP: long 26.06 has no stop loss.
+  ! BNB-PERP: long 0.948 has no stop loss.
+  ! SOL-PERP: long 13.59 has no stop loss.
+  ! ETH-PERP: long 0.6423 has no stop loss.
+
+0xde9c4026f09e6a57898e06d70b5f7de5a290b65a  (2026-10-22T19:21:52.799Z)
+  LINK-PERP long 13.4 @ 12.938 | TP 100% SL 0% | TP 13.585 x 13.4
+  AVAX-PERP long 37.5 @ 10.248 | TP 100% SL 0% | TP 10.76 x 37.5
+  SUI-PERP long 101 @ 1.0574 | TP 100% SL 0% | TP 1.1103 x 101
+  XRP-PERP long 348.6 @ 1.3696 | TP 100% SL 0% | TP 1.4381 x 348.6
+  HYPE-PERP long 34.01 @ 82.06641576 | TP 100% SL 0% | TP 86.17 x 34.01
+  BNB-PERP long 0.45 @ 746.546 | TP 100% SL 0% | TP 783.873 x 0.45
+  ETH-PERP long 0.5552 @ 2529.712876 | TP 100% SL 0% | TP 2656.2 x 0.5552
+  SOL-PERP long 14.21 @ 109.05 | TP 100% SL 0% | TP 114.5 x 14.21
+  STT held by stops 1.20, claimable 0.00
+  ! LINK-PERP: long 13.4 has no stop loss.
+  ! AVAX-PERP: long 37.5 has no stop loss.
+  ! SUI-PERP: long 101 has no stop loss.
+  ! XRP-PERP: long 348.6 has no stop loss.
+  ! HYPE-PERP: long 34.01 has no stop loss.
+  ! BNB-PERP: long 0.45 has no stop loss.
+  ! ETH-PERP: long 0.5552 has no stop loss.
+  ! SOL-PERP: long 14.21 has no stop loss.
+
+0x3c28ab7604afdc74c6907896b6e29546c13422d1  (2026-10-22T19:21:54.879Z)
+  LINK-PERP long 27.4 @ 12.974 | TP 100% SL 0% | TP 13.623 x 27.4
+  AVAX-PERP long 18.2 @ 10.274 | TP 100% SL 0% | TP 10.788 x 18.2
+  SUI-PERP long 206 @ 1.0602 | TP 100% SL 0% | TP 1.1132 x 206
+  XRP-PERP long 177.6 @ 1.3711 | TP 100% SL 0% | TP 1.4397 x 177.6
+  HYPE-PERP long 18.66 @ 82.34348875 | TP 100% SL 0% | TP 86.46 x 18.66
+  BNB-PERP long 0.473 @ 746.617 | TP 100% SL 0% | TP 783.948 x 0.473
+  SOL-PERP long 13.56 @ 109.0432375 | TP 100% SL 0% | TP 114.5 x 13.56
+  ETH-PERP long 0.6457 @ 2528.223231 | TP 100% SL 0% | TP 2654.63 x 0.6457
+  STT held by stops 1.20, claimable 0.00
+  ! LINK-PERP: long 27.4 has no stop loss.
+  ! AVAX-PERP: long 18.2 has no stop loss.
+  ! SUI-PERP: long 206 has no stop loss.
+  ! XRP-PERP: long 177.6 has no stop loss.
+  ! HYPE-PERP: long 18.66 has no stop loss.
+  ! BNB-PERP: long 0.473 has no stop loss.
+  ! SOL-PERP: long 13.56 has no stop loss.
+  ! ETH-PERP: long 0.6457 has no stop loss.
+
+0x1318a85bd2a368efa8cbe64bb54d4d83df815852  (2026-10-22T19:21:56.914Z)
+  LINK-PERP long 24.5 @ 12.962 | TP 100% SL 0% | TP 13.61 x 24.5
+  SUI-PERP long 175 @ 1.0586 | TP 100% SL 0% | TP 1.1115 x 175
+  XRP-PERP long 312.5 @ 1.3712 | TP 100% SL 0% | TP 1.4398 x 312.5
+  HYPE-PERP long 18.23 @ 82.3 | TP 100% SL 0% | TP 86.41 x 18.23
+  SOL-PERP long 13.05 @ 108.91 | TP 100% SL 0% | TP 114.36 x 13.05
+  ETH-PERP long 0.6117 @ 2521.674604 | TP 100% SL 0% | TP 2647.76 x 0.6117
+  STT held by stops 0.90, claimable 0.00
+  ! LINK-PERP: long 24.5 has no stop loss.
+  ! SUI-PERP: long 175 has no stop loss.
+  ! XRP-PERP: long 312.5 has no stop loss.
+  ! HYPE-PERP: long 18.23 has no stop loss.
+  ! SOL-PERP: long 13.05 has no stop loss.
+  ! ETH-PERP: long 0.6117 has no stop loss.
+
+0xd094a20dd12114328c5cbc44060f59792557d12f  (2026-10-22T19:21:59.693Z)
+  HYPE-PERP long 12.32 @ 82.29 | TP 100% SL 0% | TP 86.4 x 12.32
+  XRP-PERP long 167.3 @ 1.3715 | TP 100% SL 0% | TP 1.4401 x 167.3
+  LINK-PERP long 27 @ 12.989 | TP 100% SL 0% | TP 13.638 x 27
+  SUI-PERP long 203 @ 1.0602 | TP 100% SL 0% | TP 1.1132 x 203
+  SOL-PERP long 12.23 @ 108.9024939 | TP 100% SL 0% | TP 114.35 x 12.23
+  ETH-PERP long 0.9295 @ 2521.712712 | TP 100% SL 0% | TP 2647.8 x 0.9295
+  STT held by stops 0.90, claimable 0.00
+  ! HYPE-PERP: long 12.32 has no stop loss.
+  ! XRP-PERP: long 167.3 has no stop loss.
+  ! LINK-PERP: long 27 has no stop loss.
+  ! SUI-PERP: long 203 has no stop loss.
+  ! SOL-PERP: long 12.23 has no stop loss.
+  ! ETH-PERP: long 0.9295 has no stop loss.
+
+0xd631b6253990e7669e8cb5100c375ed2f8142122  (2026-10-22T19:22:02.016Z)
+  LINK-PERP long 13.5 @ 12.999 | TP 100% SL 0% | TP 13.649 x 13.5
+  SUI-PERP long 320 @ 1.063687188 | TP 100% SL 0% | TP 1.1169 x 320
+  AVAX-PERP long 21.2 @ 10.335 | TP 100% SL 0% | TP 10.852 x 21.2
+  XRP-PERP long 93.6 @ 1.375 | TP 100% SL 0% | TP 1.4438 x 93.6
+  HYPE-PERP long 13.92 @ 82.58 | TP 100% SL 0% | TP 86.71 x 13.92
+  SOL-PERP long 12.34 @ 108.91 | TP 100% SL 0% | TP 114.36 x 12.34
+  ETH-PERP long 0.5842 @ 2521.8 | TP 100% SL 0% | TP 2647.89 x 0.5842
+  STT held by stops 1.05, claimable 0.00
+  ! LINK-PERP: long 13.5 has no stop loss.
+  ! SUI-PERP: long 320 has no stop loss.
+  ! AVAX-PERP: long 21.2 has no stop loss.
+  ! XRP-PERP: long 93.6 has no stop loss.
+  ! HYPE-PERP: long 13.92 has no stop loss.
+  ! SOL-PERP: long 12.34 has no stop loss.
+  ! ETH-PERP: long 0.5842 has no stop loss.
+
+0x3982e3930efd87fe1bad4cd66e2c1fb38f306501  (2026-10-22T19:22:04.066Z)
+  LINK-PERP long 13.2 @ 13.028 | TP 100% SL 0% | TP 13.679 x 13.2
+  AVAX-PERP long 17.5 @ 10.346 | TP 100% SL 0% | TP 10.863 x 17.5
+  SUI-PERP long 186 @ 1.0648 | TP 100% SL 0% | TP 1.118 x 186
+  XRP-PERP long 335.2 @ 1.3753 | TP 100% SL 0% | TP 1.4441 x 335.2
+  HYPE-PERP long 12.45 @ 82.56 | TP 100% SL 0% | TP 86.69 x 12.45
+  ETH-PERP long 0.5878 @ 2519.576222 | TP 100% SL 0% | TP 2645.56 x 0.5878
+  SOL-PERP long 15.17 @ 108.48 | TP 100% SL 0% | TP 113.9 x 15.17
+  STT held by stops 1.05, claimable 0.00
+  ! LINK-PERP: long 13.2 has no stop loss.
+  ! AVAX-PERP: long 17.5 has no stop loss.
+  ! SUI-PERP: long 186 has no stop loss.
+  ! XRP-PERP: long 335.2 has no stop loss.
+  ! HYPE-PERP: long 12.45 has no stop loss.
+  ! ETH-PERP: long 0.5878 has no stop loss.
+  ! SOL-PERP: long 15.17 has no stop loss.
+
+0x36f3c4b4091efe5e8d8c12a777013c5db5887e2c  (2026-10-22T19:22:06.107Z)
+  LINK-PERP long 15.8 @ 12.959 | TP 100% SL 0% | TP 13.607 x 15.8
+  AVAX-PERP long 10.9 @ 10.313 | TP 100% SL 0% | TP 10.829 x 10.9
+  SUI-PERP long 67 @ 1.0588 | TP 100% SL 0% | TP 1.1117 x 67
+  DOGE-PERP long 880 @ 0.0847 | TP 100% SL 0% | TP 0.08894 x 880
+  HYPE-PERP long 12.18 @ 82.47 | TP 100% SL 0% | TP 86.59 x 12.18
+  ETH-PERP long 0.5651 @ 2515.312895 | TP 100% SL 0% | TP 2641.08 x 0.5651
+  SOL-PERP long 22.66 @ 108.36 | TP 100% SL 0% | TP 113.78 x 22.66
+  STT held by stops 1.05, claimable 0.00
+  ! LINK-PERP: long 15.8 has no stop loss.
+  ! AVAX-PERP: long 10.9 has no stop loss.
+  ! SUI-PERP: long 67 has no stop loss.
+  ! DOGE-PERP: long 880 has no stop loss.
+  ! HYPE-PERP: long 12.18 has no stop loss.
+  ! ETH-PERP: long 0.5651 has no stop loss.
+  ! SOL-PERP: long 22.66 has no stop loss.
+
+0x2bfe0d4f27a1749e8b37352fc1b6f5160d0b1480  (2026-10-22T19:22:08.139Z)
+  DOGE-PERP long 1310 @ 0.08456 | TP 100% SL 0% | TP 0.08879 x 1310
+  AVAX-PERP long 11.3 @ 10.288 | TP 100% SL 0% | TP 10.802 x 11.3
+  HYPE-PERP long 13.21 @ 82.33080242 | TP 100% SL 0% | TP 86.45 x 13.21
+  SUI-PERP long 310 @ 1.0578 | TP 100% SL 0% | TP 1.1107 x 310
+  SOL-PERP long 10.34 @ 108.66 | TP 100% SL 0% | TP 114.09 x 10.34
+  ETH-PERP long 0.7903 @ 2517.324972 | TP 100% SL 0% | TP 2643.19 x 0.7903
+  STT held by stops 0.90, claimable 0.00
+  ! DOGE-PERP: long 1310 has no stop loss.
+  ! AVAX-PERP: long 11.3 has no stop loss.
+  ! HYPE-PERP: long 13.21 has no stop loss.
+  ! SUI-PERP: long 310 has no stop loss.
+  ! SOL-PERP: long 10.34 has no stop loss.
+  ! ETH-PERP: long 0.7903 has no stop loss.
+
+0x2500871a369eb64b11d5b3f4a0df889c0f6607ef  (2026-10-22T19:22:10.094Z)
+  VVV-PERP short 13.42 @ 22.446 | TP 0% SL 0% | no stops
+  XRP-PERP short 1550.5 @ 1.295906869 | TP 100% SL 100% | SL 1.4903 x 1550.5, TP 1.1015 x 1550.5
+  ETH-PERP short 4.1592 @ 2415.674928 | TP 0% SL 0% | no stops
+  STT held by stops 0.30, claimable 0.00
+  ! VVV-PERP: short 13.42 has no stop loss.
+  ! ETH-PERP: short 4.1592 has no stop loss.
+
+0x952dc46c20bc806cf012fb68652f272d4c86d9b5  (2026-10-22T19:22:12.635Z)
+  BNB-PERP long 3.4 @ 736.032 | TP 0% SL 0% | no stops
+  SOL-PERP long 114.6 @ 104.6816265 | TP 0% SL 0% | no stops
+  HYPE-PERP long 62.8 @ 79.40598726 | TP 0% SL 0% | no stops
+  ETH-PERP long 4.771 @ 2514.944977 | TP 0% SL 0% | no stops
+  BTC-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! BNB-PERP: long 3.4 has no stop loss.
+  ! SOL-PERP: long 114.6 has no stop loss.
+  ! HYPE-PERP: long 62.8 has no stop loss.
+  ! ETH-PERP: long 4.771 has no stop loss.
+  ! BTC-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x32000355392685532eacd905105541081d5deb30  (2026-10-22T19:22:14.612Z)
+  SOL-PERP short 47.61 @ 105.7762559 | TP 100% SL 0% | TP 97.22 x 47.61
+  HYPE-PERP short 152.53 @ 80.07 | TP 100% SL 0% | TP 73.3 x 152.53
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: short 47.61 has no stop loss.
+  ! HYPE-PERP: short 152.53 has no stop loss.
+
+0x56345f1a52adfbaa1b0ed163706f985dbe6341f0  (2026-10-22T19:22:16.590Z)
+  HYPE-PERP short 12.51 @ 80.07 | TP 100% SL 0% | TP 68.55 x 12.51
+  SOL-PERP short 150.59 @ 104.4706919 | TP 100% SL 0% | TP 79.7 x 130.65, TP 98.16 x 19.94
+  STT held by stops 0.45, claimable 0.00
+  ! HYPE-PERP: short 12.51 has no stop loss.
+  ! SOL-PERP: short 150.59 has no stop loss.
+
+0x597c3e365fc2b25abe7d69430a93f7f3d54be5fc  (2026-10-22T19:22:18.545Z)
+  HYPE-PERP short 23 @ 80.06 | TP 100% SL 0% | TP 67.75 x 23
+  DOGE-PERP short 59550 @ 0.0813 | TP 100% SL 0% | TP 0.00081 x 59550
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: short 23 has no stop loss.
+  ! DOGE-PERP: short 59550 has no stop loss.
+
+0xe246d3396d7c3c4f91fc2f8aa700787b44dbe20e  (2026-10-22T19:22:21.080Z)
+  BTC-PERP short 0.00838 @ 81609.5 | TP 100% SL 0% | TP 74056.2 x 0.00838
+  HYPE-PERP long 17.42 @ 81.87298507 | TP 100% SL 0% | TP 89.66 x 17.42
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! BTC-PERP: short 0.00838 has no stop loss.
+  ! HYPE-PERP: long 17.42 has no stop loss.
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xbe9ccd1c7c7d4ff8f81d7bb8999cd86ce1e9d172  (2026-10-22T19:22:23.079Z)
+  HYPE-PERP long 18.44 @ 78.87099026 | TP 100% SL 0% | TP 91.18 x 18.44
+  BTC-PERP short 0.05708 @ 81630.4 | TP 100% SL 0% | TP 76305.1 x 0.05708
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: long 18.44 has no stop loss.
+  ! BTC-PERP: short 0.05708 has no stop loss.
+
+0x8fd6df6490d019c6eefd168421c8e8b7430d2755  (2026-10-22T19:22:25.039Z)
+  SOL-PERP long 39.19 @ 104.83 | TP 100% SL 100% | TP 118 x 39.19, SL 95 x 39.19
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x2a0b6ce3b8f754387ef75b7db7c6ea1b1ee5dc4e  (2026-10-22T19:22:26.988Z)
+  BTC-PERP long 0.02731 @ 82130.3 | TP 100% SL 0% | wrong side 16313.4 x 0.05879, TP 147912.1 x 0.0861
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.02731 has no stop loss.
+  ! BTC-PERP: 1 stop(s) are on the wrong side for a long and cannot reduce it.
+
+0xadfc83ed29add006ddbbf365e6bd88cbbb443fe2  (2026-10-22T19:22:28.928Z)
+  BTC-PERP short 0.20777 @ 81713.7 | TP 100% SL 0% | TP 817.1 x 0.20777
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.20777 has no stop loss.
+
+0x63fd0d7ebb922e6a40388352e47bbcba6717090a  (2026-10-22T19:22:30.875Z)
+  BTC-PERP long 0.20322 @ 81954.77103 | TP 100% SL 0% | TP 163909.5 x 0.20322
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: long 0.20322 has no stop loss.
+
+0x1ea8e7c49251fe10d71be325a7d17f1efaad7b78  (2026-10-22T19:22:33.276Z)
+  BTC-PERP long 0.16209 @ 81419.2 | TP 0% SL 100% | SL 80379.3 x 0.16209
+  STT held by stops 0.15, claimable 0.00
+  ok: nothing to fix
+
+0x2c5b30e51e020c4954358d97c34710c811980719  (2026-10-22T19:22:35.212Z)
+  BTC-PERP long 0.00122 @ 81148.24918 | TP 0% SL 50% | SL 50 x 0.00061
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: stop loss covers 50% of the 0.00122 long; the rest has no stop.
+
+0x8fd912e22cb763cbd56fdb7af8417d409749b57d  (2026-10-22T19:22:37.150Z)
+  HYPE-PERP short 219.82 @ 81.45011191 | TP 100% SL 0% | TP 75 x 219.82
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: short 219.82 has no stop loss.
+
+0xc7298d49e017b8e79cc9e4d847f34022d8468f3f  (2026-10-22T19:22:39.098Z)
+  XRP-PERP short 13181.5 @ 1.370917614 | TP 100% SL 0% | TP 1.25 x 13181.5
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 13181.5 has no stop loss.
+
+0x90907ffa665a12635782efee5699a35838507ff9  (2026-10-22T19:22:41.055Z)
+  BTC-PERP long 0.44257 @ 82608.69268 | TP 0% SL 0% | no stops
+  DOGE-PERP long 12140 @ 0.08224 | TP 100% SL 0% | TP 0.08399 x 12140
+  SUI-PERP long 951 @ 1.0495 | TP 100% SL 0% | TP 1.12 x 951
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.44257 has no stop loss.
+  ! DOGE-PERP: long 12140 has no stop loss.
+  ! SUI-PERP: long 951 has no stop loss.
+
+0x6b4ae00df65ec8e13bbbed11f64a3bfb55eea540  (2026-10-22T19:22:43.008Z)
+  ZEC-PERP long 0.507 @ 1331.72303 | TP 0% SL 0% | no stops
+  WLD-PERP long 848 @ 0.5319654674 | TP 100% SL 0% | TP 6 x 659, TP 2 x 2732
+  STT held by stops 0.30, claimable 0.00
+  ! ZEC-PERP: long 0.507 has no stop loss.
+  ! WLD-PERP: long 848 has no stop loss.
+
+0x833037296693cb5e099e474d6e0c85e752b2976c  (2026-10-22T19:22:45.511Z)
+  DOGE-PERP short 1110 @ 0.08003 | TP 0% SL 0% | no stops
+  WLD-PERP short 83 @ 0.5687 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.20647 @ 82902.15672 | TP 0% SL 0% | no stops
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! DOGE-PERP: short 1110 has no stop loss.
+  ! WLD-PERP: short 83 has no stop loss.
+  ! BTC-PERP: long 0.20647 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x4d20afb9beecddf3b60bec5b061f948e512c5bec  (2026-10-22T19:22:47.733Z)
+  SOL-PERP long 4.66 @ 105.1021353 | TP 100% SL 100% | SL 100 x 4.66, TP 110 x 4.66
+  STT held by stops 0.30, claimable 0.30
+  ! 0.30 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x1fc0b672677b394301b141ecaf4a1be359743385  (2026-10-22T19:22:49.714Z)
+  NEAR-PERP long 1729 @ 5.201766374 | TP 100% SL 100% | TP 5.7 x 1729, SL 4.5 x 1729
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0xc6467c8e05a5462a5e9597a3e379bddf9fba6254  (2026-10-22T19:22:51.662Z)
+  NEAR-PERP long 1372.1 @ 5.202237359 | TP 100% SL 100% | SL 4.6 x 1372.1, TP 5.7 x 1372.1
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x1a3fc0892d717b546ccddf6ad6885327e4a638f8  (2026-10-22T19:22:54.210Z)
+  XRP-PERP long 464.5 @ 1.3285 | TP 0% SL 0% | wrong side 20 x 10
+  HYPE-PERP short 2.28 @ 78.41 | TP 0% SL 0% | wrong side 30 x 0.5
+  ETH-PERP short 0.0065 @ 2401.33 | TP 0% SL 0% | no stops
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.60, claimable 0.00
+  ! XRP-PERP: long 464.5 has no stop loss.
+  ! XRP-PERP: 1 stop(s) are on the wrong side for a long and cannot reduce it.
+  ! HYPE-PERP: short 2.28 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) are on the wrong side for a short and cannot reduce it.
+  ! ETH-PERP: short 0.0065 has no stop loss.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xbadef1f1aa8845121e681f7a5a29c118a813a69d  (2026-10-22T19:22:56.729Z)
+  DOGE-PERP short 700 @ 0.07899 | TP 0% SL 0% | no stops
+  SUI-PERP long 493 @ 0.9906 | TP 0% SL 0% | no stops
+  ZEC-PERP short 0.3 @ 1259.171 | TP 0% SL 0% | no stops
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! DOGE-PERP: short 700 has no stop loss.
+  ! SUI-PERP: long 493 has no stop loss.
+  ! ZEC-PERP: short 0.3 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x91e9339d2a9131f604d97a6d94da0467cf0deb88  (2026-10-22T19:22:58.681Z)
+  HYPE-PERP short 1 @ 78.53 | TP 0% SL 0% | no stops
+  NEAR-PERP short 20 @ 5.111 | TP 0% SL 80% | SL 20 x 6, SL 10 x 10
+  DOGE-PERP long 5670 @ 0.08017 | TP 0% SL 0% | no stops
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: short 1 has no stop loss.
+  ! NEAR-PERP: stop loss covers 80% of the 20 short; the rest has no stop.
+  ! DOGE-PERP: long 5670 has no stop loss.
+
+0xfe90f3789066d51db05616a0c4380bc228fafcb1  (2026-10-22T19:23:01.173Z)
+  DOGE-PERP long 4070 @ 0.08044 | TP 0% SL 0% | no stops
+  BNB-PERP short 0.1 @ 740.186 | TP 0% SL 0% | no stops
+  ETH-PERP short 0.03 @ 2438.71 | TP 0% SL 0% | no stops
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! DOGE-PERP: long 4070 has no stop loss.
+  ! BNB-PERP: short 0.1 has no stop loss.
+  ! ETH-PERP: short 0.03 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xbb9ea349be51daa5b3e035c135fa6a217ef9b875  (2026-10-22T19:23:03.147Z)
+  BTC-PERP long 0.02867 @ 82169.40572 | TP 100% SL 100% | TP 85000 x 0.02867, SL 80000 x 0.02867
+  STT held by stops 0.30, claimable 0.15
+  ! 0.15 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xe40ddf0a07416b35a86001681aa930d0ed5d4da5  (2026-10-22T19:23:05.086Z)
+  BTC-PERP short 0.22217 @ 82116.53154 | TP 100% SL 0% | TP 79520 x 0.22217
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.22217 has no stop loss.
+
+0xed5048cf4004e47e7b3f10d784ad3c6b682a83d0  (2026-10-22T19:23:07.021Z)
+  BTC-PERP short 0.22287 @ 82090.24823 | TP 100% SL 0% | TP 79494 x 0.22287
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.22287 has no stop loss.
+
+0x9a041f5398b227af1b4133ff5d58a2643943dd84  (2026-10-22T19:23:08.953Z)
+  BTC-PERP short 0.22358 @ 82054.17721 | TP 100% SL 0% | TP 79431 x 0.22358
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.22358 has no stop loss.
+
+0x8baa54d001eb701765a2d4d60de73adc53279b4b  (2026-10-22T19:23:10.896Z)
+  BTC-PERP short 0.22495 @ 82068.0303 | TP 100% SL 0% | TP 79447 x 0.22495
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.22495 has no stop loss.
+
+0x9ba15224fc6f5eadb8f125df03de6d3ca548a54f  (2026-10-22T19:23:12.827Z)
+  BTC-PERP short 0.22308 @ 81993.25533 | TP 100% SL 0% | TP 79422 x 0.22308
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.22308 has no stop loss.
+
+0x953d94953cb0e285c1fda179c1436b16064b2cfc  (2026-10-22T19:23:14.761Z)
+  BTC-PERP short 0.22296 @ 82145.23573 | TP 100% SL 0% | TP 79493 x 0.22296
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: short 0.22296 has no stop loss.
+
+0x3ce165cfd2434e181648c80507e13a81ff6419c6  (2026-10-22T19:23:17.471Z)
+  HYPE-PERP long 56.3 @ 81.76 | TP 100% SL 0% | TP 100 x 56.3
+  NEAR-PERP long 460.8 @ 5.1111 | TP 100% SL 0% | TP 6 x 460.8
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! HYPE-PERP: long 56.3 has no stop loss.
+  ! NEAR-PERP: long 460.8 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x2ea67f52869c49cc51600e0501241a08d75d5486  (2026-10-22T19:23:19.421Z)
+  NEAR-PERP short 1020.7 @ 4.926232595 | TP 100% SL 100% | SL 5.6 x 1020.7, TP 4.2 x 1020.7
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x47e7fbe83a79ae08218b3f94457c3f6e2ae6ff4e  (2026-10-22T19:23:21.356Z)
+  ZEC-PERP long 0.405 @ 1233.096 | TP 0% SL 0% | no stops
+  NEAR-PERP long 202.7 @ 4.937200493 | TP 0% SL 0% | no stops
+  ETH-PERP short 0.7967 @ 2389.193343 | TP 31% SL 0% | TP 2309 x 0.2461
+  ZRO-PERP long 1607.6 @ 1.775462466 | TP 0% SL 0% | no stops
+  XRP-PERP long 628.3 @ 1.3324 | TP 0% SL 0% | no stops
+  DOGE-PERP long 9220 @ 0.08174 | TP 0% SL 0% | no stops
+  SOL-PERP long 15.24 @ 106.0138189 | TP 0% SL 0% | no stops
+  STT held by stops 0.15, claimable 0.00
+  ! ZEC-PERP: long 0.405 has no stop loss.
+  ! NEAR-PERP: long 202.7 has no stop loss.
+  ! ETH-PERP: take profit covers 31% of the 0.7967 short.
+  ! ETH-PERP: short 0.7967 has no stop loss.
+  ! ZRO-PERP: long 1607.6 has no stop loss.
+  ! XRP-PERP: long 628.3 has no stop loss.
+  ! DOGE-PERP: long 9220 has no stop loss.
+  ! SOL-PERP: long 15.24 has no stop loss.
+
+0x5909bb8b193c5e228163c4c4aec99bccb03292ba  (2026-10-22T19:23:23.313Z)
+  BTC-PERP long 0.2005 @ 80884.32812 | TP 32% SL 100% | SL 70000 x 0.2005, TP 86000 x 0.06461
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: take profit covers 32% of the 0.2005 long.
+
+0x4b2a10060366e1b41fab2c334d2b240be41f2d0a  (2026-10-22T19:23:25.272Z)
+  SUI-PERP long 9581 @ 0.9814254879 | TP 100% SL 0% | TP 1.1341 x 9581
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: long 9581 has no stop loss.
+
+0x53d77c33948644aa418a1cf9a0859f41206ea63f  (2026-10-22T19:23:27.229Z)
+  SUI-PERP short 4377 @ 0.9781033356 | TP 100% SL 0% | TP 0.8376 x 4377
+  DOGE-PERP short 113350 @ 0.08368 | TP 100% SL 0% | TP 0.03747 x 113350
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: short 4377 has no stop loss.
+  ! DOGE-PERP: short 113350 has no stop loss.
+
+0xa882c43448b181546fd31cd692a933b86ac104d8  (2026-10-22T19:23:29.185Z)
+  SUI-PERP short 4565 @ 0.9786799562 | TP 100% SL 0% | TP 0.6923 x 4565
+  DOGE-PERP short 113720 @ 0.08374 | TP 100% SL 0% | TP 0.06918 x 113720
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: short 4565 has no stop loss.
+  ! DOGE-PERP: short 113720 has no stop loss.
+
+0xa026258e5e29381a69eee25a02f3641470d9c937  (2026-10-22T19:23:31.145Z)
+  SUI-PERP short 4503 @ 0.9795678881 | TP 100% SL 0% | TP 0.8496 x 4503
+  DOGE-PERP short 113700 @ 0.08376 | TP 100% SL 0% | TP 0.06499 x 113700
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: short 4503 has no stop loss.
+  ! DOGE-PERP: short 113700 has no stop loss.
+
+0x609230725a14bb542fa038522768697e7afa03b9  (2026-10-22T19:23:33.110Z)
+  SUI-PERP short 2743 @ 0.9789371856 | TP 100% SL 0% | TP 0.6528 x 2743
+  DOGE-PERP short 113940 @ 0.08399417676 | TP 100% SL 0% | TP 0.04683 x 113940
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: short 2743 has no stop loss.
+  ! DOGE-PERP: short 113940 has no stop loss.
+
+0xb56217a29cc40a6bac166be3ffbed52fbc97448b  (2026-10-22T19:23:35.068Z)
+  SUI-PERP short 11079 @ 1.041710931 | TP 100% SL 0% | TP 0.9353 x 1968, TP 0.7879 x 9111
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: short 11079 has no stop loss.
+
+0x71ccad0d733e5e165374eb2bb588a30780eecbf2  (2026-10-22T19:23:37.562Z)
+  SUI-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xa64461b0af2456f970cc08d7e8fa6f6a83c1ed2b  (2026-10-22T19:23:39.496Z)
+  SUI-PERP long 15406 @ 0.9854658704 | TP 100% SL 0% | TP 1.0784 x 15406
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: long 15406 has no stop loss.
+
+0xad39ef097d7c118f1f09d2651b72230ddbee66a2  (2026-10-22T19:23:41.988Z)
+  SUI-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb9def511e65f9b08c309eeb58dfb81d18e047547  (2026-10-22T19:23:44.489Z)
+  SUI-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb02140307dd5e7d15ec795318375d490b3d0d1cc  (2026-10-22T19:23:46.420Z)
+  SUI-PERP long 16258 @ 0.9852539181 | TP 100% SL 0% | TP 1.068 x 16258
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: long 16258 has no stop loss.
+
+0x657c52b67bdf833a6000e8e7cabe406b5a177232  (2026-10-22T19:23:49.090Z)
+  SUI-PERP long 2799 @ 0.9849273669 | TP 100% SL 0% | TP 1.0689 x 2799
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: long 2799 has no stop loss.
+
+0x92d23e80fd8552cab675a7fc54aaf1aa7f95ff44  (2026-10-22T19:23:51.605Z)
+  SUI-PERP long 888 @ 0.9846 | TP 100% SL 0% | TP 1.078 x 888
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 888 has no stop loss.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xa75026a81501b81fe339adabfa88db4e4ba166e5  (2026-10-22T19:23:53.562Z)
+  SUI-PERP long 5590 @ 0.9868637209 | TP 100% SL 0% | TP 1.3182 x 5590
+  BTC-PERP short 0.21532 @ 83492.02708 | TP 100% SL 0% | TP 64802.8 x 0.21532
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 5590 has no stop loss.
+  ! BTC-PERP: short 0.21532 has no stop loss.
+
+0x3ee44f36977bf36feeaf4414ec56621ee7874b79  (2026-10-22T19:23:55.522Z)
+  SUI-PERP long 6831 @ 0.9945232177 | TP 100% SL 0% | TP 1.4784 x 6831
+  XRP-PERP short 12527.3 @ 1.365914191 | TP 100% SL 0% | TP 0.8979 x 12527.3
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 6831 has no stop loss.
+  ! XRP-PERP: short 12527.3 has no stop loss.
+
+0x59b6c749865cf8a3012baa334a580fac89071b2b  (2026-10-22T19:23:58.058Z)
+  SUI-PERP long 178 @ 0.9947 | TP 100% SL 0% | TP 1.7686 x 178
+  ETH-PERP orphan: 1 stop(s), 0 resting order(s)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! SUI-PERP: long 178 has no stop loss.
+  ! ETH-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xba832e101ad0858149a8a845f2db147fe8a65d7b  (2026-10-22T19:24:00.578Z)
+  SUI-PERP long 1888 @ 0.9948868644 | TP 100% SL 0% | TP 1.979 x 1888
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 1888 has no stop loss.
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xc13c62780bac94e74d973003d44e497f1bec0291  (2026-10-22T19:24:03.099Z)
+  SUI-PERP long 2110 @ 0.9943046445 | TP 100% SL 0% | TP 1.5478 x 2110
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 2110 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x5d6a8a7ac124cfa125e042847528c33bee381b2b  (2026-10-22T19:24:05.634Z)
+  SUI-PERP long 2055 @ 0.9930019951 | TP 100% SL 0% | TP 99 x 2055
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 2055 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x2b1acbc88da737ca753abfeba7369f8838387a30  (2026-10-22T19:24:08.158Z)
+  SUI-PERP long 1911 @ 0.9931 | TP 100% SL 0% | TP 1.9858 x 1911
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SUI-PERP: long 1911 has no stop loss.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x4bb677f21d6a83d6941da7c0338ff1432141d6ac  (2026-10-22T19:24:10.652Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x7cb9dad5d72d0244e256b6bb120d5464bf4f5a2e  (2026-10-22T19:24:13.185Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xe656925f88d471674728ff40782708c41d70eb73  (2026-10-22T19:24:15.677Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xfb1a14d5e3707393e5c9c0236bf940c6e077eed4  (2026-10-22T19:24:18.203Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x77e758745211716569b5076ceab2a82b2154cbec  (2026-10-22T19:24:20.727Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x0f2f79b787faa675ebdf917c157923dc86ace0a6  (2026-10-22T19:24:23.257Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x1ccd0aac5f5aec76e104bf3a74559e960c20aa16  (2026-10-22T19:24:25.796Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x682026a5bdbb9770ad5cdc34a3d0971e35804517  (2026-10-22T19:24:28.914Z)
+  NEAR-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0xe513095685df95e1a273933a7d9b3784fe658f8c  (2026-10-22T19:24:31.431Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb8faed9aa2501cefa7fab8673fa4649d7784bad3  (2026-10-22T19:24:34.445Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xa8c4e5ea631ff0e411b6f4b3dc9a55415b644c1b  (2026-10-22T19:24:36.971Z)
+  NEAR-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x4c592c8d185766d254ec75e146869d100a6bee38  (2026-10-22T19:24:39.489Z)
+  NEAR-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x2003da71c560944e7e911209880613f8edcf4fb9  (2026-10-22T19:24:41.982Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x502c95c154f4aa0b37fca9a5635313250759e773  (2026-10-22T19:24:45.295Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xcf646b14ab9e8dc7b7895ca6b60b355b8a24894a  (2026-10-22T19:24:47.818Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x28f9cf1dc5289262e012bd88afc951b055bf4983  (2026-10-22T19:24:50.609Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x77fb201cb1ad09abefe9efe19f24281b10355854  (2026-10-22T19:24:53.135Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x947a378d1b0c8cf4ea4329fc3630168c9dc7b625  (2026-10-22T19:24:55.653Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x6bc308f03c6bb721ab38d7f63e593f3984bd4581  (2026-10-22T19:24:58.164Z)
+  NEAR-PERP short 952.7 @ 4.693106907 | TP 100% SL 0% | TP 3.1282 x 952.7
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: short 952.7 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x14ffaabd67fdf596a5d002bff4bbbcce51ee26ac  (2026-10-22T19:25:00.099Z)
+  NEAR-PERP long 1123 @ 4.698627925 | TP 100% SL 0% | TP 7.7872 x 1123
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: long 1123 has no stop loss.
+
+0x471ddd2ed99b4b6a5cf0aed3298014f3e3f2cba8  (2026-10-22T19:25:02.033Z)
+  NEAR-PERP long 1086.4 @ 4.704011432 | TP 100% SL 0% | TP 6.2868 x 1086.4
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: long 1086.4 has no stop loss.
+
+0x14d70cb0a5d234ab0a2d9ab11863a197a9dde181  (2026-10-22T19:25:04.581Z)
+  NEAR-PERP long 29.8 @ 4.7127 | TP 100% SL 0% | TP 7.8621 x 29.8
+  BTC-PERP short 0.04511 @ 80990.68207 | TP 100% SL 0% | TP 36239.5 x 0.04511
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.45, claimable 0.00
+  ! NEAR-PERP: long 29.8 has no stop loss.
+  ! BTC-PERP: short 0.04511 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x2d05a0ba12edd3b904e730a2b58a9bde95507b12  (2026-10-22T19:25:06.555Z)
+  SOL-PERP long 57.43 @ 103.9783249 | TP 100% SL 0% | TP 112.6 x 57.43
+  ETH-PERP short 2.5329 @ 2380.49 | TP 100% SL 0% | TP 2293.31 x 2.5329
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: long 57.43 has no stop loss.
+  ! ETH-PERP: short 2.5329 has no stop loss.
+
+0xcdd1cf4b74c939f3c69b2c4e7e836a9d86bd5c23  (2026-10-22T19:25:08.571Z)
+  HYPE-PERP long 0.69 @ 78.26 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.2115 @ 2352.28 | TP 100% SL 100% | TP 2822.74 x 0.2115, SL 1881.82 x 0.2115
+  BTC-PERP long 0.18512 @ 80796.7061 | TP 100% SL 100% | SL 60597.5 x 0.18512, TP 100995.9 x 0.18512
+  STT held by stops 0.60, claimable 0.00
+  ! HYPE-PERP: long 0.69 has no stop loss.
+
+0x5d586ea17f4e5024efa9af1e24e43ca88d84425b  (2026-10-22T19:25:11.095Z)
+  BTC-PERP long 0.04849 @ 80517.82669 | TP 100% SL 0% | TP 116528.8 x 0.04849
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.04849 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xda76cd4415eb7cff4574546286cb1e6f7ff9a81a  (2026-10-22T19:25:13.062Z)
+  NEAR-PERP short 65.3 @ 4.705 | TP 100% SL 0% | TP 1.5449 x 65.3
+  BTC-PERP long 0.13228 @ 83921.43568 | TP 100% SL 0% | TP 252158.1 x 0.13228
+  STT held by stops 0.30, claimable 0.00
+  ! NEAR-PERP: short 65.3 has no stop loss.
+  ! BTC-PERP: long 0.13228 has no stop loss.
+
+0xf03e6040f9b082339cd00704f46622be77515805  (2026-10-22T19:25:15.556Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x944b32ccfc9026c596583845830d80ca312c7a32  (2026-10-22T19:25:17.496Z)
+  SOL-PERP long 262.66 @ 103.7226567 | TP 100% SL 0% | TP 150.11 x 262.66
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 262.66 has no stop loss.
+
+0x72827fd2a24681bbbc814aa9d1769493a3deaf8a  (2026-10-22T19:25:19.460Z)
+  SOL-PERP long 78.76 @ 103.98 | TP 100% SL 0% | TP 150.42 x 87.75
+  BTC-PERP short 0.12519 @ 82158.87219 | TP 100% SL 0% | TP 41079.4 x 0.12519
+  STT held by stops 0.30, claimable 0.07
+  ! SOL-PERP: long 78.76 has no stop loss.
+  ! BTC-PERP: short 0.12519 has no stop loss.
+  ! 0.07 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x646310d04b1f2872d445b93d8fb294bce3c6a26f  (2026-10-22T19:25:21.549Z)
+  DOGE-PERP long 2680 @ 0.08032 | TP 0% SL 0% | no stops
+  SOL-PERP long 2.8 @ 104.64 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.02309 @ 81888.00801 | TP 50% SL 50% | SL 73487.6 x 0.01152, TP 89818.2 x 0.01152
+  ETH-PERP short 0.104 @ 2414.93 | TP 100% SL 100% | TP 2173.44 x 0.104, SL 2656.42 x 0.104
+  BNB-PERP short 0.195 @ 744.8780513 | TP 100% SL 100% | TP 670.39 x 0.195, SL 819.366 x 0.195
+  HYPE-PERP long 22.33 @ 83.44 | TP 100% SL 100% | SL 75.1 x 22.33, TP 91.78 x 22.33
+  STT held by stops 1.20, claimable 0.00
+  ! DOGE-PERP: long 2680 has no stop loss.
+  ! SOL-PERP: long 2.8 has no stop loss.
+  ! BTC-PERP: stop loss covers 50% of the 0.02309 long; the rest has no stop.
+  ! BTC-PERP: take profit covers 50% of the 0.02309 long.
+
+0x28b90b72533c757e32cfb85593b8f10d7e958a0a  (2026-10-22T19:25:24.047Z)
+  XRP-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x0e569718bfeb8a03fc488bd950c9e70f5ee3ae99  (2026-10-22T19:25:26.539Z)
+  SUI-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb0beeff9b9a7bf9663184ca755e897ace33b504a  (2026-10-22T19:25:29.038Z)
+  HYPE-PERP short 114.95 @ 78.22777816 | TP 0% SL 0% | no stops
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: short 114.95 has no stop loss.
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x531331a32eb72302e1e6ed75b76c4fa4e9e629ab  (2026-10-22T19:25:31.010Z)
+  BTC-PERP long 0.01511 @ 82750.89454 | TP 0% SL 0% | no stops
+  ADA-PERP long 8983 @ 0.2234 | TP 0% SL 0% | no stops
+  HYPE-PERP long 15.6 @ 81.61214103 | TP 0% SL 0% | no stops
+  AVAX-PERP long 86.3 @ 10.202 | TP 100% SL 0% | TP 11 x 86.3
+  ETH-PERP long 0.8193 @ 2501.867499 | TP 100% SL 0% | TP 2530 x 0.8193
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.01511 has no stop loss.
+  ! ADA-PERP: long 8983 has no stop loss.
+  ! HYPE-PERP: long 15.6 has no stop loss.
+  ! AVAX-PERP: long 86.3 has no stop loss.
+  ! ETH-PERP: long 0.8193 has no stop loss.
+
+0x338877068af802d3f3bb1493478ae5503e2c05a6  (2026-10-22T19:25:33.506Z)
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x5085eea03e03e42b0b0b74b4fd47c0719a16d48c  (2026-10-22T19:25:35.720Z)
+  SOL-PERP long 95.72 @ 102.93 | TP 0% SL 0% | no stops
+  BTC-PERP long 0.02568 @ 84200 | TP 100% SL 0% | TP 85000 x 0.02593
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: long 95.72 has no stop loss.
+  ! BTC-PERP: long 0.02568 has no stop loss.
+
+0x5bb0c8d5beb530bf16c2069d0a617bb2b5b044ad  (2026-10-22T19:25:37.656Z)
+  HYPE-PERP long 54.93 @ 81.94333151 | TP 100% SL 0% | TP 87.27 x 54.93
+  STT held by stops 0.15, claimable 0.00
+  ! HYPE-PERP: long 54.93 has no stop loss.
+
+0x81d6987e8ddf1dede3306b8a83d95ad01a403546  (2026-10-22T19:25:39.602Z)
+  XRP-PERP long 8.1 @ 1.3531 | TP 100% SL 0% | TP 1.5831 x 8.1
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: long 8.1 has no stop loss.
+
+0x06b7272eae09e25adff08c454c60597c493af1ed  (2026-10-22T19:25:41.550Z)
+  ETH-PERP long 0.2377 @ 2530.505104 | TP 100% SL 0% | TP 2530 x 0.2377
+  STT held by stops 0.15, claimable 0.00
+  ! ETH-PERP: long 0.2377 has no stop loss.
+
+0x85d4b30340533cb6e7e3eaa9c78d7a2a1d817c1e  (2026-10-22T19:25:44.052Z)
+  BTC-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xb3d1e822a6cd96ddf6cce141df56c6ead5f61e28  (2026-10-22T19:25:46.499Z)
+  BTC-PERP long 0.08987 @ 83394.81632 | TP 0% SL 0% | no stops
+  HYPE-PERP long 33.43 @ 80.97 | TP 0% SL 0% | no stops
+  TAO-PERP long 1.21 @ 272.638 | TP 0% SL 0% | no stops
+  NEAR-PERP long 216.8 @ 5.18 | TP 0% SL 0% | no stops
+  BNB-PERP long 3.667 @ 740.1007925 | TP 62% SL 0% | TP 800 x 2.274
+  STT held by stops 0.15, claimable 0.30
+  ! BTC-PERP: long 0.08987 has no stop loss.
+  ! HYPE-PERP: long 33.43 has no stop loss.
+  ! TAO-PERP: long 1.21 has no stop loss.
+  ! NEAR-PERP: long 216.8 has no stop loss.
+  ! BNB-PERP: take profit covers 62% of the 3.667 long.
+  ! BNB-PERP: long 3.667 has no stop loss.
+  ! 0.30 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0xe896bd5eb7d6d6f66244e9b03eac5806150efd49  (2026-10-22T19:25:48.448Z)
+  XRP-PERP short 13410.1 @ 1.366554484 | TP 100% SL 0% | TP 1.25 x 13410.1
+  STT held by stops 0.15, claimable 0.00
+  ! XRP-PERP: short 13410.1 has no stop loss.
+
+0x94f4e47676cf0a4024da12d3f515dc3cd87cbc30  (2026-10-22T19:25:50.663Z)
+  BTC-PERP long 0.01588 @ 82698.84843 | TP 0% SL 38% | SL 79202.3 x 0.00596
+  STT held by stops 0.15, claimable 0.00
+  ! BTC-PERP: stop loss covers 38% of the 0.01588 long; the rest has no stop.
+
+0xe280a3b2e921b41fc75fb28ac2f699e4a2dc6f5e  (2026-10-22T19:25:53.162Z)
+  AVAX-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.07
+  ! AVAX-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! 0.07 STT of trigger fees is waiting to be claimed (press Claim in the app's Balances tab).
+
+0x3c8e0af83940a4844ab1cbfe694b7144436dcad7  (2026-10-22T19:25:55.665Z)
+  NEAR-PERP short 178.9 @ 4.634913807 | TP 0% SL 0% | no stops
+  HYPE-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: short 178.9 has no stop loss.
+  ! HYPE-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xf3d9ba3f6a8b1d55fa049b6fb1bfda2c8da3f573  (2026-10-22T19:25:57.631Z)
+  HYPE-PERP short 19.58 @ 82.19 | TP 100% SL 0% | TP 63.77 x 19.58
+  SOL-PERP short 170.47 @ 106.7738447 | TP 100% SL 0% | TP 83.95 x 170.47
+  STT held by stops 0.30, claimable 0.00
+  ! HYPE-PERP: short 19.58 has no stop loss.
+  ! SOL-PERP: short 170.47 has no stop loss.
+
+0xa662fb912209081aaceef9e72ef26f9cedefe4ff  (2026-10-22T19:26:00.126Z)
+  SUI-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x510c808a981458fc2090d7802d141f7b39d5df89  (2026-10-22T19:26:02.080Z)
+  SUI-PERP long 2382 @ 1.058528925 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.7607 @ 2508.83 | TP 100% SL 0% | TP 2600 x 0.7607
+  STT held by stops 0.15, claimable 0.00
+  ! SUI-PERP: long 2382 has no stop loss.
+  ! ETH-PERP: long 0.7607 has no stop loss.
+
+0x826a47813bbfe01e85426869536bb8052bdce917  (2026-10-22T19:26:04.623Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xd9ec48dd31fcb115ff8b6160f07839e4cb7d9092  (2026-10-22T19:26:06.581Z)
+  ETH-PERP short 2.4147 @ 2395.322846 | TP 100% SL 100% | SL 4479.69 x 6.8396, TP 363.22 x 6.8396
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x187ff8b5dfd5c176e9dfb36ede9a6e9da4bad688  (2026-10-22T19:26:09.616Z)
+  SOL-PERP orphan: 2 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! SOL-PERP: 2 stop(s) with no position and no order (0.30 STT held). They would close a future position; cancel them.
+
+0x34edc8860e38842bf2a5dc7ab6849a09b5e49b00  (2026-10-22T19:26:12.109Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xcf24d9aee30de084a2c077937b2e89a09df93d8c  (2026-10-22T19:26:14.931Z)
+  BTC-PERP long 0.30166 @ 81935.96474 | TP 0% SL 0% | no stops
+  HYPE-PERP long 1.58 @ 83.37 | TP 0% SL 0% | no stops
+  ETH-PERP long 0.4121 @ 2531.076215 | TP 100% SL 0% | TP 2619.66 x 0.4121
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.30, claimable 0.00
+  ! BTC-PERP: long 0.30166 has no stop loss.
+  ! HYPE-PERP: long 1.58 has no stop loss.
+  ! ETH-PERP: long 0.4121 has no stop loss.
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0xbc3bb813a0d609daad5c62688f30b7057dcf1637  (2026-10-22T19:26:17.468Z)
+  SOL-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! SOL-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+0x140a64126b4e5c3a5c8b80a26dd223ff9d762f0e  (2026-10-22T19:26:19.454Z)
+  BTC-PERP short 0.12902 @ 84684.07065 | TP 0% SL 0% | no stops
+  TAO-PERP long 2.107 @ 284.4176678 | TP 66% SL 66% | SL 200 x 1.393, TP 295 x 1.393
+  NEAR-PERP long 233.3 @ 5.56766138 | TP 0% SL 15% | SL 4 x 35.7
+  STT held by stops 0.45, claimable 0.00
+  ! BTC-PERP: short 0.12902 has no stop loss.
+  ! TAO-PERP: stop loss covers 66% of the 2.107 long; the rest has no stop.
+  ! TAO-PERP: take profit covers 66% of the 2.107 long.
+  ! NEAR-PERP: stop loss covers 15% of the 233.3 long; the rest has no stop.
+
+0x3526d82aa28bb23601b52cde5dc63d439ac9da39  (2026-10-22T19:26:21.419Z)
+  BTC-PERP short 0.16373 @ 82909.66144 | TP 100% SL 100% | TP 76802 x 0.16373, SL 89017.3 x 0.16373
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x0aea1acec394662e0c522f8ea24cbac762c62424  (2026-10-22T19:26:23.382Z)
+  BTC-PERP long 0.16232 @ 82904.97448 | TP 100% SL 100% | SL 76744.3 x 0.16232, TP 89065.6 x 0.16232
+  STT held by stops 0.30, claimable 0.00
+  ok: nothing to fix
+
+0x138c8872128d8bd3651e26860e9602b418c85e32  (2026-10-22T19:26:25.883Z)
+  NEAR-PERP orphan: 1 stop(s), 0 resting order(s)
+  STT held by stops 0.15, claimable 0.00
+  ! NEAR-PERP: 1 stop(s) with no position and no order (0.15 STT held). They would close a future position; cancel them.
+
+SUMMARY {"owners":463,"withPosition":365,"underCoveredSL":19,"noSL":307,"idle":134,"claimable":30}
