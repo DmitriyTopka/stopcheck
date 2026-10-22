@@ -1,6 +1,8 @@
 # StopCheck for dreamDEX perps
 
-Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position is really protected, and a small bot closes the unprotected part when your stop price is hit.
+While testing dreamDEX perps we filed 21 feedback reports; this tool fixes the one that can cost a trader the most.
+
+Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position a stop loss really protects. A small bot then closes the unprotected part when your stop price is hit.
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
@@ -16,7 +18,7 @@ These are not only our test accounts. A scan of accounts with pending stops on 2
 
 ## What it does
 
-- **Check (web page and CLI).** For an address: each open position with the share covered by its stop loss and take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
+- **Check (web page and CLI). Start here.** Paste an address and get a share card with one number: how much of the account's open position value a stop loss covers. Below it, for each position: each open position with the share covered by its stop loss and take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
 - **Gap keeper (bot).** A trading key linked to your account with "Link a bot" cannot arm stops for you; only the account can. So the keeper watches instead: when the mark reaches your stop loss and that stop covers only part of the position, it closes the uncovered rest with a reduce order through `placeOrderFor`.
 
 ## Live demo (Somnia Tokyo testnet, 2026-10-22)
@@ -33,6 +35,10 @@ The trap from report 019, reproduced in the dreamDEX app and closed by the keepe
 | **19:34:38** | **Gap keeper closes the other 0.00018 with `placeOrderFor` from the linked bot key** | [0x8524c1fb…67abc2](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2) |
 
 Without the keeper, half of the position would have stayed open with no stop after the trader's stop loss "fired on the entire position". Keeper log: [`demo/keeper-2026-10-22.log`](demo/keeper-2026-10-22.log). Gas spent by the bot for the whole run: 0.0098 STT.
+
+## Next
+
+A linked bot is authorised per owner and operator (`isOperatorAuthorized(owner, operator, selector)`), and `placeOrderFor` takes the owner as an argument. So one hosted keeper could serve every trader who links its address, with no server on their side. We have not built that yet; on testnet we did not want to run orders for strangers.
 
 ## Who it is for
 

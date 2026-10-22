@@ -35,6 +35,15 @@
   .legs { margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:14px; }
   .legs em { font-style:normal; font-weight:600; color:var(--ink); } .legs em.bad { color:var(--bad); }
   .muted { color:var(--muted); } .small { font-size:13px; }
+  .share { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 20px; margin-bottom:20px; }
+  .share .big { font-size:56px; font-weight:750; line-height:1; letter-spacing:-0.02em; }
+  .share.full .big { color:var(--ok); } .share.part .big { color:var(--part); } .share.none .big { color:var(--bad); }
+  .share .line { font-size:17px; margin-top:6px; }
+  .share .extra { color:var(--muted); font-size:13px; margin-top:8px; }
+  .share .actions { display:flex; gap:8px; margin-top:16px; flex-wrap:wrap; }
+  .share .actions a, .share .actions button { padding:9px 14px; border-radius:10px; font-size:14px; font-weight:600; text-decoration:none; }
+  .share .actions a { background:var(--ink); color:var(--bg); }
+  .share .actions button { background:transparent; color:var(--ink); border:1px solid var(--line); }
   footer { margin-top:40px; color:var(--muted); font-size:13px; }
   a { color:var(--accent); }
   @media (max-width:520px) { .stats { grid-template-columns:1fr; } form { flex-direction:column; } }
