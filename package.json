@@ -1,0 +1,19 @@
+{
+  "name": "stopcheck",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Checks whether a dreamDEX perps account's TP/SL actually cover its positions",
+  "scripts": {
+    "check": "tsx src/cli.ts",
+    "build:web": "esbuild src/web.ts --bundle --format=esm --platform=browser --target=es2020 --outfile=docs/app.js --minify"
+  },
+  "dependencies": {
+    "@somnia-chain/markets-sdk": "0.32.1",
+    "viem": "2.57.10"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.0"
+  }
+}
