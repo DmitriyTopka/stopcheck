@@ -20,7 +20,7 @@ These are not only our test accounts. A scan of accounts with pending stops on 2
 
 ## What it does
 
-- **Check (web page and CLI). Start here.** Paste an address and get a share card with one number: how much of the account's open position value a stop loss covers. Below it, for each position: each open position with the share covered by its stop loss and take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
+- **Check (web page and CLI). Start here.** Paste an address and get a share card with one number: how much of the account's open position value a stop loss covers. Below it: the share of each open position covered by its stop loss and by its take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
 - **Gap keeper (bot).** A trading key linked to your account with "Link a bot" cannot arm stops for you; only the account can. So the keeper watches instead: when the mark reaches your stop loss and that stop covers only part of the position, it closes the uncovered rest with a reduce order through `placeOrderFor`.
 
 ## Live demo (Somnia Tokyo testnet, 2026-10-22)
