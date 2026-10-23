@@ -76,7 +76,11 @@ Market list, pending stops and candidate positions come from the dreamDEX indexe
 
 ## X posts
 
-To be added.
+1. [The "Entire" trap and the bot that closed the other half (with the demo video)](https://x.com/SirenaMC2/status/2113498955908812882)
+2. [463 accounts scanned: 19 with a stop loss covering only part of the position](https://x.com/SirenaMC2/status/2113499393676488753)
+3. [Cancelled limit orders leave their TP/SL armed](https://x.com/SirenaMC2/status/2113499520369910070)
+
+All three tag @DreamDEXSomnia and were posted on 2026-10-23.
 
 ## License
 
