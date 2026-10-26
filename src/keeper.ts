@@ -22,6 +22,7 @@ import {
   sleep,
   tradingKeyCheck,
 } from "@dreamdex-bot-kit/perp-core";
+import { privateKeyToAccount } from "viem/accounts";
 import { checkAccount, type PositionCheck } from "./check.js";
 
 loadEnv();
@@ -29,6 +30,19 @@ const POLL_MS = envNum("KEEPER_POLL_MS", 10_000);
 // After a close, give the chain and the indexer time to show it before acting
 // on the same position again.
 const COOLDOWN_MS = envNum("KEEPER_COOLDOWN_MS", 30_000);
+// Stop for good once the bot key has spent this much STT since start, so a
+// close that keeps failing cannot drain the key.
+const GAS_CAP_STT = envNum("KEEPER_GAS_CAP_STT", 1);
+const RPC = process.env.KEEPER_RPC ?? "https://api.hideki2.infra.testnet.somnia.network";
+
+async function balanceStt(address: string): Promise<number> {
+  const res = await fetch(RPC, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "eth_getBalance", params: [address, "latest"] }),
+  });
+  return Number(BigInt((await res.json()).result)) / 1e18;
+}
 
 interface Gap {
   symbol: string;
@@ -60,7 +74,10 @@ async function main(): Promise<void> {
   // the account's own stop fires, the next read shows no SL at all.
   const known = new Map<string, Gap>();
 
-  console.log(`gap keeper for ${owner} | poll ${POLL_MS / 1000}s | dry-run ${!live}`);
+  const bot = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`).address;
+  const startBalance = await balanceStt(bot);
+
+  console.log(`gap keeper for ${owner} | poll ${POLL_MS / 1000}s | dry-run ${!live} | gas cap ${GAS_CAP_STT} STT from ${startBalance.toFixed(4)}`);
 
   while (!stopped()) {
     let report;
@@ -129,6 +146,12 @@ async function main(): Promise<void> {
       if (!live) {
         console.log(`[dry-run] would close ${(fraction * 100).toFixed(1)}% of ${g.symbol} (${(p.size * fraction).toPrecision(6)})`);
         continue;
+      }
+      const spent = startBalance - (await balanceStt(bot));
+      if (spent >= GAS_CAP_STT) {
+        console.log(`gas cap reached: spent ${spent.toFixed(4)} STT, stopping`);
+        await shutdown(ctx);
+        return;
       }
       const res = await closePosition(ctx, market, owner, { fraction, label: "gap keeper" });
       console.log(`${g.symbol}: gap close sent=${res.sent} filled=${res.filled}`);
