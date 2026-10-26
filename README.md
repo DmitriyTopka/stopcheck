@@ -4,7 +4,7 @@ While testing dreamDEX perps we filed 21 feedback reports; this tool fixes the o
 
 Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position a stop loss really protects. A small bot then closes the unprotected part when your stop price is hit.
 
-**Demo video (50 s):** [demo/stopcheck-demo.mp4](demo/stopcheck-demo.mp4)
+**Demo video (50 s):** https://youtu.be/T29UDxKIuF8 (also in the repo: [demo/stopcheck-demo.mp4](demo/stopcheck-demo.mp4))
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
@@ -39,6 +39,22 @@ The trap from report 019, reproduced in the dreamDEX app and closed by the keepe
 | **19:34:38** | **Gap keeper closes the other 0.00018 with `placeOrderFor` from the linked bot key** | [0x8524c1fb…67abc2](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2) |
 
 Without the keeper, half of the position would have stayed open with no stop after the trader's stop loss "fired on the entire position". Keeper log: [`demo/keeper-2026-10-22.log`](demo/keeper-2026-10-22.log). Gas spent by the bot for the whole run: 0.0098 STT.
+
+## Second live run (2026-10-26)
+
+The same trap, four days later, right after the fresh scan.
+
+| time (UTC) | what happened | transaction |
+|---|---|---|
+| 06:17:18 | Long 0.00018 BTC in the app | [0xed50ea61…95ccc7f3](https://explorer.testnet.somnia.network/tokyo/tx/0xed50ea6153c924f13587abe4ccecf3d8b83c2382353583418553d8ca95ccc7f3) |
+| 06:18:07 | TP/SL in **Entire** mode (TP 90,000, SL 79,900): both legs store 0.00018 BTC | [0x04f15186…cafe8f7fce](https://explorer.testnet.somnia.network/tokyo/tx/0x04f151862f4943a39e879989ee50f7608d97e9f97e9d07b8161934cafe8f7fce) |
+| 06:18:35 | Added 0.00018 BTC, position 0.00036. StopCheck: "stop loss covers 50%" | [0x905f1043…2ba3127d](https://explorer.testnet.somnia.network/tokyo/tx/0x905f1043f9dcdcb58b6492a6076a9a10af6cfcc557666450e93e66cb2ba3127d) |
+| 06:27:00 | The account's own stop loss fires and closes 0.00018 | [0x9b13ce9e…2eda2aee](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee) |
+| **06:27:15** | **Gap keeper closes the other 0.00018 with `placeOrderFor` from the linked bot key** | [0x01a5d298…eccbcc12](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12) |
+
+Gas spent by the bot: 0.0098 STT. Keeper log: [`demo/keeper-2026-10-26.log`](demo/keeper-2026-10-26.log). After the run the app showed its own banner for the other leg's 0.15 STT ("held for you to claim rather than refunded"), the case from report 020.
+
+**Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 70,000 covers 0.00018. Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until 8 Nov 2026. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
 
 ## Next
 

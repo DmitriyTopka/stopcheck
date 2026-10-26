@@ -1,0 +1,79 @@
+gap keeper for 0x84326A92162Ece92ed257A31073fDd3a6599BF21 | poll 10s | dry-run false | gas cap 1 STT from 4.8867
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80041.27474773189
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80033.22948232459
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80030.33139663124
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80025.03433864757
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80037.4274938807
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80019.83766683695
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80004.54803404148
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79990.85722839976
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80003.44571981524
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80013.69281611108
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80025.13509219987
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80031.13044529394
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80050.2690792132
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80052.66738372049
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80038.47714345873
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80023.78564980379
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80005.94647037511
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 80008.44652107664
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79995.50217271899
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79984.80951985405
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79969.0191904421
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79949.6319380354
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79945.08545461285
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79950.23206362745
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79931.2437436883
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79935.34510973451
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79915.45454290783
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79904.46118626077
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79900.663281591
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79917.60394138767
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79910.95833795286
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79907.70891886562
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79905.90968139464
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 79900 | mark 79901.36348502422
+BTC-PERP long 0.00018: stop covers 0.0%, 0.000180000 uncovered | SL 79900 | mark 79878.42740118099 | STOP FIRED
+placed gap keeper short 0.00018 BTC @ 79893.3 | filled 0.00018 | order 16343815249306670542750
+BTC-PERP: gap close sent=true filled=18000
+nothing uncovered (1 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (0 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+nothing uncovered (1 position(s))
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79831.45785085317
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79838.45618351622
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79870.93178572353
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79875.9535449747
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79909.00841766233
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79884.57531735754
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79910.90740494651
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79904.13747278294
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79907.36170898874
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79912.55512633594
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79914.10575928331
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79912.05746824124
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79920.15215148321
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79920.95126535687
+BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 70000 | mark 79906.01088615715
