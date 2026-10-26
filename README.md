@@ -18,6 +18,8 @@ While testing dreamDEX perps on Somnia Tokyo testnet (Hideki) for the Perps Buil
 
 These are not only our test accounts. A scan of accounts with pending stops on 2026-10-22 showed live positions with a stop loss covering 84% of a 0.78 BTC short and a take profit covering 48% of a 2,119 ZRO long.
 
+A fresh scan on 2026-10-26 found the same picture four days later: of 293 accounts with pending stops, 13 have a stop loss that covers only part of a position, 100 hold 134 stops with no position or order behind them, and 27 have 5.12 STT waiting to be claimed. Report 019 still reproduces: of the 205 pending stops created from 23 Oct on, 201 store a fixed size, so an "Entire" stop still stops covering the whole position once you add to it.
+
 ## What it does
 
 - **Check (web page and CLI). Start here.** Paste an address and get a share card with one number: how much of the account's open position value a stop loss covers. Below it: the share of each open position covered by its stop loss and by its take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
