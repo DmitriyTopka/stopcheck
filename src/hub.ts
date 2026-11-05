@@ -17,6 +17,8 @@
 
 import { createExchange, envNum, loadEnv, onStop, shutdown, sleep, type PerpContext } from "@dreamdex-bot-kit/perp-core";
 import { getAddress } from "viem";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname } from "node:path";
 import { privateKeyToAccount } from "viem/accounts";
 import { createClient } from "./check.js";
 import { gapStep, newOwnerState, type OwnerState } from "./gap.js";
@@ -33,6 +35,26 @@ const COOLDOWN_MS = envNum("KEEPER_COOLDOWN_MS", 30_000);
 const OWNER_GAS_CAP_STT = envNum("HUB_OWNER_GAS_CAP_STT", 0.1);
 const GAS_CAP_STT = envNum("KEEPER_GAS_CAP_STT", 1);
 const MAX_OWNERS = envNum("HUB_MAX_OWNERS", 50);
+// Accounts guarded before anyone else and outside the shared budget, so strangers
+// who link the key cannot use up the gas or the slots the demo account needs.
+const PRIORITY = new Set(
+  (process.env.HUB_PRIORITY_OWNERS ?? "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean),
+);
+const PRIORITY_GAS_CAP_STT = envNum("HUB_PRIORITY_GAS_CAP_STT", 0.5);
+// Gas spent per account, kept on disk and keyed by address, so it survives an
+// account being dropped and re-added and a restart of the hub.
+const SPEND_FILE = process.env.HUB_SPEND_FILE ?? "state/hub-spend.json";
+function loadSpend(): Record<string, number> {
+  try {
+    return existsSync(SPEND_FILE) ? JSON.parse(readFileSync(SPEND_FILE, "utf8")) : {};
+  } catch {
+    return {};
+  }
+}
+function saveSpend(s: Record<string, number>): void {
+  mkdirSync(dirname(SPEND_FILE), { recursive: true });
+  writeFileSync(SPEND_FILE, JSON.stringify(s, null, 2));
+}
 const RPC = process.env.KEEPER_RPC ?? "https://api.hideki2.infra.testnet.somnia.network";
 
 async function balanceStt(address: string): Promise<number> {
@@ -88,6 +110,9 @@ async function main(): Promise<void> {
   const guarded = new Map<string, Guarded>();
   const startBalance = await balanceStt(bot);
   let capLogged = false;
+  const spend = loadSpend();
+  const sharedSpent = () =>
+    Object.entries(spend).filter(([k]) => !PRIORITY.has(k)).reduce((a, [, v]) => a + v, 0);
   let lastRefresh = 0;
 
   console.log(
@@ -98,7 +123,11 @@ async function main(): Promise<void> {
   async function refresh(): Promise<void> {
     const { owners, fromIndexer, fromLogs, pools } = await finder.find();
     const seen = new Set<string>();
-    for (const o of owners.slice(0, MAX_OWNERS)) {
+    // Priority accounts first, then the rest in discovery order up to the slot limit.
+    const ranked = [...owners].sort(
+      (a, b) => Number(PRIORITY.has(b.address.toLowerCase())) - Number(PRIORITY.has(a.address.toLowerCase())),
+    );
+    for (const o of ranked.slice(0, MAX_OWNERS)) {
       const k = o.address.toLowerCase();
       seen.add(k);
       if (!guarded.has(k)) {
@@ -108,7 +137,7 @@ async function main(): Promise<void> {
           tag: `[${short(owner)}]`,
           ctx: contextFor(owner, Boolean(key)),
           state: newOwnerState(),
-          spent: 0,
+          spent: spend[k] ?? 0,
           backoffUntil: 0,
         });
         console.log(`[${short(owner)}] now guarded: placeOrderFor granted on ${o.pools.size}/${pools.length} perp pools`);
@@ -155,21 +184,24 @@ async function main(): Promise<void> {
               return "skip";
             }
             before = await balanceStt(bot);
-            const total = startBalance - before;
-            if (total >= GAS_CAP_STT) {
-              if (!capLogged) console.log(`gas cap reached: spent ${total.toFixed(4)} STT in total, watching only from now on`);
+            const prio = PRIORITY.has(g.owner.toLowerCase());
+            const total = sharedSpent();
+            if (!prio && total >= GAS_CAP_STT) {
+              if (!capLogged) console.log(`gas cap reached: spent ${total.toFixed(4)} STT on shared accounts, watching only from now on`);
               capLogged = true;
               log(`${symbol}: total gas cap reached, not sending`);
               return "skip";
             }
-            if (g.spent >= OWNER_GAS_CAP_STT) {
+            if (g.spent >= (prio ? PRIORITY_GAS_CAP_STT : OWNER_GAS_CAP_STT)) {
               log(`${symbol}: account gas cap reached (${g.spent.toFixed(4)} STT), not sending`);
               return "skip";
             }
             return "send";
           },
           afterSend: async () => {
-            g.spent += Math.max(0, before - (await balanceStt(bot)));
+            g.spent += Math.max(0, before - (await balanceStt(bot).catch(() => before - 0.02)));
+            spend[g.owner.toLowerCase()] = g.spent;
+            saveSpend(spend);
             log(`gas spent on this account so far: ${g.spent.toFixed(4)} STT`);
           },
         });

@@ -3,3 +3,4 @@ node_modules/
 *.key
 logs/
 demo/v2/check/
+state/

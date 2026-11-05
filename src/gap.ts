@@ -143,10 +143,17 @@ export async function gapStep(o: StepOptions): Promise<StepResult> {
     const go = o.beforeSend ? await o.beforeSend(g.symbol, market.info.poolAddress) : "send";
     if (go === "stop") return "stop";
     if (go === "skip") continue;
-    const res = await closePosition(ctx, market, owner, { fraction, label: "gap keeper" });
-    log(`${g.symbol}: gap close sent=${res.sent} filled=${res.filled}`);
-    await o.afterSend?.(g.symbol, res.sent);
-    if (res.sent) known.delete(g.symbol);
+    // afterSend runs even when the close throws, so gas spent on a failed send is
+    // still charged to this account.
+    let sent = false;
+    try {
+      const res = await closePosition(ctx, market, owner, { fraction, label: "gap keeper" });
+      sent = res.sent;
+      log(`${g.symbol}: gap close sent=${res.sent} filled=${res.filled}`);
+    } finally {
+      await o.afterSend?.(g.symbol, sent);
+    }
+    if (sent) known.delete(g.symbol);
   }
 
   if (!known.size) log(`nothing uncovered (${report.positions.length} position(s))`);
