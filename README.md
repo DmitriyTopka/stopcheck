@@ -8,6 +8,13 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
+## Judges start here
+
+- **Live right now.** Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21. The card says the stop loss covers 50% of a 0.00036 BTC long: an "Entire" stop set before the position was doubled. Our keeper watches this account on a server until the bounty results are out.
+- **It worked twice on chain.** Each time the account's own stop closed half and the keeper closed the other half seconds later. 22 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2). 26 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12). Full timelines below.
+- **Not just our account.** On 26 Oct we scanned the 293 accounts that had pending stops. 13 had a stop loss covering only part of a position, and 100 were holding 134 stops with no position or order behind them.
+- **Video and posts.** 50-second demo at https://youtu.be/T29UDxKIuF8, three X posts tagging @DreamDEXSomnia at the end of this page.
+
 ## Why
 
 While testing dreamDEX perps on Somnia Tokyo testnet (Hideki) for the Perps Builder Bounty, we hit three ways a trader ends up less protected than the app suggests:
@@ -54,15 +61,27 @@ The same trap, four days later, right after the fresh scan.
 
 Gas spent by the bot: 0.0098 STT. Keeper log: [`demo/keeper-2026-10-26.log`](demo/keeper-2026-10-26.log). After the run the app showed its own banner for the other leg's 0.15 STT ("held for you to claim rather than refunded"), the case from report 020.
 
-**Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 70,000 covers 0.00018. Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until 8 Nov 2026. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
+**Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 70,000 covers 0.00018. Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until the bounty results are announced. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
 
 ## Next
 
 A linked bot is authorised per owner and operator (`isOperatorAuthorized(owner, operator, selector)`), and `placeOrderFor` takes the owner as an argument. So one hosted keeper could serve every trader who links its address, with no server on their side. We have not built that yet; on testnet we did not want to run orders for strangers.
 
+## Mainnet
+
+Somnia mainnet has no perp markets yet, and the bot kit refuses `NETWORK=mainnet` for that reason. Nothing in the keeper's logic is testnet-specific: it reads positions and stops from the chain and closes with `placeOrderFor`. When perps go live, three things change:
+
+1. `src/check.ts` takes the chain, indexer and address preset from `NETWORK` instead of the Hideki constants (lines 14-17 and 73).
+2. The keeper runs on the kit's mainnet branch of perp-core once the kit ships one, with `KEEPER_RPC` pointed at the mainnet RPC. The stop registry address is read from the pool with `getOperatorPermissionsRegistry(pool)`, so no hardcoded address is needed.
+3. The trader links the keeper key with Link a bot on mainnet and puts some SOMI on it for gas. Each testnet run cost the bot 0.0098 STT, and the 1-token gas cap stays.
+
+Our plan is to switch the demo keeper to mainnet within the 30 days after perps launch there.
+
 ## Who it is for
 
 Anyone trading perps on dreamDEX who sets TP/SL and then adds to or trims a position, and bot builders who arm brackets through the Markets SDK.
+
+StopCheck does not trade for you, and that is the difference from DreamFly, the official dreamBot released on 3 Nov. DreamFly decides which strategy to run and when to sit out, and guards its own trades with a daily loss stop. StopCheck is for positions you opened yourself in the app: it checks what your TP/SL on the stop registry really covers and closes only the part your stop loss left open. The two can run side by side.
 
 ## Run it
 
