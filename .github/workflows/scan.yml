@@ -1,0 +1,46 @@
+# Daily network scan: reads every account with a pending dreamDEX perp stop on
+# Somnia Tokyo testnet and commits the totals (no addresses) to docs/, where the
+# page shows them in "Network today". Read-only, no keys or secrets needed.
+name: daily scan
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      # --budget stops reading new accounts after 8 minutes, so a slow RPC gives a
+      # smaller scan instead of a timeout. If the first try fails outright, retry
+      # once with fewer accounts. A run that reads almost nothing writes nothing.
+      - name: Scan
+        run: |
+          npm run check -- --scan 500 --budget 480 --json docs/scan-latest.json \
+            || npm run check -- --scan 150 --budget 180 --concurrency 2 --json docs/scan-latest.json
+      - name: Commit if changed
+        run: |
+          git add docs/scan-latest.json docs/scan-history.json
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "scan: $(date -u +%Y-%m-%d)"
+          git push

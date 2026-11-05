@@ -1,0 +1,22 @@
+[
+  {
+    "time": "2026-11-05T09:21:32Z",
+    "block": 42166220,
+    "pendingStops": 1101,
+    "accountsWithPendingStops": 453,
+    "accountsScanned": 453,
+    "readFailures": 0,
+    "accountsWithPosition": 309,
+    "partlyCovered": 12,
+    "uncoveredNotionalUsd": 41306.76,
+    "noStopLoss": 265,
+    "orphanAccounts": 180,
+    "orphanStops": 317,
+    "waitingStops": 1,
+    "sttHeldByStops": 165.45,
+    "sttToClaim": 17.47,
+    "accountsWithSttToClaim": 73,
+    "stopsCreated7d": 738,
+    "fixedSizeStops7d": 713
+  }
+]

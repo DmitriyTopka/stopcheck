@@ -12,7 +12,16 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 
 - **Live right now.** Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21. The card says the stop loss covers 50% of a 0.00036 BTC long: an "Entire" stop set before the position was doubled. Our keeper watches this account on a server until the bounty results are out.
 - **It worked twice on chain.** Each time the account's own stop closed half and the keeper closed the other half seconds later. 22 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2). 26 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12). Full timelines below.
-- **Not just our account.** On 26 Oct we scanned the 293 accounts that had pending stops. 13 had a stop loss covering only part of a position, and 100 were holding 134 stops with no position or order behind them.
+- **Not just our account.** On 5 Nov we scanned all 453 accounts that had pending stops. 12 had a stop loss covering only part of a position (one of them is our demo account), leaving about $41,300 of position value with no stop. 180 were holding 317 stops with no position or order behind them. Of the 738 stops created in the 7 days before, 713 (97%) store a fixed size, so they stop covering the whole position as soon as it grows. The page shows these numbers and refreshes them every day.
+
+| Judging criterion | Where to look |
+|---|---|
+| Clear user value | [Why](#why), the live card above, the network numbers |
+| Repeat-use loop | "Network today" on the [page](https://dmitriytopka.github.io/stopcheck/), refreshed daily by a [GitHub Action](.github/workflows/scan.yml); any trader can re-check an address after each change to a position |
+| Technical execution | [How it reads](#how-it-reads) (sizes from the chain, not the indexer), [`src/check.ts`](src/check.ts), [`src/keeper.ts`](src/keeper.ts) with a gas cap |
+| Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
+| X posts | [X posts](#x-posts) |
+| Mainnet | [Mainnet](#mainnet) |
 - **Video and posts.** 50-second demo at https://youtu.be/T29UDxKIuF8, three X posts tagging @DreamDEXSomnia at the end of this page.
 
 ## Why
@@ -26,6 +35,8 @@ While testing dreamDEX perps on Somnia Tokyo testnet (Hideki) for the Perps Buil
 These are not only our test accounts. A scan of accounts with pending stops on 2026-10-22 showed live positions with a stop loss covering 84% of a 0.78 BTC short and a take profit covering 48% of a 2,119 ZRO long.
 
 A fresh scan on 2026-10-26 found the same picture four days later: of 293 accounts with pending stops, 13 have a stop loss that covers only part of a position, 100 hold 134 stops with no position or order behind them, and 27 have 5.12 STT waiting to be claimed. Report 019 still reproduces: of the 205 pending stops created from 23 Oct on, 201 store a fixed size, so an "Entire" stop still stops covering the whole position once you add to it.
+
+On 2026-11-05 the scan covered all 453 accounts with pending stops: 12 partly covered, 180 accounts holding 317 orphan stops, 17.47 STT waiting to be claimed by 73 accounts, and 713 of the 738 stops created in the last 7 days store a fixed size. The latest numbers are always in [`docs/scan-latest.json`](docs/scan-latest.json).
 
 ## What it does
 
@@ -89,6 +100,7 @@ StopCheck does not trade for you, and that is the difference from DreamFly, the 
 npm install
 npm run check -- 0xYourAddress     # one account
 npm run check -- --scan 100        # accounts with pending stops
+npm run check -- --scan 500 --json docs/scan-latest.json --history docs/scan-history.json   # network numbers for the page, no addresses
 npm run build:web                  # rebuilds docs/app.js for the page
 ```
 

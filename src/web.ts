@@ -1,4 +1,5 @@
 import { checkAccount, createClient, type PositionCheck, type Report, type StopLeg } from "./check.js";
+import type { ScanSummary } from "./cli.js";
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
@@ -11,6 +12,54 @@ const pct = (x: number) => {
   return `${Math.floor(v)}%`;
 };
 const client = createClient();
+
+// ---- Network today: totals from the daily scan (docs/scan-latest.json) ----
+
+const day = (iso: string) => iso.slice(0, 10);
+const dateLabel = (iso: string) => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+const usd = (x: number) => `$${Math.round(x).toLocaleString("en-US")}`;
+
+/** "up 2 since 4 Nov", "same as 4 Nov"; empty when there is no earlier day to compare with. */
+function trend(now: number, before: number | undefined, since: string, fmt: (x: number) => string = String): string {
+  if (before === undefined || !Number.isFinite(before)) return "";
+  const d = now - before;
+  if (Math.abs(d) < 1e-9) return `same as ${since}`;
+  return `${d > 0 ? "up" : "down"} ${fmt(Math.abs(d))} since ${since}`;
+}
+
+function networkBlock(s: ScanSummary, history: ScanSummary[]): string {
+  // Compare with the latest scan from an earlier day, so two runs on one day do not hide the change.
+  const prev = [...history].reverse().find((h) => day(h.time) < day(s.time));
+  const since = prev ? dateLabel(prev.time) : "";
+  const share = (x: ScanSummary) => (x.stopsCreated7d ? Math.round((x.fixedSizeStops7d / x.stopsCreated7d) * 100) : 0);
+  const cell = (value: string, tone: string, label: string, t: string) =>
+    `<div><b class="${tone}">${value}</b><span>${label}</span>${t ? `<em>${esc(t)}</em>` : ""}</div>`;
+  const uncovered = s.uncoveredNotionalUsd ? ` (${usd(s.uncoveredNotionalUsd)} left open)` : "";
+  return `<h2>Network today <span>${s.accountsScanned} accounts with pending stops, read ${esc(dateLabel(s.time))}</span></h2>
+    <div class="nums">
+      ${cell(String(s.partlyCovered), s.partlyCovered ? "bad" : "", `accounts whose stop loss covers only part of a position${uncovered}`, trend(s.partlyCovered, prev?.partlyCovered, since))}
+      ${cell(String(s.orphanStops), s.orphanStops ? "part" : "", `stops with no position or order behind them, in ${s.orphanAccounts} accounts`, trend(s.orphanStops, prev?.orphanStops, since))}
+      ${cell(s.sttToClaim.toFixed(2), "", `STT waiting to be claimed in ${s.accountsWithSttToClaim} accounts`, trend(s.sttToClaim, prev?.sttToClaim, since, (x) => x.toFixed(2)))}
+      ${cell(`${share(s)}%`, share(s) ? "part" : "", `of ${s.stopsCreated7d} stops set in the last 7 days store a fixed size, the "Entire" trap`, trend(share(s), prev && prev.stopsCreated7d ? share(prev) : undefined, since, (x) => `${x} pts`))}
+    </div>
+    <p>Is your account one of them? Paste your address below. The scan runs every day, so check again after you add to a position or move a stop.</p>
+    <p class="muted">Updated ${esc(s.time.replace("T", " ").replace("Z", " UTC"))}, block ${s.block ?? "?"}. ${history.length > 1 ? `${history.length} scans so far.` : "First daily scan."}</p>`;
+}
+
+async function loadNetwork(): Promise<void> {
+  try {
+    const [latest, history] = await Promise.all([
+      fetch("scan-latest.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)),
+      fetch("scan-history.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
+    ]);
+    if (!latest || typeof latest.partlyCovered !== "number") return;
+    const el = $<HTMLElement>("net");
+    el.innerHTML = networkBlock(latest, Array.isArray(history) ? history : []);
+    el.hidden = false;
+  } catch {
+    // No scan yet or offline: the address check works without it.
+  }
+}
 
 function bar(label: string, share: number, present: boolean): string {
   if (!present) return `<div class="cover"><span>${label}</span><div class="track"><i style="width:0"></i></div><b class="none">none</b></div>`;
@@ -143,3 +192,4 @@ function fromHash(): void {
 }
 window.addEventListener("hashchange", fromHash);
 fromHash();
+void loadNetwork();

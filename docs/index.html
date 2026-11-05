@@ -44,6 +44,16 @@
   .share .actions a, .share .actions button { padding:9px 14px; border-radius:10px; font-size:14px; font-weight:600; text-decoration:none; }
   .share .actions a { background:var(--ink); color:var(--bg); }
   .share .actions button { background:transparent; color:var(--ink); border:1px solid var(--line); }
+  .net { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin:0 0 20px; }
+  .net h2 { font-size:15px; margin:0 0 10px; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; }
+  .net h2 span { color:var(--muted); font-weight:400; font-size:13px; }
+  .net .nums { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+  .net .nums div { border-top:2px solid var(--line); padding-top:6px; }
+  .net .nums b { display:block; font-size:20px; line-height:1.2; } .net .nums b.bad { color:var(--bad); } .net .nums b.part { color:var(--part); }
+  .net .nums span { color:var(--muted); font-size:12.5px; display:block; }
+  .net .nums em { font-style:normal; font-size:12px; color:var(--muted); display:block; margin-top:2px; }
+  .net p { margin:10px 0 0; font-size:14px; } .net p.muted { font-size:13px; margin-top:6px; }
+  @media (max-width:520px) { .net .nums { grid-template-columns:repeat(2,1fr); } }
   footer { margin-top:40px; color:var(--muted); font-size:13px; }
   a { color:var(--accent); }
   @media (max-width:520px) { .stats { grid-template-columns:1fr; } form { flex-direction:column; } }
@@ -53,6 +63,7 @@
 <main>
   <h1>StopCheck</h1>
   <p class="lead">Does your dreamDEX take profit and stop loss actually cover your position? Paste a wallet address. Nothing is signed, this only reads the chain.</p>
+  <section id="net" class="net" hidden></section>
   <form id="form"><input id="addr" placeholder="0x… your dreamDEX account address" autocomplete="off" spellcheck="false"><button>Check</button></form>
   <div id="out"></div>
   <footer>
