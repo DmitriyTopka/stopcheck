@@ -4,7 +4,7 @@ While testing dreamDEX perps we filed 21 feedback reports; this tool fixes the o
 
 Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position a stop loss really protects. A small bot then closes the unprotected part when your stop price is hit.
 
-**Demo video (50 s):** https://youtu.be/T29UDxKIuF8 (also in the repo: [demo/stopcheck-demo.mp4](demo/stopcheck-demo.mp4))
+**Demo video (104 s, real screens, 5 Nov):** [demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4). Shorter first version: https://youtu.be/T29UDxKIuF8
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
@@ -22,7 +22,7 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 | Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
 | X posts | [X posts](#x-posts) |
 | Mainnet | [Mainnet](#mainnet) |
-- **Video and posts.** 50-second demo at https://youtu.be/T29UDxKIuF8, three X posts tagging @DreamDEXSomnia at the end of this page.
+- **Video and posts.** 104-second demo of real screens ([demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4)), three X posts tagging @DreamDEXSomnia at the end of this page.
 
 ## Why
 
@@ -89,9 +89,28 @@ Gas spent by the bot: 0.0099 STT. Keeper log lines for this run: [`demo/keeper-2
 
 **Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 70,000 covers 0.00018. Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until the bounty results are announced. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
 
+## Protect your own account
+
+The keeper is hosted. You do not run anything: link our bot key to your account and it is guarded within a minute.
+
+1. In the dreamDEX app open your wallet and choose **Link a bot** (the same step the official bot kit README describes), tick **Perps** and paste `0x13f05c8e15cC0d7d3abff02C144fb74778018a55`.
+2. That is all. Every minute the hosted keeper looks for accounts that linked this key, asks each perp pool whether the link is real (`isOperatorAuthorized`), and from then on checks your positions every 10 seconds. You can watch the result on the [page](https://dmitriytopka.github.io/stopcheck/) with your address.
+
+What it will do: when a position's stop loss covers only part of it and the mark crosses that stop (or the stop fires), it closes the part the stop left open with a reduce order from the bot key. Never more than that part, never more than what is still open.
+
+What it will not do: open positions, add to them, move or cancel your stops, touch a position whose stop already covers all of it, or act on a position with no stop loss at all. The key cannot withdraw: a linked bot only places, cancels and reduces orders for your account, and pays its own gas. If you cancel your stop loss yourself, the keeper leaves that position alone.
+
+Testnet only. This runs on Somnia Tokyo testnet (Hideki) for the dreamDEX bounty. There are no perp markets on mainnet yet.
+
+To stop it, remove the bot in the same Link a bot panel (or call `setOperatorApprovalForPool(pool, 0x13f0...8a55, selectors, false)` on the registry from your wallet). The pool then says no, the keeper drops your account at its next refresh, and before every close it asks the pool again anyway.
+
 ## Next
 
-A linked bot is authorised per owner and operator (`isOperatorAuthorized(owner, operator, selector)`), and `placeOrderFor` takes the owner as an argument. So one hosted keeper could serve every trader who links its address, with no server on their side. We have not built that yet; on testnet we did not want to run orders for strangers.
+The hosted keeper above serves every account that links its key ([`src/hub.ts`](src/hub.ts)). What is left:
+
+- A Telegram or email note to the trader when the keeper closes a gap, with the tx link.
+- A small public status page: how many accounts are guarded and every close the keeper made.
+- Mainnet, as below, once perps launch there.
 
 ## Mainnet
 
@@ -133,6 +152,16 @@ PRIVATE_KEY=0x... OWNER_ADDRESS=0xYourAccount NETWORK=hideki DRY_RUN=false npm r
 ```
 
 `PRIVATE_KEY` is the bot key you linked in the app with Link a bot (Perps), not your wallet key. Every 10 seconds the keeper re-reads the account. For a position whose stop loss covers only part of it, it remembers the uncovered size and the first stop-loss trigger. When the mark crosses that trigger it re-reads the position and closes the uncovered size, capped at what is still open, so it never closes more than your stop left behind. Code: [`src/keeper.ts`](src/keeper.ts).
+
+The hosted version guards every account that linked the key, with the same per-account logic ([`src/gap.ts`](src/gap.ts)):
+
+```bash
+npm run owners                                   # who linked 0x13f0...8a55, checked on chain
+npm run hub                                      # dry run, no key needed
+PRIVATE_KEY=0x... DRY_RUN=false npm run hub      # live
+```
+
+Owners come from the indexer's `OperatorApproval` rows for the bot key plus the registry's own logs since start, and each one is confirmed with `isOperatorAuthorized(owner, bot, placeOrderFor)` on every perp pool. The list refreshes every 60 s (`HUB_REFRESH_MS`). Before each live close the hub asks the pool again, and it stops sending for one account after `HUB_OWNER_GAS_CAP_STT` (0.1) and for all after `KEEPER_GAS_CAP_STT` (1) STT, while still watching and logging. One account failing never stops the others. Code: [`src/hub.ts`](src/hub.ts), [`src/owners.ts`](src/owners.ts).
 
 ## How it reads
 

@@ -84,6 +84,8 @@ function positionCard(p: PositionCheck): string {
 }
 
 const PAGE = "https://dmitriytopka.github.io/stopcheck/";
+/** The bot key the hosted keeper (src/hub.ts) sends with. */
+const BOT = "0x13f05c8e15cC0d7d3abff02C144fb74778018a55";
 
 /**
  * The one number worth sharing: how much of the account's open exposure, by
@@ -143,6 +145,7 @@ function render(r: Report): string {
     .join("");
   return `${shareCard(r)}
     ${headline}
+    <p class="muted small">Want this account guarded? Link <code title="${BOT}">0x13f0...8a55</code> as a bot (Perps) and the hosted keeper picks it up within a minute.</p>
     <div class="stats">
       <div><b>${r.positions.length}</b><span>open positions</span></div>
       <div><b>${r.sttHeld.toFixed(2)}</b><span>STT held by stops</span></div>
