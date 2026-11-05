@@ -4,7 +4,7 @@ While testing dreamDEX perps we filed 21 feedback reports; this tool fixes the o
 
 Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position a stop loss really protects. A small bot then closes the unprotected part when your stop price is hit.
 
-**Demo video (104 s, real screens, 5 Nov):** [demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4). Shorter first version: https://youtu.be/T29UDxKIuF8
+**Demo video (104 s, real screens, 5 Nov):** https://youtu.be/aGLra4y-bGE (also in the repo: [demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4)). Shorter first version: https://youtu.be/T29UDxKIuF8
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
@@ -23,7 +23,7 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 | Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
 | X posts | [X posts](#x-posts) |
 | Mainnet | [Mainnet](#mainnet) |
-- **Video and posts.** 104-second demo of real screens ([demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4)), three X posts tagging @DreamDEXSomnia at the end of this page.
+- **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, five X posts tagging @DreamDEXSomnia at the end of this page.
 
 ## Why
 
@@ -173,8 +173,10 @@ Market list, pending stops and candidate positions come from the dreamDEX indexe
 1. [The "Entire" trap and the bot that closed the other half (with the demo video)](https://x.com/SirenaMC2/status/2113498955908812882)
 2. [463 accounts scanned: 19 with a stop loss covering only part of the position](https://x.com/SirenaMC2/status/2113499393676488753)
 3. [Cancelled limit orders leave their TP/SL armed](https://x.com/SirenaMC2/status/2113499520369910070)
+4. [Third live run, on ETH: the keeper closed the uncovered half 18 s after the stop (with the new video)](https://x.com/SirenaMC2/status/2118283633450508554)
+5. [All 453 accounts with pending stops: 12 partly covered, 713 of 738 new stops fixed-size](https://x.com/SirenaMC2/status/2118284098107998236)
 
-All three tag @DreamDEXSomnia and were posted on 2026-10-23.
+All five tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05.
 
 ## License
 
