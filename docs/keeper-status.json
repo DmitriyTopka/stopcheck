@@ -1,0 +1,23 @@
+{
+  "time": "2026-11-09T19:37:52Z",
+  "bot": "0x13f05c8e15cC0d7d3abff02C144fb74778018a55",
+  "guardedAccounts": 1,
+  "demoAccountGuarded": true,
+  "closes": [
+    {
+      "time": "2026-11-05T09:24:03Z",
+      "market": "ETH-PERP",
+      "tx": "0x13c80f3832d78e072054647faa87d47be5e528e6a422851fc3cb09422fe28ec3"
+    },
+    {
+      "time": "2026-10-26T06:27:15Z",
+      "market": "BTC-PERP",
+      "tx": "0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12"
+    },
+    {
+      "time": "2026-10-22T19:34:38Z",
+      "market": "BTC-PERP",
+      "tx": "0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2"
+    }
+  ]
+}

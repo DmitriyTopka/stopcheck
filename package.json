@@ -9,7 +9,8 @@
     "build:web": "esbuild src/web.ts --bundle --format=esm --platform=browser --target=es2020 --outfile=docs/app.js --minify",
     "keeper": "tsx src/keeper.ts",
     "hub": "tsx src/hub.ts",
-    "owners": "tsx src/owners.ts"
+    "owners": "tsx src/owners.ts",
+    "status": "tsx src/status.ts"
   },
   "dependencies": {
     "@somnia-chain/markets-sdk": "0.32.1",

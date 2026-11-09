@@ -46,15 +46,37 @@ function networkBlock(s: ScanSummary, history: ScanSummary[]): string {
     <p class="muted">Updated ${esc(s.time.replace("T", " ").replace("Z", " UTC"))}, block ${s.block ?? "?"}. ${history.length > 1 ? `${history.length} scans so far.` : "First daily scan."}</p>`;
 }
 
+// ---- Keeper status: guarded accounts and closes (docs/keeper-status.json, src/status.ts) ----
+
+interface KeeperStatus {
+  time: string;
+  bot: string;
+  guardedAccounts: number;
+  closes: { time: string; market: string; tx: string }[];
+}
+
+const EXPLORER_TX = "https://explorer.testnet.somnia.network/tokyo/tx/";
+
+function keeperBlock(k: KeeperStatus): string {
+  const n = k.guardedAccounts;
+  const list = k.closes
+    .map((c) => `<a href="${EXPLORER_TX}${esc(c.tx)}">${esc(dateLabel(c.time))}, ${esc(c.market)}</a>`)
+    .join(" · ");
+  return `<p><b>Gap keeper:</b> guards ${n} account${n === 1 ? "" : "s"} linked to its key today. ${k.closes.length} close${k.closes.length === 1 ? "" : "s"} on chain so far${list ? `: ${list}` : ""}. Link the key <code>${esc(k.bot.slice(0, 6))}…${esc(k.bot.slice(-4))}</code> with Link a bot to be guarded too (<a href="https://github.com/DmitriyTopka/stopcheck#protect-your-own-account">how</a>).</p>`;
+}
+
 async function loadNetwork(): Promise<void> {
   try {
-    const [latest, history] = await Promise.all([
+    const [latest, history, keeper] = await Promise.all([
       fetch("scan-latest.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)),
       fetch("scan-history.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : [])).catch(() => []),
+      fetch("keeper-status.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ]);
     if (!latest || typeof latest.partlyCovered !== "number") return;
     const el = $<HTMLElement>("net");
-    el.innerHTML = networkBlock(latest, Array.isArray(history) ? history : []);
+    el.innerHTML =
+      networkBlock(latest, Array.isArray(history) ? history : []) +
+      (keeper && typeof keeper.guardedAccounts === "number" && Array.isArray(keeper.closes) ? keeperBlock(keeper) : "");
     el.hidden = false;
   } catch {
     // No scan yet or offline: the address check works without it.

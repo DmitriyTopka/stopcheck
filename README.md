@@ -8,17 +8,19 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
+![StopCheck on our demo account: the stop loss covers 50% of the position, network numbers and keeper status on top](demo/stopcheck-page.png)
+
 ## Judges start here
 
 - **Live right now.** Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21. The card says the stop loss covers 50% of a 0.00036 BTC long: an "Entire" stop set before the position was doubled. Our keeper watches this account on a server until the bounty results are out.
 - **It worked three times on chain, on two markets.** Each time the account's own stop closed half and the keeper closed the other half seconds later. 22 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2). 26 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12). 5 Nov (ETH): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x5d01311d4e27c2314b9d1352eec62a11aab8c0b455c9328682d97003528e1db6), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x13c80f3832d78e072054647faa87d47be5e528e6a422851fc3cb09422fe28ec3), 18 s later. Full timelines below.
 - **Try it on your own account.** Link our bot key `0x13f05c8e15cC0d7d3abff02C144fb74778018a55` with Link a bot (Perps) and the hosted keeper guards your positions within a minute. See [Protect your own account](#protect-your-own-account).
-- **Not just our account.** On 5 Nov we scanned all 453 accounts that had pending stops. 12 had a stop loss covering only part of a position (one of them is our demo account), leaving about $41,300 of position value with no stop. 180 were holding 317 stops with no position or order behind them. Of the 738 stops created in the 7 days before, 713 (97%) store a fixed size, so they stop covering the whole position as soon as it grows. The page shows these numbers and refreshes them every day.
+- **Not just our account.** On 5 Nov we scanned all 453 accounts that had pending stops. 12 had a stop loss covering only part of a position (one of them is our demo account), leaving about $41,300 of position value with no stop. 180 were holding 317 stops with no position or order behind them. Of the 738 stops created in the 7 days before, 713 (97%) store a fixed size, so they stop covering the whole position as soon as it grows. The page shows these numbers and refreshes them every day (on 9 Nov: 7 accounts, about $95,100 of position value with no stop).
 
 | Judging criterion | Where to look |
 |---|---|
 | Clear user value | [Why](#why), the live card above, the network numbers |
-| Repeat-use loop | "Network today" on the [page](https://dmitriytopka.github.io/stopcheck/), refreshed daily by a [GitHub Action](.github/workflows/scan.yml); any trader can re-check an address after each change to a position |
+| Repeat-use loop | "Network today" on the [page](https://dmitriytopka.github.io/stopcheck/), refreshed daily by a [GitHub Action](.github/workflows/scan.yml), with the keeper's status under it (accounts guarded, every close with its tx); any trader can re-check an address after each change to a position |
 | Technical execution | [How it reads](#how-it-reads) (sizes from the chain, not the indexer), [`src/check.ts`](src/check.ts), [`src/keeper.ts`](src/keeper.ts) with a gas cap |
 | Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
 | X posts | [X posts](#x-posts) |
@@ -110,7 +112,6 @@ To stop it, remove the bot in the same Link a bot panel (or call `setOperatorApp
 The hosted keeper above serves every account that links its key ([`src/hub.ts`](src/hub.ts)). What is left:
 
 - A Telegram or email note to the trader when the keeper closes a gap, with the tx link.
-- A small public status page: how many accounts are guarded and every close the keeper made.
 - Mainnet, as below, once perps launch there.
 
 ## Mainnet
@@ -177,6 +178,19 @@ Market list, pending stops and candidate positions come from the dreamDEX indexe
 5. [All 453 accounts with pending stops: 12 partly covered, 713 of 738 new stops fixed-size](https://x.com/SirenaMC2/status/2118284098107998236)
 
 All five tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05.
+
+## Known limitations
+
+- Testnet only. There are no perp markets on Somnia mainnet yet; see [Mainnet](#mainnet).
+- The keeper guards only accounts that link its key. Today that is one account, our demo account; the page shows the current count every day ([`src/status.ts`](src/status.ts)).
+- It needs a stop loss to act on. A position with no stop loss, or one whose stop already covers all of it, is left alone.
+- The list of accounts to scan comes from the dreamDEX indexer. Sizes are read from the chain, but an account the indexer has not seen yet is not in the daily numbers.
+- The keeper closes at market with a reduce order after the mark crosses the stop, so the fill can differ from the stop price, as with any stop.
+- Three live closes so far, all on our own test account. We have not seen it run on someone else's position.
+
+## How this was built
+
+Written during the bounty, from 22 Oct, by one person with Claude Code (Anthropic) as the coding assistant: it wrote most of the code, the scripts and the texts. The trades in the live runs were placed in the dreamDEX app on our test account and every close was checked on the explorer. Every number on this page comes from a script in this repo, with its output saved in [`demo/`](demo) or [`docs/`](docs).
 
 ## License
 

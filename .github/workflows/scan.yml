@@ -33,9 +33,14 @@ jobs:
         run: |
           npm run check -- --scan 500 --budget 480 --json docs/scan-latest.json \
             || npm run check -- --scan 150 --budget 180 --concurrency 2 --json docs/scan-latest.json
+      # Keeper status for the page: guarded account count and closes, read-only.
+      # A failure here keeps yesterday's file and never blocks the scan commit.
+      - name: Keeper status
+        continue-on-error: true
+        run: npm run status -- docs/keeper-status.json
       - name: Commit if changed
         run: |
-          git add docs/scan-latest.json docs/scan-history.json
+          git add docs/scan-latest.json docs/scan-history.json docs/keeper-status.json
           if git diff --cached --quiet; then
             echo "no change"
             exit 0
