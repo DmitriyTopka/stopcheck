@@ -1,9 +1,14 @@
 {
-  "time": "2026-11-10T15:00:51Z",
+  "time": "2026-11-10T19:08:50Z",
   "bot": "0x13f05c8e15cC0d7d3abff02C144fb74778018a55",
   "guardedAccounts": 1,
   "demoAccountGuarded": true,
   "closes": [
+    {
+      "time": "2026-11-10T19:06:59Z",
+      "market": "SOL-PERP",
+      "tx": "0xca131b59b4f92a4fd72dd18b30c5c2766b086c37538212a59a9b719595893c15"
+    },
     {
       "time": "2026-11-05T09:24:03Z",
       "market": "ETH-PERP",
