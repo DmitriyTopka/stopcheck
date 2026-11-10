@@ -54,6 +54,11 @@
   .net .nums em { font-style:normal; font-size:12px; color:var(--muted); display:block; margin-top:2px; }
   .net p { margin:10px 0 0; font-size:14px; } .net p.muted { font-size:13px; margin-top:6px; }
   @media (max-width:520px) { .net .nums { grid-template-columns:repeat(2,1fr); } }
+  .live { font-size:13.5px; color:var(--muted); margin:-16px 0 20px; padding-left:16px; position:relative; }
+  .live::before { content:""; position:absolute; left:0; top:6px; width:8px; height:8px; border-radius:50%; background:var(--line); }
+  .live.on::before { background:var(--ok); animation:pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity:.35; } }
+  @media (prefers-reduced-motion: reduce) { .live.on::before { animation:none; } }
   footer { margin-top:40px; color:var(--muted); font-size:13px; }
   a { color:var(--accent); }
   @media (max-width:520px) { .stats { grid-template-columns:1fr; } form { flex-direction:column; } }
@@ -65,6 +70,7 @@
   <p class="lead">Does your dreamDEX take profit and stop loss actually cover your position? Paste a wallet address. Nothing is signed, this only reads the chain.</p>
   <section id="net" class="net" hidden></section>
   <form id="form"><input id="addr" placeholder="0x… your dreamDEX account address" autocomplete="off" spellcheck="false"><button>Check</button></form>
+  <p id="live" class="live" hidden></p>
   <div id="out"></div>
   <footer>
     What it looks for: a TP/SL set as "Entire" that only covers the size you had when you set it; stops left armed after their limit order was cancelled; STT trigger fees waiting to be claimed after a linked TP/SL fired. Somnia Tokyo testnet only.

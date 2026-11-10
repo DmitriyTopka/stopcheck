@@ -24,6 +24,7 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 | Technical execution | [How it reads](#how-it-reads) (sizes from the chain, not the indexer), [`src/check.ts`](src/check.ts), [`src/keeper.ts`](src/keeper.ts) with a gas cap |
 | Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
 | X posts | [X posts](#x-posts) |
+| Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity): the card updates itself when the account changes on chain, code in [`src/web.ts`](src/web.ts) |
 | Mainnet | [Mainnet](#mainnet) |
 - **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, five X posts tagging @DreamDEXSomnia at the end of this page.
 
@@ -44,6 +45,7 @@ On 2026-11-05 the scan covered all 453 accounts with pending stops: 12 partly co
 ## What it does
 
 - **Check (web page and CLI). Start here.** Paste an address and get a share card with one number: how much of the account's open position value a stop loss covers. Below it: the share of each open position covered by its stop loss and by its take profit; stops with no position, split into "waiting for a resting order" and true orphans; STT held by stops and STT waiting to be claimed.
+- **Live card (Somnia Reactivity).** Once an address is open, the page keeps a Reactivity subscription and redraws the card by itself when that account trades or its stops change. See [Live card](#live-card-somnia-reactivity).
 - **Gap keeper (bot).** A trading key linked to your account with "Link a bot" cannot arm stops for you; only the account can. So the keeper watches instead: when the mark reaches your stop loss and that stop covers only part of the position, it closes the uncovered rest with a reduce order through `placeOrderFor`.
 
 ## Live demo (Somnia Tokyo testnet, 2026-10-22)
@@ -167,6 +169,32 @@ Owners come from the indexer's `OperatorApproval` rows for the bot key plus the 
 
 ## How it reads
 
+```mermaid
+flowchart LR
+  T["Trader<br/>(dreamDEX app)"] -- "Link a bot (Perps)" --> R["Operator registry<br/>(Somnia Tokyo testnet)"]
+  subgraph Chain["Somnia Tokyo testnet"]
+    R
+    P["Perp pools<br/>positions, mark"]
+    S["Stop registry<br/>TP/SL legs and sizes"]
+  end
+  I["dreamDEX indexer<br/>who has stops"] --> C
+  P --> C["StopCheck<br/>page and CLI<br/>src/check.ts"]
+  S --> C
+  C --> W["Share card<br/>% covered"]
+  P -. "Somnia Reactivity<br/>somnia_watch push" .-> W
+  A["Daily GitHub Action<br/>scan + keeper status"] --> N["Network today<br/>on the page"]
+  R -- "isOperatorAuthorized" --> H["Hosted keeper hub<br/>src/hub.ts, every 10 s"]
+  P --> H
+  S --> H
+  H -- "placeOrderFor:<br/>reduce the uncovered part" --> P
+```
+
+Sizes are always read from the chain; the indexer only says where to look.
+
+### Live card (Somnia Reactivity)
+
+After the first read, the page opens an off-chain Reactivity subscription (`somnia_watch` over `wss://api.hideki2.infra.testnet.somnia.network/ws`) for every perp pool, margin bank and stop registry. The node pushes each log as it lands in a block. When a log names the account (in its topics or data), the page reads the account again from the chain and redraws the card, at most once every 5 seconds. Off-chain subscriptions cost nothing, need no key and sign nothing. Code: `watchLive` in [`src/web.ts`](src/web.ts).
+
 Market list, pending stops and candidate positions come from the dreamDEX indexer. Position sizes (`getPerpPosition`), stop sizes and links (`getPerpStopOrders`), resting orders (`getOpenOrdersOnchain`) and claimable fees (`getUnclaimedPerpStopSomi`) are read from the chain, so a lagging indexer cannot make a position look covered. Code: [`src/check.ts`](src/check.ts).
 
 ## X posts
@@ -186,6 +214,7 @@ All five tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05.
 - It needs a stop loss to act on. A position with no stop loss, or one whose stop already covers all of it, is left alone.
 - The list of accounts to scan comes from the dreamDEX indexer. Sizes are read from the chain, but an account the indexer has not seen yet is not in the daily numbers.
 - The keeper closes at market with a reduce order after the mark crosses the stop, so the fill can differ from the stop price, as with any stop.
+- The live card works only while the page is open; if the socket drops, it says so and stops updating. The keeper itself still polls every 10 seconds and does not use Reactivity yet.
 - Three live closes so far, all on our own test account. We have not seen it run on someone else's position.
 
 ## How this was built

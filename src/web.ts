@@ -187,8 +187,19 @@ async function run(address: string): Promise<void> {
   }
   out.innerHTML = `<p class="muted">Reading positions and stops…</p>`;
   history.replaceState(null, "", `#${address}`);
+  stopLive();
   try {
-    out.innerHTML = render(await checkAccount(address, client));
+    await show(address);
+    void watchLive(address);
+  } catch (e: any) {
+    out.innerHTML = `<p class="verdict warn">Could not read this account: ${esc(String(e?.message ?? e).slice(0, 200))}</p>`;
+  }
+}
+
+/** Reads the account and draws the card; also used for live refreshes. */
+async function show(address: string): Promise<void> {
+  const out = $<HTMLDivElement>("out");
+  out.innerHTML = render(await checkAccount(address, client));
     $<HTMLButtonElement>("copy")?.addEventListener("click", async (ev) => {
       const btn = ev.currentTarget as HTMLButtonElement;
       try {
@@ -198,9 +209,85 @@ async function run(address: string): Promise<void> {
         btn.textContent = "Copy failed";
       }
     });
-  } catch (e: any) {
-    out.innerHTML = `<p class="verdict warn">Could not read this account: ${esc(String(e?.message ?? e).slice(0, 200))}</p>`;
-  }
+}
+
+// ---- Live card: Somnia Reactivity (off-chain subscription over WebSocket) ----
+// The node pushes every log from the perp pools, margin banks and stop registries
+// as it lands in a block (somnia_watch). When a log names this account, the card
+// is read again from the chain. Free, no key, nothing signed. If the socket drops,
+// the card simply stops updating and says so.
+
+const REACTIVITY_WS = "wss://api.hideki2.infra.testnet.somnia.network/ws";
+let live: WebSocket | null = null;
+
+function liveNote(html: string, on: boolean): void {
+  const el = $<HTMLParagraphElement>("live");
+  el.innerHTML = html;
+  el.className = on ? "live on" : "live";
+  el.hidden = false;
+}
+
+function stopLive(): void {
+  const ws = live;
+  live = null;
+  ws?.close();
+  $<HTMLParagraphElement>("live").hidden = true;
+}
+
+async function watchLive(address: string): Promise<void> {
+  const rows: any[] = await (client.client as any).listPerpMarkets();
+  const sources = new Set<string>([address.toLowerCase()]);
+  for (const r of rows) for (const a of [r.poolAddress, r.marginBank, r.stopRegistry]) if (a) sources.add(String(a).toLowerCase());
+  const needle = address.toLowerCase().slice(2);
+  const ws = new WebSocket(REACTIVITY_WS);
+  live = ws;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  let updates = 0;
+  let lastRead = Date.now();
+  const watching = `<b>Live via Somnia Reactivity.</b> This card updates by itself when this account's positions or stops change on chain`;
+  ws.onopen = () =>
+    ws.send(JSON.stringify({ jsonrpc: "2.0", id: 1, method: "eth_subscribe", params: ["somnia_watch", { address: [...sources], eth_calls: [] }] }));
+  ws.onmessage = (m) => {
+    if (live !== ws) return;
+    let j: any;
+    try {
+      j = JSON.parse(String(m.data));
+    } catch {
+      return;
+    }
+    if (j.id === 1) {
+      if (j.error) liveNote("Live updates are not available right now. The card above is still correct as of the time shown.", false);
+      else liveNote(`${watching}.`, true);
+      return;
+    }
+    const log = j.params?.result;
+    if (!log) return;
+    const hit =
+      String(log.address ?? "").toLowerCase() === address.toLowerCase() ||
+      (log.topics ?? []).some((t: string) => String(t).toLowerCase().includes(needle)) ||
+      String(log.data ?? "").toLowerCase().includes(needle);
+    if (!hit) return;
+    // One trade emits several logs: wait for the burst to end, then read once,
+    // and never more often than every 5 s for a busy account.
+    if (timer) return;
+    const wait = Math.max(1500, lastRead + 5000 - Date.now());
+    timer = setTimeout(async () => {
+      timer = undefined;
+      lastRead = Date.now();
+      if (live !== ws) return;
+      try {
+        await show(address);
+        updates++;
+        const at = new Date().toISOString().slice(11, 19);
+        liveNote(`${watching}. Updated at ${at} UTC after an on-chain event (${updates} so far).`, true);
+      } catch {
+        // Keep the last card; the next event tries again.
+      }
+    }, wait);
+  };
+  ws.onclose = () => {
+    if (live === ws) liveNote("Live updates stopped (connection closed). Press Check to read the account again.", false);
+  };
 }
 
 $<HTMLFormElement>("form").addEventListener("submit", (ev) => {
