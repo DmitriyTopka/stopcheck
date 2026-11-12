@@ -133,19 +133,39 @@ export async function gapStep(o: StepOptions): Promise<StepResult> {
     if (Date.now() - (lastAct.get(g.symbol) ?? 0) < o.cooldownMs) continue;
 
     // Close the uncovered amount, capped by what is open now: if the account's
-    // own stop already fired, what is left IS the uncovered part.
-    const fraction = Math.min(1, g.uncovered / p.size);
-    lastAct.set(g.symbol, Date.now());
+    // own stop already fired, what is left IS the uncovered part. The size is
+    // read again right before the close (same call closePosition sizes with):
+    // the stop often fires between the cycle's read and this point, and a
+    // fraction of the old size would then be too small (seen on AVAX, 12 Nov).
+    let liveSize = p.size;
+    try {
+      const preview: any = await (ctx.exchange.client as any).previewPerpClosePnl({
+        pool: market.info.poolAddress,
+        marginBank: market.info.marginBank,
+        account: owner,
+      });
+      if (preview?.closedQuantity !== undefined) liveSize = Number(BigInt(preview.closedQuantity)) / 10 ** market.info.baseDecimals;
+    } catch {
+      // Keep the cycle's size; closePosition re-checks anyway.
+    }
+    if (liveSize <= 0) {
+      known.delete(g.symbol);
+      continue;
+    }
+    const fraction = Math.min(1, g.uncovered / liveSize);
     if (!o.live) {
+      lastAct.set(g.symbol, Date.now());
       log(`[dry-run] would close ${(fraction * 100).toFixed(1)}% of ${g.symbol} (${(p.size * fraction).toPrecision(6)})`);
       continue;
     }
     const go = o.beforeSend ? await o.beforeSend(g.symbol, market.info.poolAddress) : "send";
+    // The cooldown only follows a send attempt; a skipped close is tried again next cycle.
     if (go === "stop") return "stop";
     if (go === "skip") continue;
     // afterSend runs even when the close throws, so gas spent on a failed send is
     // still charged to this account.
     let sent = false;
+    lastAct.set(g.symbol, Date.now());
     try {
       const res = await closePosition(ctx, market, owner, { fraction, label: "gap keeper" });
       sent = res.sent;
@@ -154,6 +174,7 @@ export async function gapStep(o: StepOptions): Promise<StepResult> {
       await o.afterSend?.(g.symbol, sent);
     }
     if (sent) known.delete(g.symbol);
+    else lastAct.delete(g.symbol);
   }
 
   if (!known.size) log(`nothing uncovered (${report.positions.length} position(s))`);

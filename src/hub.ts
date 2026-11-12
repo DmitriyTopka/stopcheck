@@ -23,6 +23,7 @@ import { privateKeyToAccount } from "viem/accounts";
 import { createClient } from "./check.js";
 import { gapStep, newOwnerState, type OwnerState } from "./gap.js";
 import { DEFAULT_BOT, OwnerFinder, canPlaceFor } from "./owners.js";
+import { startWake, type Wake } from "./wake.js";
 
 loadEnv();
 const POLL_MS = envNum("KEEPER_POLL_MS", 10_000);
@@ -114,6 +115,13 @@ async function main(): Promise<void> {
   const sharedSpent = () =>
     Object.entries(spend).filter(([k]) => !PRIORITY.has(k)).reduce((a, [, v]) => a + v, 0);
   let lastRefresh = 0;
+  // Optional Somnia Reactivity wake-up (HUB_REACTIVITY=1): polling stays as the fallback.
+  let wake: Wake | null = null;
+  if (process.env.HUB_REACTIVITY === "1") {
+    const rows: any[] = await (client.client as any).listPerpMarkets();
+    const sources = [...new Set(rows.flatMap((r) => [r.poolAddress, r.marginBank, r.stopRegistry]).filter(Boolean).map((a) => String(a).toLowerCase()))];
+    wake = startWake(sources, () => [...guarded.keys()], (line) => console.log(line));
+  }
 
   console.log(
     `gap keeper hub for bot ${bot} | refresh owners ${REFRESH_MS / 1000}s | poll ${POLL_MS / 1000}s | dry-run ${!live} | ` +
@@ -211,8 +219,14 @@ async function main(): Promise<void> {
       }
     }
 
-    await sleep(POLL_MS, stopped);
+    if (wake) {
+      const woke = await Promise.race([sleep(POLL_MS, stopped).then(() => null), wake.next()]);
+      if (woke) console.log(`[${short(woke.owner)}] woken by a Reactivity event at ${new Date(woke.at).toISOString()}`);
+    } else {
+      await sleep(POLL_MS, stopped);
+    }
   }
+  wake?.close();
   for (const g of guarded.values()) await shutdown(g.ctx);
 }
 

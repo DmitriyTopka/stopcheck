@@ -12,7 +12,8 @@
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
   main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
   h1 { font-size:28px; margin:0 0 6px; letter-spacing:-0.01em; }
-  .lead { color:var(--muted); margin:0 0 24px; }
+  .lead { color:var(--ink); margin:0 0 8px; }
+  .demo { color:var(--muted); margin:0 0 24px; }
   form { display:flex; gap:8px; margin-bottom:28px; }
   input { flex:1; min-width:0; padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); font:15px ui-monospace,Menlo,monospace; }
   button { padding:12px 18px; border:0; border-radius:10px; background:var(--accent); color:#fff; font-weight:600; cursor:pointer; }
@@ -67,13 +68,14 @@
 <body>
 <main>
   <h1>StopCheck</h1>
-  <p class="lead">Does your dreamDEX take profit and stop loss actually cover your position? Paste a wallet address. Nothing is signed, this only reads the chain.</p>
+  <p class="lead">Your stop loss on dreamDEX perps can cover only part of your position: set it as "Entire", add to the position, and it still closes just the old size. Paste an address to see how much a stop really covers. Link our free keeper and it closes the part your stop leaves open, seconds after the stop fires.</p>
+  <p class="demo small">Nothing is signed, this page only reads the chain. <a href="#0x84326A92162Ece92ed257A31073fDd3a6599BF21">See the demo account</a> (a stop covering 50%, guarded by the keeper) · <a href="https://github.com/DmitriyTopka/stopcheck#protect-your-own-account">How the keeper works</a></p>
   <section id="net" class="net" hidden></section>
   <form id="form"><input id="addr" placeholder="0x… your dreamDEX account address" autocomplete="off" spellcheck="false"><button>Check</button></form>
   <p id="live" class="live" hidden></p>
   <div id="out"></div>
   <footer>
-    What it looks for: a TP/SL set as "Entire" that only covers the size you had when you set it; stops left armed after their limit order was cancelled; STT trigger fees waiting to be claimed after a linked TP/SL fired. Somnia Tokyo testnet only.
+    What it checks: a stop loss or take profit that covers less than the whole position (an "Entire" stop set before you added to it, or a partial one); stops still armed after their limit order was cancelled, which would act on your next position; trigger fees (0.15 STT per stop) you can claim back in the app. It keeps working after any fix to "Entire": it compares every stop with the position it protects. Somnia Tokyo testnet only.
   </footer>
 </main>
 <script type="module" src="app.js"></script>

@@ -1,8 +1,10 @@
 # StopCheck for dreamDEX perps
 
-While testing dreamDEX perps we filed 21 feedback reports; this tool fixes the one that can cost a trader the most.
-
 Your take profit and stop loss on dreamDEX may not cover the position you think they cover. StopCheck tells you, for any account, how much of each position a stop loss really protects. A small bot then closes the unprotected part when your stop price is hit.
+
+It is a safety layer, not a patch for one bug. It compares every stop with the position it protects, so it keeps catching gaps after "Entire" is fixed: stops left armed after a cancelled order, partial take profits, stops with no position behind them. The daily scan would also show such a fix working, as the count of partly covered accounts drops to zero.
+
+We found the trap while testing dreamDEX perps, in one of our 21 feedback reports; this tool is the answer to the one that can cost a trader the most.
 
 **Demo video (104 s, real screens, 5 Nov):** https://youtu.be/aGLra4y-bGE (also in the repo: [demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4)). Shorter first version: https://youtu.be/T29UDxKIuF8
 
@@ -13,7 +15,7 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 ## Judges start here
 
 - **Live right now.** Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21. The card says the stop loss covers 50% of a 0.00036 BTC long: an "Entire" stop set before the position was doubled. Our keeper watches this account on a server until the bounty results are out.
-- **It worked four times on chain, on three markets.** Each time the account's own stop closed half and the keeper closed the other half seconds later. 22 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2). 26 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12). 5 Nov (ETH): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x5d01311d4e27c2314b9d1352eec62a11aab8c0b455c9328682d97003528e1db6), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x13c80f3832d78e072054647faa87d47be5e528e6a422851fc3cb09422fe28ec3), 18 s later. 10 Nov (SOL): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x80c5ad3c60c042b2afe91e189ef078c0fe4a12aacd42571cb8f0a67692cdbc99), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0xca131b59b4f92a4fd72dd18b30c5c2766b086c37538212a59a9b719595893c15), 19 s later. Full timelines below.
+- **It worked six times on chain, on five markets.** Each time the account's own stop closed half and the keeper closed the other half seconds later. 22 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2). 26 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12). 5 Nov (ETH): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x5d01311d4e27c2314b9d1352eec62a11aab8c0b455c9328682d97003528e1db6), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x13c80f3832d78e072054647faa87d47be5e528e6a422851fc3cb09422fe28ec3), 18 s later. 10 Nov (SOL): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x80c5ad3c60c042b2afe91e189ef078c0fe4a12aacd42571cb8f0a67692cdbc99), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0xca131b59b4f92a4fd72dd18b30c5c2766b086c37538212a59a9b719595893c15), 19 s later. 12 Nov (AVAX): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0xa4ab30ec80e31ade793b18abbe313785048d939944f641f912825ff50dcd55ae), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x549a8b8a328602ff85a6c0fc0799f8bf6acb510489d89529202e57471146a94a), 52 s later; this run found a bug in the keeper, fixed the same morning. 12 Nov (LINK), with the fix and the hub woken by Somnia Reactivity: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0xf5cab3ad8f1d8f980f0d5b44a7be2aee9442146f3321d1e10b5e41f196b2dd40), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0xe5f07b97c9815cc6337b1dad85eec9b33ecc990193cc32d381999fbfae964eb1), 11 s later. Full timelines below.
 - **Try it on your own account.** Link our bot key `0x13f05c8e15cC0d7d3abff02C144fb74778018a55` with Link a bot (Perps) and the hosted keeper guards your positions within a minute. See [Protect your own account](#protect-your-own-account).
 - **Not just our account.** On 5 Nov we scanned all 453 accounts that had pending stops. 12 had a stop loss covering only part of a position (one of them is our demo account), leaving about $41,300 of position value with no stop. 180 were holding 317 stops with no position or order behind them. Of the 738 stops created in the 7 days before, 713 (97%) store a fixed size, so they stop covering the whole position as soon as it grows. The page shows these numbers and refreshes them every day (on 11 Nov: 6 accounts, about $94,100 of position value with no stop).
 
@@ -24,7 +26,7 @@ Your take profit and stop loss on dreamDEX may not cover the position you think 
 | Technical execution | [How it reads](#how-it-reads) (sizes from the chain, not the indexer), [`src/check.ts`](src/check.ts), [`src/keeper.ts`](src/keeper.ts) with a gas cap |
 | Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
 | X posts | [X posts](#x-posts) |
-| Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity): the card updates itself when the account changes on chain, code in [`src/web.ts`](src/web.ts) |
+| Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity) in two places: the card updates itself when the account changes on chain ([`src/web.ts`](src/web.ts)), and the keeper hub is woken by the same subscription instead of waiting for its next poll ([`src/wake.ts`](src/wake.ts)) |
 | Mainnet | [Mainnet](#mainnet) |
 - **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, five X posts tagging @DreamDEXSomnia at the end of this page.
 
@@ -105,9 +107,41 @@ A third market, five days after the ETH run. Nothing was set up for the keeper b
 | 19:06:40 | The account's own stop loss fires and closes 0.18 | [0x80c5ad3c…cdbc99](https://explorer.testnet.somnia.network/tokyo/tx/0x80c5ad3c60c042b2afe91e189ef078c0fe4a12aacd42571cb8f0a67692cdbc99) |
 | **19:06:59** | **Hosted keeper hub closes the other 0.18 with `placeOrderFor` from the linked bot key** | [0xca131b59…893c15](https://explorer.testnet.somnia.network/tokyo/tx/0xca131b59b4f92a4fd72dd18b30c5c2766b086c37538212a59a9b719595893c15) |
 
-Gas spent by the bot: 0.0047 STT. Hub log lines for SOL: [`demo/keeper-2026-11-10-sol.log`](demo/keeper-2026-11-10-sol.log). The 19 s gap is mostly the hub's 10 s polling; pushing stop events to the hub with Somnia Reactivity, as the page already does, would cut it.
+Gas spent by the bot: 0.0047 STT. Hub log lines for SOL: [`demo/keeper-2026-11-10-sol.log`](demo/keeper-2026-11-10-sol.log). At the time the hub only polled, every 10 s. Since 12 Nov it is also woken by Somnia Reactivity; see the sixth run.
 
 **Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 70,000 covers 0.00018. Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until the bounty results are announced. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
+
+## Fifth live run (2026-11-12, AVAX-PERP): the run that found a bug
+
+Same setup on a fourth market: long 3.4 AVAX, an Entire stop loss that covers 1.7 after the position was doubled.
+
+| time (UTC) | what happened | transaction |
+|---|---|---|
+| 09:00:50 | The account's own stop loss fires and closes 1.7 | [0xa4ab30ec…cd55ae](https://explorer.testnet.somnia.network/tokyo/tx/0xa4ab30ec80e31ade793b18abbe313785048d939944f641f912825ff50dcd55ae) |
+| **09:01:42** | **The hub closes the other 1.7, 52 s later** | [0x549a8b8a…46a94a](https://explorer.testnet.somnia.network/tokyo/tx/0x549a8b8a328602ff85a6c0fc0799f8bf6acb510489d89529202e57471146a94a) |
+
+52 s is too slow, and the log says why. The hub saw the mark cross the stop and worked out "close 50%" from the size it had read a moment before, 3.4. By the time the order was built the stop had already closed half, so 50% of what was left was 0.85 AVAX, under the market minimum of 1.4. The close was skipped and the hub waited out its 30 s cooldown:
+
+```
+AVAX-PERP long 3.4: stop covers 50.0%, 1.70000 uncovered | SL 8.585 | HIT
+close skipped: 50% of 1.7 AVAX is below the market minimum of 1.4.
+AVAX-PERP long 1.7: stop covers 0.0%, 1.70000 uncovered | STOP FIRED
+placed gap keeper short 1.7 AVAX @ 8.556 | filled 1.7
+```
+
+The fix in [`src/gap.ts`](src/gap.ts): right before a close the keeper reads the live size again and closes `min(1, uncovered / live size)` of it, and a skipped close no longer starts the cooldown. Logs: [`demo/keeper-2026-11-12-avax.log`](demo/keeper-2026-11-12-avax.log).
+
+## Sixth live run (2026-11-12, LINK-PERP): with the fix and Reactivity
+
+The fixed hub went live at about 09:05 UTC, now also subscribed with Somnia Reactivity (`somnia_watch`, off-chain, free) to all 75 perp pools, margin banks and stop registries. Long 2.9 LINK, Entire TP/SL, then 2.9 more, then the stop loss moved to 10.03.
+
+| time (UTC) | what happened | transaction |
+|---|---|---|
+| 11:17:00 | The account's own stop loss fires and closes 2.9 | [0xf5cab3ad…b2dd40](https://explorer.testnet.somnia.network/tokyo/tx/0xf5cab3ad8f1d8f980f0d5b44a7be2aee9442146f3321d1e10b5e41f196b2dd40) |
+| 11:17:00.3 | The Reactivity event for the account reaches the hub | hub log |
+| **11:17:11** | **The hub closes the other 2.9, 11 s after the stop** | [0xe5f07b97…964eb1](https://explorer.testnet.somnia.network/tokyo/tx/0xe5f07b97c9815cc6337b1dad85eec9b33ecc990193cc32d381999fbfae964eb1) |
+
+11 s against 18 and 19 s on the earlier runs and 52 s on AVAX. Gas spent by the bot on this account so far: 0.0243 STT. Log: [`demo/keeper-2026-11-12-link.log`](demo/keeper-2026-11-12-link.log).
 
 ## Protect your own account
 
@@ -229,8 +263,8 @@ All five tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05.
 - It needs a stop loss to act on. A position with no stop loss, or one whose stop already covers all of it, is left alone.
 - The list of accounts to scan comes from the dreamDEX indexer. Sizes are read from the chain, but an account the indexer has not seen yet is not in the daily numbers.
 - The keeper closes at market with a reduce order after the mark crosses the stop, so the fill can differ from the stop price, as with any stop.
-- The live card works only while the page is open; if the socket drops, it says so and stops updating. The keeper itself still polls every 10 seconds and does not use Reactivity yet.
-- Four live closes so far, all on our own test account. We have not seen it run on someone else's position.
+- The live card works only while the page is open; if the socket drops, it says so and stops updating. The keeper hub is woken by Reactivity too, and still polls every 10 seconds as a fallback if the socket drops.
+- Six live closes so far, all on our own test account. We have not seen it run on someone else's position.
 
 ## How this was built
 
