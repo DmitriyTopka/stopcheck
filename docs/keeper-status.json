@@ -1,9 +1,19 @@
 {
-  "time": "2026-11-11T14:31:43Z",
+  "time": "2026-11-12T15:25:23Z",
   "bot": "0x13f05c8e15cC0d7d3abff02C144fb74778018a55",
   "guardedAccounts": 1,
   "demoAccountGuarded": true,
   "closes": [
+    {
+      "time": "2026-11-12T11:17:11Z",
+      "market": "LINK-PERP",
+      "tx": "0xe5f07b97c9815cc6337b1dad85eec9b33ecc990193cc32d381999fbfae964eb1"
+    },
+    {
+      "time": "2026-11-12T09:01:42Z",
+      "market": "AVAX-PERP",
+      "tx": "0x549a8b8a328602ff85a6c0fc0799f8bf6acb510489d89529202e57471146a94a"
+    },
     {
       "time": "2026-11-10T19:06:59Z",
       "market": "SOL-PERP",

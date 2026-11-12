@@ -178,5 +178,25 @@
     "accountsWithSttToClaim": 61,
     "stopsCreated7d": 259,
     "fixedSizeStops7d": 255
+  },
+  {
+    "time": "2026-11-12T15:25:18Z",
+    "block": 48428679,
+    "pendingStops": 586,
+    "accountsWithPendingStops": 278,
+    "accountsScanned": 262,
+    "readFailures": 16,
+    "accountsWithPosition": 127,
+    "partlyCovered": 4,
+    "uncoveredNotionalUsd": 6055.92,
+    "noStopLoss": 103,
+    "orphanAccounts": 158,
+    "orphanStops": 318,
+    "waitingStops": 2,
+    "sttHeldByStops": 85.05,
+    "sttToClaim": 7.43,
+    "accountsWithSttToClaim": 55,
+    "stopsCreated7d": 122,
+    "fixedSizeStops7d": 118
   }
 ]
