@@ -28,7 +28,7 @@ We found the trap while testing dreamDEX perps, in one of our 21 feedback report
 | X posts | [X posts](#x-posts) |
 | Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity) in two places: the card updates itself when the account changes on chain ([`src/web.ts`](src/web.ts)), and the keeper hub is woken by the same subscription instead of waiting for its next poll ([`src/wake.ts`](src/wake.ts)) |
 | Mainnet | [Mainnet](#mainnet) |
-- **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, five X posts tagging @DreamDEXSomnia at the end of this page.
+- **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, six X posts tagging @DreamDEXSomnia at the end of this page.
 
 ## Why
 
@@ -253,8 +253,9 @@ Market list, pending stops and candidate positions come from the dreamDEX indexe
 3. [Cancelled limit orders leave their TP/SL armed](https://x.com/SirenaMC2/status/2113499520369910070)
 4. [Third live run, on ETH: the keeper closed the uncovered half 18 s after the stop (with the new video)](https://x.com/SirenaMC2/status/2118283633450508554)
 5. [All 453 accounts with pending stops: 12 partly covered, 713 of 738 new stops fixed-size](https://x.com/SirenaMC2/status/2118284098107998236)
+6. [Found a bug in my own keeper on AVAX (52 s), fixed it, hub now wakes on Reactivity: LINK closed in 11 s](https://x.com/SirenaMC2/status/2120855488372117892)
 
-All five tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05.
+All six tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05, 6 on 2026-11-12.
 
 ## Known limitations
 
