@@ -16,6 +16,7 @@ We found the trap while testing dreamDEX perps, in one of our 21 feedback report
 
 - **Live right now.** Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21. The card says the stop loss covers 50% of a 0.00036 BTC long: an "Entire" stop set before the position was doubled. Our keeper watches this account on a server until the bounty results are out.
 - **It worked six times on chain, on five markets.** Each time the account's own stop closed half and the keeper closed the other half seconds later. 22 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x2db1fbb610bcc905796b47326246ea95e5b055c011ca4b907fb9b3f043825178), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x8524c1fb944ecc7ceacfcd08087aa940e0acfc5d77f75a1dad7cbff8dc67abc2). 26 Oct: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x9b13ce9e6fb4175ce030494444014a0afed12984188bf21d8531c4d92eda2aee), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x01a5d298b7453fab8e22fe9689f99264ca7af821942c1eb2703c78b2eccbcc12). 5 Nov (ETH): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x5d01311d4e27c2314b9d1352eec62a11aab8c0b455c9328682d97003528e1db6), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x13c80f3832d78e072054647faa87d47be5e528e6a422851fc3cb09422fe28ec3), 18 s later. 10 Nov (SOL): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x80c5ad3c60c042b2afe91e189ef078c0fe4a12aacd42571cb8f0a67692cdbc99), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0xca131b59b4f92a4fd72dd18b30c5c2766b086c37538212a59a9b719595893c15), 19 s later. 12 Nov (AVAX): [stop](https://explorer.testnet.somnia.network/tokyo/tx/0xa4ab30ec80e31ade793b18abbe313785048d939944f641f912825ff50dcd55ae), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0x549a8b8a328602ff85a6c0fc0799f8bf6acb510489d89529202e57471146a94a), 52 s later; this run found a bug in the keeper, fixed the same morning. 12 Nov (LINK), with the fix and the hub woken by Somnia Reactivity: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0xf5cab3ad8f1d8f980f0d5b44a7be2aee9442146f3321d1e10b5e41f196b2dd40), [keeper](https://explorer.testnet.somnia.network/tokyo/tx/0xe5f07b97c9815cc6337b1dad85eec9b33ecc990193cc32d381999fbfae964eb1), 11 s later. Full timelines below.
+- **On chain, same block.** The keeper also runs as a Somnia Reactivity handler contract, [`StopCheckReactor`](https://explorer.testnet.somnia.network/tokyo/address/0xeb2cDB6c99cCEb7e1022680Fc678A000C0741a31). On 12 Nov the stop fired and the contract closed the rest in the same block, 48346838: [stop](https://explorer.testnet.somnia.network/tokyo/tx/0x4a213aeab026b714f57899a1ca88fd71349438f8c384b1242c497a54ef7f6479), [contract close](https://explorer.testnet.somnia.network/tokyo/tx/0x74fada7aff117acc66b106d448a08cf60357636568a2542a12cd48f102b52e3b). No server. See [On-chain keeper](#on-chain-keeper-somnia-reactivity-handler).
 - **Try it on your own account.** Link our bot key `0x13f05c8e15cC0d7d3abff02C144fb74778018a55` with Link a bot (Perps) and the hosted keeper guards your positions within a minute. See [Protect your own account](#protect-your-own-account).
 - **Not just our account.** On 5 Nov we scanned all 453 accounts that had pending stops. 12 had a stop loss covering only part of a position (one of them is our demo account), leaving about $41,300 of position value with no stop. 180 were holding 317 stops with no position or order behind them. Of the 738 stops created in the 7 days before, 713 (97%) store a fixed size, so they stop covering the whole position as soon as it grows. The page shows these numbers and refreshes them every day (on 11 Nov: 6 accounts, about $94,100 of position value with no stop).
 
@@ -26,7 +27,7 @@ We found the trap while testing dreamDEX perps, in one of our 21 feedback report
 | Technical execution | [How it reads](#how-it-reads) (sizes from the chain, not the indexer), [`src/check.ts`](src/check.ts), [`src/keeper.ts`](src/keeper.ts) with a gas cap |
 | Live orders and tx hashes | The [live runs](#live-demo-somnia-tokyo-testnet-2026-10-22) below, keeper logs in [`demo/`](demo) |
 | X posts | [X posts](#x-posts) |
-| Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity) in two places: the card updates itself when the account changes on chain ([`src/web.ts`](src/web.ts)), and the keeper hub is woken by the same subscription instead of waiting for its next poll ([`src/wake.ts`](src/wake.ts)) |
+| Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity) in two places: the card updates itself when the account changes on chain ([`src/web.ts`](src/web.ts)), the keeper hub is woken by the same subscription instead of waiting for its next poll ([`src/wake.ts`](src/wake.ts)), and on-chain Reactivity runs the keeper itself: a handler contract subscribed through the precompile closes the gap in the same block as the stop ([`onchain/`](onchain)) |
 | Mainnet | [Mainnet](#mainnet) |
 - **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, six X posts tagging @DreamDEXSomnia at the end of this page.
 
@@ -142,6 +143,24 @@ The fixed hub went live at about 09:05 UTC, now also subscribed with Somnia Reac
 | **11:17:11** | **The hub closes the other 2.9, 11 s after the stop** | [0xe5f07b97…964eb1](https://explorer.testnet.somnia.network/tokyo/tx/0xe5f07b97c9815cc6337b1dad85eec9b33ecc990193cc32d381999fbfae964eb1) |
 
 11 s against 18 and 19 s on the earlier runs and 52 s on AVAX. Gas spent by the bot on this account so far: 0.0243 STT. Log: [`demo/keeper-2026-11-12-link.log`](demo/keeper-2026-11-12-link.log).
+
+## On-chain keeper (Somnia Reactivity handler)
+
+The same keeper with no server at all. [`onchain/src/StopCheckReactor.sol`](onchain/src/StopCheckReactor.sol) is a `SomniaEventHandler`. Through the Reactivity precompile (`0x0100`) it subscribes to `LinkedOrderCancelled` on a market's stop registry, filtered on the guarded account as the owner topic. That event is emitted in the very transaction in which a linked TP/SL fires. The chain then calls the contract, which reads the live size from the margin bank and closes what is left with a reduce IOC through `placeOrderFor`, 2% past the mark at most. It never opens or adds: the order is always on the opposite side and never bigger than the position.
+
+Run on 12 Nov 2026, LINK-PERP, on a test account of ours (the faucet wallet, not a Perps Arena account): long 1 LINK, a linked TP/SL stored with that fixed 1 LINK (what "Entire" stores, #019), then 1 LINK more.
+
+| block | tx index | what happened | transaction |
+|---|---|---|---|
+| 48346838 | 80 | The account's stop loss fires and closes 1.0 LINK at 9.919 | [0x4a213aea…ef7f6479](https://explorer.testnet.somnia.network/tokyo/tx/0x4a213aeab026b714f57899a1ca88fd71349438f8c384b1242c497a54ef7f6479) |
+| **48346838** | **119** | **`StopCheckReactor`, called by the chain, closes the other 1.0 LINK at 9.919 (`GapClosed`)** | [0x74fada7a…02b52e3b](https://explorer.testnet.somnia.network/tokyo/tx/0x74fada7aff117acc66b106d448a08cf60357636568a2542a12cd48f102b52e3b) |
+
+Same block, both at 13:08:30 UTC. The hosted hub does not watch this account, so the contract was the only thing that could close it.
+
+- Contract: [`0xeb2cDB6c99cCEb7e1022680Fc678A000C0741a31`](https://explorer.testnet.somnia.network/tokyo/address/0xeb2cDB6c99cCEb7e1022680Fc678A000C0741a31), subscription 40608502. It holds 33 STT: Somnia asks a subscription owner for 32 STT, and the balance pays for the handler calls (this one used 910,631 gas).
+- Tests: `cd onchain && forge install foundry-rs/forge-std --no-git && npm install && forge test` (13 tests, one of them a fuzz test: never more than the position, always the opposite side, price on the tick).
+- Script that set the trap: [`onchain/scripts/trap.mts`](onchain/scripts/trap.mts).
+- Why not on the demo account: the app's Link a bot panel refuses a contract ("That address is a contract"). The operator registry on chain accepts one, and an account that signs its own transactions can grant it with `setOperatorApprovalForPool(pool, reactor, [placeOrderFor], true)`. The demo account is a Perps Arena account that signs only through the app, so it stays with the hosted hub.
 
 ## Protect your own account
 
@@ -265,7 +284,8 @@ All six tag @DreamDEXSomnia: 1-3 posted on 2026-10-23, 4-5 on 2026-11-05, 6 on 2
 - The list of accounts to scan comes from the dreamDEX indexer. Sizes are read from the chain, but an account the indexer has not seen yet is not in the daily numbers.
 - The keeper closes at market with a reduce order after the mark crosses the stop, so the fill can differ from the stop price, as with any stop.
 - The live card works only while the page is open; if the socket drops, it says so and stops updating. The keeper hub is woken by Reactivity too, and still polls every 10 seconds as a fallback if the socket drops.
-- Six live closes so far, all on our own test account. We have not seen it run on someone else's position.
+- Seven live closes so far: six by the hosted keeper on our demo account, one by the on-chain contract on our faucet test account. All on accounts we own.
+- The on-chain keeper needs an account that can sign a registry transaction: the app's Link a bot panel does not accept a contract yet. It closes everything left after a linked TP/SL fires; it does not look for other stops still covering part of the position, which the hosted hub does. We have not seen it run on someone else's position.
 
 ## How this was built
 
