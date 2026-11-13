@@ -110,7 +110,7 @@ A third market, five days after the ETH run. Nothing was set up for the keeper b
 
 Gas spent by the bot: 0.0047 STT. Hub log lines for SOL: [`demo/keeper-2026-11-10-sol.log`](demo/keeper-2026-11-10-sol.log). At the time the hub only polled, every 10 s. Since 12 Nov it is also woken by Somnia Reactivity; see the sixth run.
 
-**Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 70,000 covers 0.00018. Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until the bounty results are announced. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
+**Live for judging.** Account `0x84326A92162Ece92ed257A31073fDd3a6599BF21` holds the trap right now: a 0.00036 BTC long whose Entire stop loss at 65,000 covers 0.00018 (set again on 13 Nov after the missed close below). Open https://dmitriytopka.github.io/stopcheck/#0x84326A92162Ece92ed257A31073fDd3a6599BF21 and the card says 50%. The gap keeper watches this account on our server until the bounty results are announced. It stops by itself after spending 1 STT of gas (`KEEPER_GAS_CAP_STT`).
 
 ## Fifth live run (2026-11-12, AVAX-PERP): the run that found a bug
 
