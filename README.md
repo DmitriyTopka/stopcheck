@@ -6,7 +6,7 @@ It is a safety layer, not a patch for one bug. It compares every stop with the p
 
 We found the trap while testing dreamDEX perps, in one of our 21 feedback reports; this tool is the answer to the one that can cost a trader the most.
 
-**Demo video (104 s, real screens, 5 Nov):** https://youtu.be/aGLra4y-bGE (also in the repo: [demo/stopcheck-demo-v2.mp4](demo/stopcheck-demo-v2.mp4)). Shorter first version: https://youtu.be/T29UDxKIuF8
+**Demo video (2:27, real screens, 13 Nov):** https://youtu.be/TpaROMCsouY (also in the repo: [demo/stopcheck-demo-v3.mp4](demo/stopcheck-demo-v3.mp4), built by [demo/v3/build.py](demo/v3/build.py)). It adds the Reactivity run on LINK (11 s) and the on-chain keeper closing in the same block as the stop. Earlier versions: https://youtu.be/aGLra4y-bGE (5 Nov), https://youtu.be/T29UDxKIuF8
 
 **Try it:** https://dmitriytopka.github.io/stopcheck/ (paste an address, or open `https://dmitriytopka.github.io/stopcheck/#0xYourAddress`). Nothing is signed; the page only reads Somnia Tokyo testnet.
 
@@ -29,7 +29,7 @@ We found the trap while testing dreamDEX perps, in one of our 21 feedback report
 | X posts | [X posts](#x-posts) |
 | Somnia primitives (a plus) | Off-chain [Somnia Reactivity](#live-card-somnia-reactivity) in two places: the card updates itself when the account changes on chain ([`src/web.ts`](src/web.ts)), the keeper hub is woken by the same subscription instead of waiting for its next poll ([`src/wake.ts`](src/wake.ts)), and on-chain Reactivity runs the keeper itself: a handler contract subscribed through the precompile closes the gap in the same block as the stop ([`onchain/`](onchain)) |
 | Mainnet | [Mainnet](#mainnet) |
-- **Video and posts.** 104-second demo of real screens at https://youtu.be/aGLra4y-bGE, six X posts tagging @DreamDEXSomnia at the end of this page.
+- **Video and posts.** 2:27 demo of real screens at https://youtu.be/TpaROMCsouY, six X posts tagging @DreamDEXSomnia at the end of this page.
 
 ## Why
 
