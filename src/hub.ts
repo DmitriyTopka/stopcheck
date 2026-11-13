@@ -77,7 +77,12 @@ interface Guarded {
   spent: number;
   /** Set after a cycle threw: the account is skipped until then. */
   backoffUntil: number;
+  /** Refreshes in a row that confirmed the grant is gone. */
+  misses: number;
 }
+
+/** An account is dropped only after this many refreshes in a row confirm the grant is gone. */
+const DROP_AFTER = 3;
 
 /**
  * A perp-core context that reads as `owner` and, when a key is loaded, sends for
@@ -137,8 +142,19 @@ async function main(): Promise<void> {
     );
     for (const o of ranked.slice(0, MAX_OWNERS)) {
       const k = o.address.toLowerCase();
+      if (o.unsure) {
+        // The grant could not be read this time. Keep an account we already guard
+        // (with its memory of uncovered parts); do not add a new one on a guess.
+        if (guarded.has(k)) {
+          seen.add(k);
+          console.log(`${guarded.get(k)!.tag} link check failed (RPC), keeping it`);
+        }
+        continue;
+      }
       seen.add(k);
-      if (!guarded.has(k)) {
+      const known = guarded.get(k);
+      if (known) known.misses = 0;
+      if (!known) {
         const owner = getAddress(o.address);
         guarded.set(k, {
           owner,
@@ -147,6 +163,7 @@ async function main(): Promise<void> {
           state: newOwnerState(),
           spent: spend[k] ?? 0,
           backoffUntil: 0,
+          misses: 0,
         });
         console.log(`[${short(owner)}] now guarded: placeOrderFor granted on ${o.pools.size}/${pools.length} perp pools`);
       }
@@ -154,6 +171,12 @@ async function main(): Promise<void> {
     for (const [k, g] of guarded) {
       if (seen.has(k)) continue;
       // The grant was revoked (or the indexer and the pools both stopped naming it).
+      // One refresh is not enough: wait for DROP_AFTER in a row.
+      g.misses += 1;
+      if (g.misses < DROP_AFTER) {
+        console.log(`${g.tag} grant not found (${g.misses}/${DROP_AFTER}), keeping it for now`);
+        continue;
+      }
       console.log(`${g.tag} no longer linked, dropped`);
       await shutdown(g.ctx);
       guarded.delete(k);

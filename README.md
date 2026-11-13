@@ -144,6 +144,22 @@ The fixed hub went live at about 09:05 UTC, now also subscribed with Somnia Reac
 
 11 s against 18 and 19 s on the earlier runs and 52 s on AVAX. Gas spent by the bot on this account so far: 0.0243 STT. Log: [`demo/keeper-2026-11-12-link.log`](demo/keeper-2026-11-12-link.log).
 
+## A missed close (2026-11-13, BTC-PERP), and the fix
+
+Not every run went right. On 13 Nov at 02:52:25 UTC the BTC mark reached 70,000 and the demo account's own stop loss fired, closing 0.00018 of the 0.00036 BTC long ([tx](https://explorer.testnet.somnia.network/tokyo/tx/0xa189064060d1034d93345f2e61eb87cf0d34a9efff73d0d4c26652abe82365ca)). The hub did not close the other half.
+
+The log shows why. In that same minute the RPC answered with timeouts. The hub checks every refresh that the account still links its key, and a failed read was counted as "not linked":
+
+```
+read failed, retrying: rpc readContract getPosition failed: The request took too long to respond.
+woken by a Reactivity event at 2026-11-13T02:52:29.132Z
+[0x8432..BF21] no longer linked, dropped
+[0x8432..BF21] now guarded: placeOrderFor granted on 14/40 perp pools
+[0x8432..BF21] nothing uncovered (1 position(s))
+```
+
+The account came back one refresh later, but with a fresh state: the hub had forgotten that half of the position was uncovered, and a position with no stop loss left is not its business. The fix in [`src/owners.ts`](src/owners.ts) and [`src/hub.ts`](src/hub.ts): a failed read is "unknown", not "no", so an account already guarded is kept with its memory; it is dropped only after three refreshes in a row confirm the grant is gone. Live on the hub since 13 Nov 09:10 UTC. The on-chain keeper above has no such failure mode: it does not poll, the chain calls it.
+
 ## On-chain keeper (Somnia Reactivity handler)
 
 The same keeper with no server at all. [`onchain/src/StopCheckReactor.sol`](onchain/src/StopCheckReactor.sol) is a `SomniaEventHandler`. Through the Reactivity precompile (`0x0100`) it subscribes to `LinkedOrderCancelled` on a market's stop registry, filtered on the guarded account as the owner topic. That event is emitted in the very transaction in which a linked TP/SL fires. The chain then calls the contract, which reads the live size from the margin bank and closes what is left with a reduce IOC through `placeOrderFor`, 2% past the mark at most. It never opens or adds: the order is always on the opposite side and never bigger than the position.

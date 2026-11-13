@@ -35,6 +35,9 @@ export interface Owner {
   address: `0x${string}`;
   /** Perp pools (lowercase) where the pool authorises our key to placeOrderFor. */
   pools: Set<string>;
+  /** Every check for this owner failed (RPC error or timeout), so we do not know.
+   *  Not a "no": the hub keeps an account it already guards instead of dropping it. */
+  unsure?: boolean;
 }
 
 export interface PerpPool {
@@ -129,9 +132,15 @@ export async function confirmOwners(client: SomniaMarkets, candidates: string[],
   const out: Owner[] = [];
   for (const owner of candidates) {
     if (owner.toLowerCase() === operator.toLowerCase()) continue;
-    const answers = await Promise.all(pools.map((p) => canPlaceFor(client, p.pool, owner, operator).catch(() => false)));
-    const ok = new Set(pools.filter((_, i) => answers[i]).map((p) => p.pool.toLowerCase()));
+    // A failed read is not a "no". On 13 Nov a burst of RPC timeouts made every
+    // check fail, the hub took that as "unlinked", dropped the demo account and
+    // lost track of a stop that fired a moment later.
+    const answers = await Promise.all(
+      pools.map((p) => canPlaceFor(client, p.pool, owner, operator).then((v) => v, () => null as boolean | null)),
+    );
+    const ok = new Set(pools.filter((_, i) => answers[i] === true).map((p) => p.pool.toLowerCase()));
     if (ok.size) out.push({ address: owner as `0x${string}`, pools: ok });
+    else if (answers.some((a) => a === null)) out.push({ address: owner as `0x${string}`, pools: ok, unsure: true });
   }
   return out;
 }
@@ -179,14 +188,15 @@ async function cli(): Promise<void> {
     indexerUrl: INDEXER,
     addresses: { ...SOMNIA_HIDEKI_TESTNET_ADDRESSES, operatorPermissionsRegistry: registries[0] as `0x${string}` } as any,
   });
-  for (const o of owners) {
+  for (const o of owners.filter((x) => !x.unsure)) {
     const first = [...o.pools][0] as `0x${string}`;
     const perPool = await raw.client.isApprovedForPool({ pool: first, owner: o.address, operator: operator as `0x${string}`, selector: PLACE_ORDER_FOR });
     const global = await raw.client.isGloballyApproved({ owner: o.address, operator: operator as `0x${string}`, selector: PLACE_ORDER_FOR });
     const names = pools.filter((p) => o.pools.has(p.pool.toLowerCase())).map((p) => p.symbol);
     console.log(`${o.address}: isOperatorAuthorized on ${o.pools.size}/${pools.length} pools (${names.join(" ")}) | isApprovedForPool ${perPool} | isGloballyApproved ${global}`);
   }
-  console.log(`${owners.length} owner(s) linked to ${operator}`);
+  const unsure = owners.filter((x) => x.unsure).length;
+  console.log(`${owners.length - unsure} owner(s) linked to ${operator}${unsure ? `, ${unsure} not checked (RPC errors)` : ""}`);
 }
 
 if (process.argv[1] && /owners\.(ts|js)$/.test(process.argv[1])) {

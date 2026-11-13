@@ -48,7 +48,7 @@ async function botTransactions(bot: string): Promise<any[]> {
 export async function keeperStatus(bot = DEFAULT_BOT): Promise<KeeperStatus> {
   const client = new SomniaMarkets({ chain: hidekiTestnet, indexerUrl: INDEXER, addresses: SOMNIA_HIDEKI_TESTNET_ADDRESSES });
   const pools = await perpPools(client);
-  const owners = await confirmOwners(client, await indexerCandidates(bot), bot, pools);
+  const owners = (await confirmOwners(client, await indexerCandidates(bot), bot, pools)).filter((o) => !o.unsure);
   const symbolOf = new Map(pools.map((p) => [p.pool.toLowerCase(), p.symbol]));
   const txs = await botTransactions(bot);
   const closes = txs
