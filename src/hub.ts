@@ -20,7 +20,7 @@ import { getAddress } from "viem";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { privateKeyToAccount } from "viem/accounts";
-import { createClient } from "./check.js";
+import { createClient, listAllPerpMarkets } from "./check.js";
 import { gapStep, newOwnerState, type OwnerState } from "./gap.js";
 import { DEFAULT_BOT, OwnerFinder, canPlaceFor } from "./owners.js";
 import { startWake, type Wake } from "./wake.js";
@@ -123,7 +123,7 @@ async function main(): Promise<void> {
   // Optional Somnia Reactivity wake-up (HUB_REACTIVITY=1): polling stays as the fallback.
   let wake: Wake | null = null;
   if (process.env.HUB_REACTIVITY === "1") {
-    const rows: any[] = await (client.client as any).listPerpMarkets();
+    const rows: any[] = await listAllPerpMarkets(client.client as any);
     const sources = [...new Set(rows.flatMap((r) => [r.poolAddress, r.marginBank, r.stopRegistry]).filter(Boolean).map((a) => String(a).toLowerCase()))];
     wake = startWake(sources, () => [...guarded.keys()], (line) => console.log(line));
   }

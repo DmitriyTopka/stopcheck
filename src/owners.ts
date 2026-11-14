@@ -21,7 +21,7 @@
 
 import { SOMNIA_HIDEKI_TESTNET_ADDRESSES, SomniaMarkets } from "@somnia-chain/markets-sdk";
 import { hidekiTestnet } from "@somnia-chain/markets-sdk/chains";
-import { INDEXER } from "./check.js";
+import { INDEXER, listAllPerpMarkets } from "./check.js";
 
 export const PLACE_ORDER_FOR = "0x80054449" as const;
 export const DEFAULT_BOT = "0x13f05c8e15cC0d7d3abff02C144fb74778018a55";
@@ -103,7 +103,7 @@ export async function headBlock(): Promise<number> {
 }
 
 export async function perpPools(client: SomniaMarkets): Promise<PerpPool[]> {
-  const rows: any[] = await (client.client as any).listPerpMarkets();
+  const rows: any[] = await listAllPerpMarkets(client.client as any);
   return rows.map((r) => ({ symbol: `${r.baseSymbol}-PERP`, pool: r.poolAddress as `0x${string}` }));
 }
 

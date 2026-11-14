@@ -69,6 +69,16 @@ interface Market {
   baseDecimals: number;
 }
 
+// The SDK lists perp markets newest first and stops at 50 by default. On 13 Nov the
+// network passed 50 (test and load-test pools), BTC, ETH and SOL fell off the page and
+// every position on them looked like "0 positions". Ask for all of them.
+export const PERP_MARKETS_LIMIT = 1000;
+export async function listAllPerpMarkets(c: any): Promise<any[]> {
+  const rows: any[] = await c.listPerpMarkets({ limit: PERP_MARKETS_LIMIT });
+  if (rows.length >= PERP_MARKETS_LIMIT) console.warn(`listPerpMarkets returned ${rows.length} rows, the limit; some markets may be missing`);
+  return rows;
+}
+
 export function createClient(): SomniaMarkets {
   return new SomniaMarkets({ chain: hidekiTestnet, indexerUrl: INDEXER, addresses: SOMNIA_HIDEKI_TESTNET_ADDRESSES });
 }
@@ -109,9 +119,9 @@ export async function checkAccount(account: string, client: SomniaMarkets = crea
   const c = client.client as any;
   const addr = account as `0x${string}`;
 
-  const rows: any[] = await c.listPerpMarkets();
+  const rows: any[] = await listAllPerpMarkets(c);
   const markets = new Map<string, Market>();
-  for (const r of rows) {
+  const addMarket = (r: any) =>
     markets.set(String(r.poolAddress).toLowerCase(), {
       symbol: `${r.baseSymbol}-PERP`,
       pool: r.poolAddress,
@@ -119,13 +129,20 @@ export async function checkAccount(account: string, client: SomniaMarkets = crea
       registry: r.stopRegistry ?? null,
       baseDecimals: Number(r.baseDecimals),
     });
-  }
+  for (const r of rows) addMarket(r);
+  // A pool the list missed is looked up by address, never skipped as "no position".
+  const ensureMarket = async (pool: string) => {
+    if (!pool || markets.has(pool)) return;
+    const r = await c.getPerpMarket(pool).catch(() => null);
+    if (r) addMarket(r);
+  };
 
   // Pending stops, then their exact on-chain state (quantity, sibling, STT paid).
   const pending: any[] = await c.listPerpStopOrders({ account: addr });
   const reads: any[] = pending.length
     ? await c.getPerpStopOrders(pending.map((s: any) => ({ registry: s.registry, orderId: s.orderIdRaw })))
     : [];
+  await Promise.all(pending.map((s: any) => ensureMarket(String(s.market?.poolAddress ?? "").toLowerCase())));
   const stopsByPool = new Map<string, { isBid: boolean; op: number; leg: StopLeg }[]>();
   pending.forEach((s: any, i: number) => {
     const read = reads[i];
@@ -156,6 +173,7 @@ export async function checkAccount(account: string, client: SomniaMarkets = crea
   const indexed: any[] = await c.listPerpPositions(addr).catch(() => []);
   const pools = new Set<string>([...indexed.map((p: any) => String(p.pool ?? p.poolAddress ?? "").toLowerCase()), ...stopsByPool.keys()]);
   pools.delete("");
+  await Promise.all([...pools].map(ensureMarket));
   const sizes = new Map<string, { size: bigint; entry: bigint }>();
   await Promise.all(
     [...pools].map(async (pool) => {

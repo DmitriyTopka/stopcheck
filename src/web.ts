@@ -1,4 +1,4 @@
-import { checkAccount, createClient, type PositionCheck, type Report, type StopLeg } from "./check.js";
+import { checkAccount, createClient, listAllPerpMarkets, type PositionCheck, type Report, type StopLeg } from "./check.js";
 import type { ScanSummary } from "./cli.js";
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -235,7 +235,7 @@ function stopLive(): void {
 }
 
 async function watchLive(address: string): Promise<void> {
-  const rows: any[] = await (client.client as any).listPerpMarkets();
+  const rows: any[] = await listAllPerpMarkets(client.client as any);
   const sources = new Set<string>([address.toLowerCase()]);
   for (const r of rows) for (const a of [r.poolAddress, r.marginBank, r.stopRegistry]) if (a) sources.add(String(a).toLowerCase());
   const needle = address.toLowerCase().slice(2);
