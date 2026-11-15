@@ -1,9 +1,14 @@
 {
-  "time": "2026-11-14T13:39:16Z",
+  "time": "2026-11-15T08:36:00Z",
   "bot": "0x13f05c8e15cC0d7d3abff02C144fb74778018a55",
   "guardedAccounts": 1,
   "demoAccountGuarded": true,
   "closes": [
+    {
+      "time": "2026-11-14T15:31:27Z",
+      "market": "BTC-PERP",
+      "tx": "0x749b9f3a77e467c12fb75fe81e02257fda36e27ceb2483d47cb3bf6c76acf9b5"
+    },
     {
       "time": "2026-11-12T11:17:11Z",
       "market": "LINK-PERP",
