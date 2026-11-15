@@ -1,0 +1,26 @@
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65240.06332415472
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65195.519410327965
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65173.13530857601
+owners: 1 guarded (1 indexer candidate(s), 0 from new registry logs)
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65122.88050875278
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65139.12428066425
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65169.164521185325
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65189.20989827425
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65150.42068506675
+owners: 1 guarded (1 indexer candidate(s), 0 from new registry logs)
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65096.45263393029
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 65061.50453188013
+[0x8432..BF21] BTC-PERP long 0.00036: stop covers 50.0%, 0.000180000 uncovered | SL 65000 | mark 64999.63235359222 | HIT
+placed gap keeper short 0.00018 BTC @ 64938.9 | filled 0.00018 | order 17247705708918442924716
+[0x8432..BF21] BTC-PERP: gap close sent=true filled=18000
+[0x8432..BF21] gas spent on this account so far: 0.0383 STT
+[0x8432..BF21] nothing uncovered (1 position(s))
+[0x8432..bf21] woken by a Reactivity event at 2026-11-14T15:31:28.220Z
+[0x8432..BF21] nothing uncovered (1 position(s))
+[0x8432..BF21] nothing uncovered (1 position(s))
+owners: 1 guarded (1 indexer candidate(s), 0 from new registry logs)
+[0x8432..BF21] nothing uncovered (1 position(s))
+[0x8432..BF21] nothing uncovered (1 position(s))
+[0x8432..BF21] nothing uncovered (1 position(s))
+[0x8432..BF21] nothing uncovered (1 position(s))
+[0x8432..BF21] nothing uncovered (1 position(s))
